@@ -1,1500 +1,4 @@
 
-بسیار خب ✅
-فایل translations.json شما سالم است و فقط کافیست کلیدهای about_* را به آن اضافه کنیم.
-من فایل کامل و اصلاح‌شده را می‌فرستم تا دقیقاً جایگزین کنید.
-
-📄 فایل translations.json — کامل جایگزین شود
-json
-{
-  "en": {
-    "nav_paintings": "Paintings",
-    "nav_brushes": "Brushes",
-    "nav_prints": "Prints",
-    "nav_videos": "Videos",
-    "nav_about": "About",
-    "nav_contact": "Contact",
-
-    "hero_eyebrow": "REALISM ART",
-    "hero_title_line1": "FAHIME IZADIAN",
-    "hero_title_line2": "REALISM",
-    "hero_button": "Explore Collection",
-    "hero_scroll": "SCROLL",
-
-    "intro_eyebrow": "THE COLLECTION",
-    "intro_title_1": "Paintings created with",
-    "intro_title_em": "patience, observation",
-    "intro_title_2": "and attention to detail.",
-    "intro_text": "Explore a collection of original works, prints and artistic resources. Replace every image in this template with your own artwork and customize the text to create your personal portfolio.",
-
-    "paintings_eyebrow": "01 / COLLECTION",
-    "paintings_title": "Paintings",
-    "paintings_text": "Discover original paintings and explore the complete collection of available artwork.",
-    "paintings_link": "Discover the collection",
-
-    "brushes_eyebrow": "02 / TOOLS",
-    "brushes_title": "Brushes",
-    "brushes_subtitle": "Fine Detail Professional Brush Set",
-    "brushes_text": "A carefully selected collection of brushes designed for precision, detail and artistic control.",
-    "brushes_link": "Discover the brushes",
-
-    "prints_eyebrow": "03 / LIMITED EDITION",
-    "prints_title": "Prints",
-    "prints_text": "Purchase your limited edition print. Invest and enjoy.",
-    "prints_button": "View Prints",
-
-    "videos_eyebrow": "04 / PROCESS",
-    "videos_title": "Videos",
-    "videos_text": "Watch videos and learn more about the creative process, techniques and ideas behind each artwork.",
-    "videos_link": "Watch videos",
-    "videos_play": "Play",
-
-    "press_eyebrow": "FEATURED IN",
-    "press_title": "Press",
-
-    "newsletter_eyebrow": "STAY CONNECTED",
-    "newsletter_title": "Newsletter",
-    "newsletter_text": "Subscribe now to receive news about:",
-    "newsletter_item_prints": "Prints",
-    "newsletter_item_brushes": "Brushes",
-    "newsletter_item_paintings": "Paintings",
-    "newsletter_item_workshops": "Workshops",
-    "newsletter_placeholder": "Your email address",
-    "newsletter_button": "Subscribe",
-
-    "footer_paintings": "Paintings",
-    "footer_brushes": "Brushes",
-    "footer_prints": "Prints",
-    "footer_videos": "Videos",
-    "footer_about": "About",
-
-    "chat_title": "Artist Support",
-    "chat_status": "● Online",
-    "chat_welcome": "Hi! 👋 Welcome to Fahime Izadian Realism. How can I help you today?",
-    "chat_placeholder": "Type your message...",
-
-    "cta_text": "Learn to Paint",
-
-    "classes_eyebrow": "LEARN WITH US",
-    "classes_title": "Painting Classes",
-    "classes_subtitle": "Join our painting workshops — online or in-person.",
-
-    "filter_all": "All",
-    "filter_online": "Online",
-    "filter_inperson": "In Person",
-    "filter_hybrid": "Hybrid",
-
-    "class1_badge": "Online",
-    "class1_title": "Beginner Painting",
-    "class1_desc": "Learn color, composition and brushwork from scratch.",
-    "class1_day": "Saturdays",
-    "class1_time": "10:00 – 12:00",
-    "class1_loc": "Online (Zoom)",
-    "class1_price": "$49 / session",
-    "class1_btn": "Reserve Spot",
-
-    "class2_badge": "In Person",
-    "class2_title": "Advanced Oil Painting",
-    "class2_desc": "Deepen your technique with oils, glazing and layering.",
-    "class2_day": "Tue & Thu",
-    "class2_time": "18:00 – 20:30",
-    "class2_loc": "Studio, Qom",
-    "class2_price": "$79 / session",
-    "class2_btn": "Reserve Spot",
-
-    "class3_badge": "Online",
-    "class3_title": "Watercolor Workshop",
-    "class3_desc": "Discover the beauty of watercolor — soft, fluid, expressive.",
-    "class3_day": "Fridays",
-    "class3_time": "16:00 – 18:00",
-    "class3_loc": "Online (Google Meet)",
-    "class3_price": "$39 / session",
-    "class3_btn": "Reserve Spot",
-
-    "class4_badge": "Hybrid",
-    "class4_title": "Private Lessons",
-    "class4_desc": "One-on-one sessions tailored to your goals and pace.",
-    "class4_day": "Flexible",
-    "class4_time": "By appointment",
-    "class4_loc": "Online or In Studio",
-    "class4_price": "$120 / session",
-    "class4_btn": "Book Now",
-
-    "about_eyebrow": "05 / ABOUT",
-    "about_title": "About",
-    "about_eyebrow_2": "TECHNIQUE, STYLE AND VISION",
-    "about_headline_1": "Making space for",
-    "about_headline_em": "observation.",
-
-    "about_quote": "In the Iranians dwells the art of valor,They bow to none- not even the raging rhinoceros.\nOne in heart, and knowing their Divine Creator,They ask no praise from the stars for their goodness",
-
-    "about_bio_1": "Fahime Izadian was born in 1980.05.31 in bajak district, Qom her family discovered her talent in painting when she was 3, she was pupil of maestro Narges Ahanin Panjeh as a child and she was only inspired by her , she was smitten with manners and methods OF Dr HosseinTabakhian , who was a graduate of ENGLISH Translation from United states, and became his pupil until she became an adult, she has Bachelor of Arts in ENGLISH LITERATURE from KHORAM ABAD state university ( 2011) and Mater of ARTS in Translation Techniques from TEHRAN SCIENCE and RESEARCH UNIVERSITY (2014) she was hired by National Drilling Company in 2015 as a Translation Senior Expert for INTERNATIONAL contracts in KISH ISLAND , Mastery over ENGLISH, French, Spanish , Arabic didn't satisfy her, therefore , after years and years , she found absolute power in Silence (Painting) . she started the project of oil painting of Glance of Prophets (Negah-E-Peygambaran) in 2021. Portraits and notes selected by the artist are inspired by her feelings, since the mountains and the worlds are not able to draw the grandeur of glance of prophets, she is creating works of prophets with the hope that the foregoing might lead to emergence of more works of arts in the universe.",
-
-    "about_link": "Explore the collection"
-  },
-
-  "fa": {
-    "nav_paintings": "نقاشی‌ها",
-    "nav_brushes": "قلم‌موها",
-    "nav_prints": "چاپ‌ها",
-    "nav_videos": "ویدیوها",
-    "nav_about": "درباره",
-    "nav_contact": "تماس",
-
-    "hero_eyebrow": "هنر رئالیسم",
-    "hero_title_line1": "فهمیه ایزدیان",
-    "hero_title_line2": "رئالیسم",
-    "hero_button": "مشاهده مجموعه",
-    "hero_scroll": "اسکرول",
-
-    "intro_eyebrow": "مجموعه",
-    "intro_title_1": "نقاشی‌هایی خلق‌شده با",
-    "intro_title_em": "صبر و مشاهده",
-    "intro_title_2": "و توجه به جزئیات.",
-    "intro_text": "مجموعه‌ای از آثار اصلی، چاپ‌ها و منابع هنری را کاوش کنید. هر تصویر این قالب را با اثر هنری خود جایگزین کنید و متن را برای ساخت پورتفولیوی شخصی خود سفارشی کنید.",
-
-    "paintings_eyebrow": "۰۱ / مجموعه",
-    "paintings_title": "نقاشی‌ها",
-    "paintings_text": "نقاشی‌های اصلی را کشف کنید و مجموعه کامل آثار موجود را ببینید.",
-    "paintings_link": "کشف مجموعه",
-
-    "brushes_eyebrow": "۰۲ / ابزارها",
-    "brushes_title": "قلم‌موها",
-    "brushes_subtitle": "ست حرفه‌ای قلم‌موی جزئیات دقیق",
-    "brushes_text": "مجموعه‌ای منتخب از قلم‌موها برای دقت، جزئیات و کنترل هنری.",
-    "brushes_link": "کشف قلم‌موها",
-
-    "prints_eyebrow": "۰۳ / نسخه محدود",
-    "prints_title": "چاپ‌ها",
-    "prints_text": "چاپ نسخه محدود خود را بخرید. سرمایه‌گذاری کنید و لذت ببرید.",
-    "prints_button": "مشاهده چاپ‌ها",
-
-    "videos_eyebrow": "۰۴ / فرآیند",
-    "videos_title": "ویدیوها",
-    "videos_text": "ویدیوها را تماشا کنید و درباره فرآیند خلاقانه، تکنیک‌ها و ایده‌های پشت هر اثر بیشتر بدانید.",
-    "videos_link": "تماشای ویدیوها",
-    "videos_play": "پخش",
-
-    "press_eyebrow": "معرفی‌شده در",
-    "press_title": "مطبوعات",
-
-    "newsletter_eyebrow": "در ارتباط بمانید",
-    "newsletter_title": "خبرنامه",
-    "newsletter_text": "همین حالا مشترک شوید تا اخبار دریافت کنید درباره:",
-    "newsletter_item_prints": "چاپ‌ها",
-    "newsletter_item_brushes": "قلم‌موها",
-    "newsletter_item_paintings": "نقاشی‌ها",
-    "newsletter_item_workshops": "کارگاه‌ها",
-    "newsletter_placeholder": "ایمیل شما",
-    "newsletter_button": "عضویت",
-
-    "footer_paintings": "نقاشی‌ها",
-    "footer_brushes": "قلم‌موها",
-    "footer_prints": "چاپ‌ها",
-    "footer_videos": "ویدیوها",
-    "footer_about": "درباره",
-
-    "chat_title": "پشتیبانی هنری",
-    "chat_status": "● آنلاین",
-    "chat_welcome": "سلام! 👋 به فهمیه ایزدیان خوش آمدید. چطور می‌توانم کمکتان کنم؟",
-    "chat_placeholder": "پیام خود را بنویسید...",
-
-    "cta_text": "نقاشی یاد بگیر",
-
-    "classes_eyebrow": "با ما یاد بگیرید",
-    "classes_title": "کلاس‌های نقاشی",
-    "classes_subtitle": "به کارگاه‌های نقاشی ما بپیوندید — آنلاین یا حضوری.",
-
-    "filter_all": "همه",
-    "filter_online": "آنلاین",
-    "filter_inperson": "حضوری",
-    "filter_hybrid": "ترکیبی",
-
-    "class1_badge": "آنلاین",
-    "class1_title": "نقاشی مبتدی",
-    "class1_desc": "رنگ، ترکیب‌بندی و قلم‌زنی را از صفر یاد بگیرید.",
-    "class1_day": "شنبه‌ها",
-    "class1_time": "۱۰:۰۰ – ۱۲:۰۰",
-    "class1_loc": "آنلاین (Zoom)",
-    "class1_price": "۴۹ دلار / جلسه",
-    "class1_btn": "رزرو جا",
-
-    "class2_badge": "حضوری",
-    "class2_title": "نقاشی پیشرفته رنگ روغن",
-    "class2_desc": "تکنیک خود را با رنگ روغن، لعاب‌کاری و لایه‌گذاری عمیق‌تر کنید.",
-    "class2_day": "سه‌شنبه و پنجشنبه",
-    "class2_time": "۱۸:۰۰ – ۲۰:۳۰",
-    "class2_loc": "استودیو، قم",
-    "class2_price": "۷۹ دلار / جلسه",
-    "class2_btn": "رزرو جا",
-
-    "class3_badge": "آنلاین",
-    "class3_title": "کارگاه آبرنگ",
-    "class3_desc": "زیبایی آبرنگ را کشف کنید — نرم، سیال، بیانگر.",
-    "class3_day": "جمعه‌ها",
-    "class3_time": "۱۶:۰۰ – ۱۸:۰۰",
-    "class3_loc": "آنلاین (Google Meet)",
-    "class3_price": "۳۹ دلار / جلسه",
-    "class3_btn": "رزرو جا",
-
-    "class4_badge": "ترکیبی",
-    "class4_title": "درس‌های خصوصی",
-    "class4_desc": "جلسات یک‌به‌یک متناسب با اهداف و سرعت شما.",
-    "class4_day": "انعطاف‌پذیر",
-    "class4_time": "با هماهنگی",
-    "class4_loc": "آنلاین یا در استودیو",
-    "class4_price": "۱۲۰ دلار / جلسه",
-    "class4_btn": "همین حالا رزرو کن",
-
-    "about_eyebrow": "۰۵ / درباره",
-    "about_title": "درباره",
-    "about_eyebrow_2": "تکنیک، سبک و بینش",
-    "about_headline_1": "فضایی برای",
-    "about_headline_em": "مشاهده.",
-
-    "about_quote": "هنر نزد ایرانیان است و بس /ندارند کرگ ژیان را به کس\nهمه یکدلانند و یزدان شناس/ به نیکی ندارند از اختر سپاس",
-
-    "about_bio_1": "فهیمه ایزدیان در تاریخ 10/03/1368 در ایران منطقه باجک به دنیا آمد، از 3 سالگی خانواده اش استعداد او را در نقاشی کشف کردند، او در کودکی شاگرد استاد نرگس آهنین پنجه بود و تنها از او الهام گرفت، او در 6 سالگی شیفته منش و طریقت جناب آقای دکتر حسین طباخیان دانش آموخته فن ترجمه زبان انگلیسی از ایالات متحده آمریکا شد و تا بزرگسالی تحت تعلیم او قرار گرفت، وی دارای مدرک کارشناسی ادبیات زبان انگلیسی از دانشگاه دولتی خرم آباد(1390 ) و کارشناسی ارشد فن ترجمه از وزارت علوم و تحقیقات( 1393) می باشد، وی از سال 1394 به عنوان کارشناس ارشد ترجمه قرارداد های ملی حفاری ایران ( جزیره کیش) شد، او به زبان های انگلیسی، فرانسه، اسپانیایی، عربی تسلط دارد، لیکن اما این مهم عطش روح او را اغنا نکرد، او پس از سال ها و سال ها قدرت مطلقه را در زبان سکوت ( نقاشی) کشف کرد. وی در سال 1400 استارت پروژه نگاه پیغمبران رنگ روغن را زد ؛ تصاویر و توضیحات انتخاب شده توس این هنرمند الهام گرفته از احساسات وی می باشند، زیرا کوه ها و هستی ها قادر به تصویر کشیدن عظمت نگاه پیغمبران نمی باشند. این هنرمند صاحبدل در حال حاضر در حال خلق پرتره های پیغمبران می باشد تا این مهم زمینه ساز منصه ظهور آثار گسترده تری در عالم هستی گردد.",
-
-    "about_link": "مشاهده مجموعه"
-  }
-}
-✅ جمع‌بندی نهایی — فقط ۳ فایل:
-#	فایل	کار
-۱	about.html	کامل جایگزین شود (کد بالا در پیام قبلی)
-۲	translations.json	همین فایل بالا — کامل جایگزین شود
-۳	i18n.js	هیچ تغییری لازم نیست ✅
-📌 دو نکته اجرایی:
-about-hero.jpg و about-portrait.jpg را در پوشه پروژه قرار دهید.
-
-برای اینکه شکست خط شعر (با \n) درست نمایش داده شود، این CSS را به style.css اضافه کنید:
-
-css
-.about-quote {
-  white-space: pre-line;
-}
-
-html[dir="rtl"] .about-quote {
-  text-align: right;
-}
-✅ متن‌ها کاملاً برابر با فایل‌های Word (انگلیسی و فارسی)
-✅ فونت همان فونت خود سایت
-✅ هیچ بخش دیگری از سایت تغییر نمی‌کند
-
-اگر خطایی در نمایش دیدید، اسکرین‌شات بفرستید تا سریع اصلاح کنم. 🎨
-
-این فایل css است چاگر تغییر نیاز دارد کد اصلاح شده را بفرست
-بسیار خب ✅
-فایل CSS شما کاملاً سالم است و برای صفحه About فقط باید چند خط به آن اضافه شود — نه تغییر در بخش‌های موجود.
-
-فقط این بلوک را به انتهای فایل style.css اضافه کنید:
-
-css
-/* =====================================
-   ABOUT PAGE (Bio — EN / FA)
-===================================== */
-
-.about-detail {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  background: var(--cream);
-  align-items: center;
-}
-
-.about-detail-image {
-  overflow: hidden;
-  height: 100%;
-}
-
-.about-detail-image img {
-  width: 100%;
-  height: 100%;
-  min-height: 700px;
-  object-fit: cover;
-}
-
-.about-detail-content {
-  padding: 100px 8%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-detail-content h2 {
-  font-size: clamp(2.4rem, 5vw, 4.5rem);
-  margin-bottom: 35px;
-}
-
-.about-detail-content h2 em {
-  font-weight: 400;
-}
-
-/* نقل قول شاعرانه */
-.about-quote {
-  white-space: pre-line;             /* برای شکست خط شعر از \n در JSON */
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.15rem;
-  line-height: 2;
-  color: #333;
-  border-left: 3px solid #b8956a;
-  padding-left: 22px;
-  margin: 0 0 40px;
-}
-
-/* متن بیوگرافی */
-.about-text {
-  font-size: 15px;
-  line-height: 2;
-  color: #444;
-  margin-bottom: 24px;
-}
-
-.about-text em {
-  font-style: italic;
-}
-
-/* لینک پایانی */
-.about-detail-content .text-link {
-  margin-top: 20px;
-}
-
-/* =====================================
-   ABOUT PAGE — RTL (فارسی)
-===================================== */
-html[dir="rtl"] .about-detail-content {
-  text-align: right;
-}
-
-html[dir="rtl"] .about-quote {
-  border-left: none;
-  border-right: 3px solid #b8956a;
-  padding-left: 0;
-  padding-right: 22px;
-  text-align: right;
-}
-
-/* =====================================
-   ABOUT — TABLET
-===================================== */
-@media (max-width: 900px) {
-  .about-detail {
-    grid-template-columns: 1fr;
-  }
-
-  .about-detail-image img {
-    min-height: 500px;
-  }
-
-  .about-detail-content {
-    padding: 80px 8%;
-  }
-}
-
-/* =====================================
-   ABOUT — MOBILE
-===================================== */
-@media (max-width: 600px) {
-  .about-detail-image img {
-    min-height: 380px;
-  }
-
-  .about-detail-content {
-    padding: 60px 7%;
-  }
-
-  .about-quote {
-    font-size: 1rem;
-    padding-left: 16px;
-    margin-bottom: 30px;
-  }
-
-  html[dir="rtl"] .about-quote {
-    padding-right: 16px;
-    padding-left: 0;
-  }
-
-  .about-text {
-    font-size: 14px;
-    line-height: 1.9;
-  }
-}
-📌 نکات مهم:
-هیچ بخشی از CSS قبلی حذف یا تغییر نمی‌کند — فقط این بلوک به انتها اضافه می‌شود.
-
-فونت:
-
-در حالت انگلیسی: var(--serif) = Playfair Display برای نقل قول + DM Sans برای متن.
-
-در حالت فارسی: html[dir="rtl"] body که قبلاً در CSS شما تعریف شده (Vazirmatn, Tahoma) به‌طور خودکار روی متن About هم اعمال می‌شود.
-
-white-space: pre-line باعث می‌شود \n که در translations.json برای شکست خط شعر گذاشتیم، درست نمایش داده شود.
-
-کلاس‌های مورد استفاده: .about-detail, .about-detail-image, .about-detail-content, .about-quote, .about-text — همه جدید هستند و با کلاس .about-section قبلی تداخل ندارند.
-
-✅ جمع‌بندی نهایی — فقط این فایل‌ها:
-#	فایل	کار
-۱	about.html	کامل جایگزین شود (کد پیام قبلی)
-۲	translations.json	کامل جایگزین شود (کد پیام قبلی)
-۳	style.css	فقط بلوک بالا به انتهای فایل اضافه شود
-۴	i18n.js	هیچ تغییری لازم نیست ✅
-متن‌ها دقیقاً مطابق فایل Word (EN و FA)
-
-فونت همان فونت خود سایت
-
-هیچ بخش دیگری تغییر نمی‌کند
-
-اگر بعد از جایگزینی، چیدمان یا فونت ایراد داشت، اسکرین‌شات بفرستید تا سریع تنظیم کنم. 🎨
-
-از اول تغییرات که باید انجام بشه کد ها را از اول بفرست
-بسیار خب ✅
-از اول، همه فایل‌هایی که باید تغییر کنند را کامل و آماده جایگزینی می‌فرستم.
-هیچ بخشی از سایت شما تغییر نمی‌کند جز موارد زیر:
-
-#	فایل	کار
-۱	about.html	فایل جدید — کامل بسازید
-۲	translations.json	کلیدهای About اضافه شود
-۳	style.css	فقط بلوک About به انتها اضافه شود
-۴	i18n.js	دست نزنید ✅
-۱) فایل about.html — کامل بسازید
-html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>About — Fahime Izadian Realism</title>
-
-  <meta
-    name="description"
-    content="About Fahime Izadian — Realism Artist & Art Studio, Qom, Iran"
-  />
-
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="i18n.js"></script>
-  <script defer src="chat-final-v3.js"></script>
-</head>
-
-<body>
-
-  <!-- =========================
-       HEADER
-  ========================== -->
-  <header class="header" id="home">
-    <div class="header-container">
-
-      <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="fa">FA</button>
-      </div>
-
-      <a href="index.html" class="logo">
-        <span class="logo-main">FAHIME IZADIAN</span>
-        <span class="logo-sub">REALISM</span>
-      </a>
-
-      <nav class="desktop-nav">
-        <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
-        <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
-        <a href="prints.html" data-lang-key="nav_prints">Prints</a>
-        <a href="videos.html" data-lang-key="nav_videos">Videos</a>
-        <a href="about.html" data-lang-key="nav_about">About</a>
-        <a href="contact.html" data-lang-key="nav_contact">Contact</a>
-      </nav>
-
-      <button
-        class="menu-toggle"
-        aria-label="Open menu"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-    </div>
-
-    <!-- Mobile Menu -->
-    <nav class="mobile-nav">
-      <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
-      <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
-      <a href="prints.html" data-lang-key="nav_prints">Prints</a>
-      <a href="videos.html" data-lang-key="nav_videos">Videos</a>
-      <a href="about.html" data-lang-key="nav_about">About</a>
-      <a href="contact.html" data-lang-key="nav_contact">Contact</a>
-    </nav>
-
-  </header>
-
-  <!-- =========================
-       PAGE HERO
-  ========================== -->
-  <section class="page-hero" style="background-image: url('about-hero.jpg');">
-    <div class="page-hero-overlay"></div>
-    <div class="page-hero-content">
-      <p class="eyebrow" data-lang-key="about_eyebrow">05 / ABOUT</p>
-      <h1 data-lang-key="about_title">About</h1>
-    </div>
-  </section>
-
-  <!-- =========================
-       ABOUT DETAIL
-  ========================== -->
-  <section class="about-detail section-padding">
-
-    <div class="about-detail-image reveal">
-      <img src="about-portrait.jpg" alt="Fahime Izadian in her studio" />
-    </div>
-
-    <div class="about-detail-content reveal">
-
-      <p class="eyebrow dark" data-lang-key="about_eyebrow_2">
-        TECHNIQUE, STYLE AND VISION
-      </p>
-
-      <h2>
-        <span data-lang-key="about_headline_1">Making space for</span>
-        <em data-lang-key="about_headline_em">observation.</em>
-      </h2>
-
-      <!-- نقل قول شاعرانه -->
-      <blockquote class="about-quote" data-lang-key="about_quote">
-        In the Iranians dwells the art of valor,They bow to none- not even the
-        raging rhinoceros. One in heart, and knowing their Divine Creator,They
-        ask no praise from the stars for their goodness
-      </blockquote>
-
-      <!-- بیوگرافی -->
-      <p class="about-text" data-lang-key="about_bio_1">
-        Fahime Izadian was born in 1980.05.31 in bajak district, Qom her family
-        discovered her talent in painting when she was 3, she was pupil of
-        maestro Narges Ahanin Panjeh as a child and she was only inspired by her
-        , she was smitten with manners and methods OF Dr HosseinTabakhian , who
-        was a graduate of ENGLISH Translation from United states, and became his
-        pupil until she became an adult, she has Bachelor of Arts in ENGLISH
-        LITERATURE from KHORAM ABAD state university ( 2011) and Mater of ARTS
-        in Translation Techniques from TEHRAN SCIENCE and RESEARCH UNIVERSITY
-        (2014) she was hired by National Drilling Company in 2015 as a
-        Translation Senior Expert for INTERNATIONAL contracts in KISH ISLAND ,
-        Mastery over ENGLISH, French, Spanish , Arabic didn't satisfy her,
-        therefore , after years and years , she found absolute power in Silence
-        (Painting) . she started the project of oil painting of Glance of
-        Prophets (Negah-E-Peygambaran) in 2021. Portraits and notes selected by
-        the artist are inspired by her feelings, since the mountains and the
-        worlds are not able to draw the grandeur of glance of prophets, she is
-        creating works of prophets with the hope that the foregoing might lead
-        to emergence of more works of arts in the universe.
-      </p>
-
-      <a href="paintings.html" class="text-link">
-        <span data-lang-key="about_link">Explore the collection</span>
-        <span>→</span>
-      </a>
-
-    </div>
-
-  </section>
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-  <footer class="footer">
-
-    <div class="footer-top">
-
-      <a href="index.html" class="footer-logo">
-        FAHIME IZADIAN REALISM
-      </a>
-
-      <div class="footer-links">
-        <a href="paintings.html" data-lang-key="footer_paintings">Paintings</a>
-        <a href="brushes.html" data-lang-key="footer_brushes">Brushes</a>
-        <a href="prints.html" data-lang-key="footer_prints">Prints</a>
-        <a href="videos.html" data-lang-key="footer_videos">Videos</a>
-        <a href="about.html" data-lang-key="footer_about">About</a>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-      <p>
-        © <span id="year"></span> Fahime Izadian Realism.
-        Realism Artist &amp; Art Studio — Qom, Iran.
-      </p>
-
-      <a href="#home">
-        Back to top ↑
-      </a>
-
-    </div>
-
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
-</body>
-</html>
-۲) فایل translations.json — کامل جایگزین شود
-json
-{
-  "en": {
-    "nav_paintings": "Paintings",
-    "nav_brushes": "Brushes",
-    "nav_prints": "Prints",
-    "nav_videos": "Videos",
-    "nav_about": "About",
-    "nav_contact": "Contact",
-
-    "hero_eyebrow": "REALISM ART",
-    "hero_title_line1": "FAHIME IZADIAN",
-    "hero_title_line2": "REALISM",
-    "hero_button": "Explore Collection",
-    "hero_scroll": "SCROLL",
-
-    "intro_eyebrow": "THE COLLECTION",
-    "intro_title_1": "Paintings created with",
-    "intro_title_em": "patience, observation",
-    "intro_title_2": "and attention to detail.",
-    "intro_text": "Explore a collection of original works, prints and artistic resources. Replace every image in this template with your own artwork and customize the text to create your personal portfolio.",
-
-    "paintings_eyebrow": "01 / COLLECTION",
-    "paintings_title": "Paintings",
-    "paintings_text": "Discover original paintings and explore the complete collection of available artwork.",
-    "paintings_link": "Discover the collection",
-
-    "brushes_eyebrow": "02 / TOOLS",
-    "brushes_title": "Brushes",
-    "brushes_subtitle": "Fine Detail Professional Brush Set",
-    "brushes_text": "A carefully selected collection of brushes designed for precision, detail and artistic control.",
-    "brushes_link": "Discover the brushes",
-
-    "prints_eyebrow": "03 / LIMITED EDITION",
-    "prints_title": "Prints",
-    "prints_text": "Purchase your limited edition print. Invest and enjoy.",
-    "prints_button": "View Prints",
-
-    "videos_eyebrow": "04 / PROCESS",
-    "videos_title": "Videos",
-    "videos_text": "Watch videos and learn more about the creative process, techniques and ideas behind each artwork.",
-    "videos_link": "Watch videos",
-    "videos_play": "Play",
-
-    "press_eyebrow": "FEATURED IN",
-    "press_title": "Press",
-
-    "newsletter_eyebrow": "STAY CONNECTED",
-    "newsletter_title": "Newsletter",
-    "newsletter_text": "Subscribe now to receive news about:",
-    "newsletter_item_prints": "Prints",
-    "newsletter_item_brushes": "Brushes",
-    "newsletter_item_paintings": "Paintings",
-    "newsletter_item_workshops": "Workshops",
-    "newsletter_placeholder": "Your email address",
-    "newsletter_button": "Subscribe",
-
-    "footer_paintings": "Paintings",
-    "footer_brushes": "Brushes",
-    "footer_prints": "Prints",
-    "footer_videos": "Videos",
-    "footer_about": "About",
-
-    "chat_title": "Artist Support",
-    "chat_status": "● Online",
-    "chat_welcome": "Hi! 👋 Welcome to Fahime Izadian Realism. How can I help you today?",
-    "chat_placeholder": "Type your message...",
-
-    "cta_text": "Learn to Paint",
-
-    "classes_eyebrow": "LEARN WITH US",
-    "classes_title": "Painting Classes",
-    "classes_subtitle": "Join our painting workshops — online or in-person.",
-
-    "filter_all": "All",
-    "filter_online": "Online",
-    "filter_inperson": "In Person",
-    "filter_hybrid": "Hybrid",
-
-    "class1_badge": "Online",
-    "class1_title": "Beginner Painting",
-    "class1_desc": "Learn color, composition and brushwork from scratch.",
-    "class1_day": "Saturdays",
-    "class1_time": "10:00 – 12:00",
-    "class1_loc": "Online (Zoom)",
-    "class1_price": "$49 / session",
-    "class1_btn": "Reserve Spot",
-
-    "class2_badge": "In Person",
-    "class2_title": "Advanced Oil Painting",
-    "class2_desc": "Deepen your technique with oils, glazing and layering.",
-    "class2_day": "Tue & Thu",
-    "class2_time": "18:00 – 20:30",
-    "class2_loc": "Studio, Qom",
-    "class2_price": "$79 / session",
-    "class2_btn": "Reserve Spot",
-
-    "class3_badge": "Online",
-    "class3_title": "Watercolor Workshop",
-    "class3_desc": "Discover the beauty of watercolor — soft, fluid, expressive.",
-    "class3_day": "Fridays",
-    "class3_time": "16:00 – 18:00",
-    "class3_loc": "Online (Google Meet)",
-    "class3_price": "$39 / session",
-    "class3_btn": "Reserve Spot",
-
-    "class4_badge": "Hybrid",
-    "class4_title": "Private Lessons",
-    "class4_desc": "One-on-one sessions tailored to your goals and pace.",
-    "class4_day": "Flexible",
-    "class4_time": "By appointment",
-    "class4_loc": "Online or In Studio",
-    "class4_price": "$120 / session",
-    "class4_btn": "Book Now",
-
-    "about_eyebrow": "05 / ABOUT",
-    "about_title": "About",
-    "about_eyebrow_2": "TECHNIQUE, STYLE AND VISION",
-    "about_headline_1": "Making space for",
-    "about_headline_em": "observation.",
-
-    "about_quote": "In the Iranians dwells the art of valor,They bow to none- not even the raging rhinoceros.\nOne in heart, and knowing their Divine Creator,They ask no praise from the stars for their goodness",
-
-    "about_bio_1": "Fahime Izadian was born in 1980.05.31 in bajak district, Qom her family discovered her talent in painting when she was 3, she was pupil of maestro Narges Ahanin Panjeh as a child and she was only inspired by her , she was smitten with manners and methods OF Dr HosseinTabakhian , who was a graduate of ENGLISH Translation from United states, and became his pupil until she became an adult, she has Bachelor of Arts in ENGLISH LITERATURE from KHORAM ABAD state university ( 2011) and Mater of ARTS in Translation Techniques from TEHRAN SCIENCE and RESEARCH UNIVERSITY (2014) she was hired by National Drilling Company in 2015 as a Translation Senior Expert for INTERNATIONAL contracts in KISH ISLAND , Mastery over ENGLISH, French, Spanish , Arabic didn't satisfy her, therefore , after years and years , she found absolute power in Silence (Painting) . she started the project of oil painting of Glance of Prophets (Negah-E-Peygambaran) in 2021. Portraits and notes selected by the artist are inspired by her feelings, since the mountains and the worlds are not able to draw the grandeur of glance of prophets, she is creating works of prophets with the hope that the foregoing might lead to emergence of more works of arts in the universe.",
-
-    "about_link": "Explore the collection"
-  },
-
-  "fa": {
-    "nav_paintings": "نقاشی‌ها",
-    "nav_brushes": "قلم‌موها",
-    "nav_prints": "چاپ‌ها",
-    "nav_videos": "ویدیوها",
-    "nav_about": "درباره",
-    "nav_contact": "تماس",
-
-    "hero_eyebrow": "هنر رئالیسم",
-    "hero_title_line1": "فهمیه ایزدیان",
-    "hero_title_line2": "رئالیسم",
-    "hero_button": "مشاهده مجموعه",
-    "hero_scroll": "اسکرول",
-
-    "intro_eyebrow": "مجموعه",
-    "intro_title_1": "نقاشی‌هایی خلق‌شده با",
-    "intro_title_em": "صبر و مشاهده",
-    "intro_title_2": "و توجه به جزئیات.",
-    "intro_text": "مجموعه‌ای از آثار اصلی، چاپ‌ها و منابع هنری را کاوش کنید. هر تصویر این قالب را با اثر هنری خود جایگزین کنید و متن را برای ساخت پورتفولیوی شخصی خود سفارشی کنید.",
-
-    "paintings_eyebrow": "۰۱ / مجموعه",
-    "paintings_title": "نقاشی‌ها",
-    "paintings_text": "نقاشی‌های اصلی را کشف کنید و مجموعه کامل آثار موجود را ببینید.",
-    "paintings_link": "کشف مجموعه",
-
-    "brushes_eyebrow": "۰۲ / ابزارها",
-    "brushes_title": "قلم‌موها",
-    "brushes_subtitle": "ست حرفه‌ای قلم‌موی جزئیات دقیق",
-    "brushes_text": "مجموعه‌ای منتخب از قلم‌موها برای دقت، جزئیات و کنترل هنری.",
-    "brushes_link": "کشف قلم‌موها",
-
-    "prints_eyebrow": "۰۳ / نسخه محدود",
-    "prints_title": "چاپ‌ها",
-    "prints_text": "چاپ نسخه محدود خود را بخرید. سرمایه‌گذاری کنید و لذت ببرید.",
-    "prints_button": "مشاهده چاپ‌ها",
-
-    "videos_eyebrow": "۰۴ / فرآیند",
-    "videos_title": "ویدیوها",
-    "videos_text": "ویدیوها را تماشا کنید و درباره فرآیند خلاقانه، تکنیک‌ها و ایده‌های پشت هر اثر بیشتر بدانید.",
-    "videos_link": "تماشای ویدیوها",
-    "videos_play": "پخش",
-
-    "press_eyebrow": "معرفی‌شده در",
-    "press_title": "مطبوعات",
-
-    "newsletter_eyebrow": "در ارتباط بمانید",
-    "newsletter_title": "خبرنامه",
-    "newsletter_text": "همین حالا مشترک شوید تا اخبار دریافت کنید درباره:",
-    "newsletter_item_prints": "چاپ‌ها",
-    "newsletter_item_brushes": "قلم‌موها",
-    "newsletter_item_paintings": "نقاشی‌ها",
-    "newsletter_item_workshops": "کارگاه‌ها",
-    "newsletter_placeholder": "ایمیل شما",
-    "newsletter_button": "عضویت",
-
-    "footer_paintings": "نقاشی‌ها",
-    "footer_brushes": "قلم‌موها",
-    "footer_prints": "چاپ‌ها",
-    "footer_videos": "ویدیوها",
-    "footer_about": "درباره",
-
-    "chat_title": "پشتیبانی هنری",
-    "chat_status": "● آنلاین",
-    "chat_welcome": "سلام! 👋 به فهمیه ایزدیان خوش آمدید. چطور می‌توانم کمکتان کنم؟",
-    "chat_placeholder": "پیام خود را بنویسید...",
-
-    "cta_text": "نقاشی یاد بگیر",
-
-    "classes_eyebrow": "با ما یاد بگیرید",
-    "classes_title": "کلاس‌های نقاشی",
-    "classes_subtitle": "به کارگاه‌های نقاشی ما بپیوندید — آنلاین یا حضوری.",
-
-    "filter_all": "همه",
-    "filter_online": "آنلاین",
-    "filter_inperson": "حضوری",
-    "filter_hybrid": "ترکیبی",
-
-    "class1_badge": "آنلاین",
-    "class1_title": "نقاشی مبتدی",
-    "class1_desc": "رنگ، ترکیب‌بندی و قلم‌زنی را از صفر یاد بگیرید.",
-    "class1_day": "شنبه‌ها",
-    "class1_time": "۱۰:۰۰ – ۱۲:۰۰",
-    "class1_loc": "آنلاین (Zoom)",
-    "class1_price": "۴۹ دلار / جلسه",
-    "class1_btn": "رزرو جا",
-
-    "class2_badge": "حضوری",
-    "class2_title": "نقاشی پیشرفته رنگ روغن",
-    "class2_desc": "تکنیک خود را با رنگ روغن، لعاب‌کاری و لایه‌گذاری عمیق‌تر کنید.",
-    "class2_day": "سه‌شنبه و پنجشنبه",
-    "class2_time": "۱۸:۰۰ – ۲۰:۳۰",
-    "class2_loc": "استودیو، قم",
-    "class2_price": "۷۹ دلار / جلسه",
-    "class2_btn": "رزرو جا",
-
-    "class3_badge": "آنلاین",
-    "class3_title": "کارگاه آبرنگ",
-    "class3_desc": "زیبایی آبرنگ را کشف کنید — نرم، سیال، بیانگر.",
-    "class3_day": "جمعه‌ها",
-    "class3_time": "۱۶:۰۰ – ۱۸:۰۰",
-    "class3_loc": "آنلاین (Google Meet)",
-    "class3_price": "۳۹ دلار / جلسه",
-    "class3_btn": "رزرو جا",
-
-    "class4_badge": "ترکیبی",
-    "class4_title": "درس‌های خصوصی",
-    "class4_desc": "جلسات یک‌به‌یک متناسب با اهداف و سرعت شما.",
-    "class4_day": "انعطاف‌پذیر",
-    "class4_time": "با هماهنگی",
-    "class4_loc": "آنلاین یا در استودیو",
-    "class4_price": "۱۲۰ دلار / جلسه",
-    "class4_btn": "همین حالا رزرو کن",
-
-    "about_eyebrow": "۰۵ / درباره",
-    "about_title": "درباره",
-    "about_eyebrow_2": "تکنیک، سبک و بینش",
-    "about_headline_1": "فضایی برای",
-    "about_headline_em": "مشاهده.",
-
-    "about_quote": "هنر نزد ایرانیان است و بس /ندارند کرگ ژیان را به کس\nهمه یکدلانند و یزدان شناس/ به نیکی ندارند از اختر سپاس",
-
-    "about_bio_1": "فهیمه ایزدیان در تاریخ 10/03/1368 در ایران منطقه باجک به دنیا آمد، از 3 سالگی خانواده اش استعداد او را در نقاشی کشف کردند، او در کودکی شاگرد استاد نرگس آهنین پنجه بود و تنها از او الهام گرفت، او در 6 سالگی شیفته منش و طریقت جناب آقای دکتر حسین طباخیان دانش آموخته فن ترجمه زبان انگلیسی از ایالات متحده آمریکا شد و تا بزرگسالی تحت تعلیم او قرار گرفت، وی دارای مدرک کارشناسی ادبیات زبان انگلیسی از دانشگاه دولتی خرم آباد(1390 ) و کارشناسی ارشد فن ترجمه از وزارت علوم و تحقیقات( 1393) می باشد، وی از سال 1394 به عنوان کارشناس ارشد ترجمه قرارداد های ملی حفاری ایران ( جزیره کیش) شد، او به زبان های انگلیسی، فرانسه، اسپانیایی، عربی تسلط دارد، لیکن اما این مهم عطش روح او را اغنا نکرد، او پس از سال ها و سال ها قدرت مطلقه را در زبان سکوت ( نقاشی) کشف کرد. وی در سال 1400 استارت پروژه نگاه پیغمبران رنگ روغن را زد ؛ تصاویر و توضیحات انتخاب شده توس این هنرمند الهام گرفته از احساسات وی می باشند، زیرا کوه ها و هستی ها قادر به تصویر کشیدن عظمت نگاه پیغمبران نمی باشند. این هنرمند صاحبدل در حال حاضر در حال خلق پرتره های پیغمبران می باشد تا این مهم زمینه ساز منصه ظهور آثار گسترده تری در عالم هستی گردد.",
-
-    "about_link": "مشاهده مجموعه"
-  }
-}
-۳) فایل style.css — فقط این بلوک را به انتهای فایل اضافه کنید
-css
-/* =====================================
-   ABOUT PAGE (Bio — EN / FA)
-===================================== */
-
-.about-detail {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  background: var(--cream);
-  align-items: center;
-}
-
-.about-detail-image {
-  overflow: hidden;
-  height: 100%;
-}
-
-.about-detail-image img {
-  width: 100%;
-  height: 100%;
-  min-height: 700px;
-  object-fit: cover;
-}
-
-.about-detail-content {
-  padding: 100px 8%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-detail-content h2 {
-  font-size: clamp(2.4rem, 5vw, 4.5rem);
-  margin-bottom: 35px;
-}
-
-.about-detail-content h2 em {
-  font-weight: 400;
-}
-
-/* نقل قول شاعرانه */
-.about-quote {
-  white-space: pre-line;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.15rem;
-  line-height: 2;
-  color: #333;
-  border-left: 3px solid #b8956a;
-  padding-left: 22px;
-  margin: 0 0 40px;
-}
-
-/* متن بیوگرافی */
-.about-text {
-  font-size: 15px;
-  line-height: 2;
-  color: #444;
-  margin-bottom: 24px;
-}
-
-.about-text em {
-  font-style: italic;
-}
-
-.about-detail-content .text-link {
-  margin-top: 20px;
-}
-
-/* =====================================
-   ABOUT PAGE — RTL (فارسی)
-===================================== */
-html[dir="rtl"] .about-detail-content {
-  text-align: right;
-}
-
-html[dir="rtl"] .about-quote {
-  border-left: none;
-  border-right: 3px solid #b8956a;
-  padding-left: 0;
-  padding-right: 22px;
-  text-align: right;
-}
-
-/* =====================================
-   ABOUT — TABLET
-===================================== */
-@media (max-width: 900px) {
-  .about-detail {
-    grid-template-columns: 1fr;
-  }
-
-  .about-detail-image img {
-    min-height: 500px;
-  }
-
-  .about-detail-content {
-    padding: 80px 8%;
-  }
-}
-
-/* =====================================
-   ABOUT — MOBILE
-===================================== */
-@media (max-width: 600px) {
-  .about-detail-image img {
-    min-height: 380px;
-  }
-
-  .about-detail-content {
-    padding: 60px 7%;
-  }
-
-  .about-quote {
-    font-size: 1rem;
-    padding-left: 16px;
-    margin-bottom: 30px;
-  }
-
-  html[dir="rtl"] .about-quote {
-    padding-right: 16px;
-    padding-left: 0;
-  }
-
-  .about-text {
-    font-size: 14px;
-    line-height: 1.9;
-  }
-}
-۴) فایل i18n.js — هیچ تغییری لازم نیست ✅
-فایل شما سالم است و خودش کلیدهای جدید را از translations.json می‌خواند.
-
-📌 کارهای نهایی:
-about.html → فایل جدید بسازید (کد بخش ۱).
-
-translations.json → کامل جایگزین کنید (کد بخش ۲).
-
-style.css → فقط بلوک بخش ۳ را به انتهای فایل اضافه کنید.
-
-دو عکس در پوشه پروژه قرار دهید:
-
-about-hero.jpg (پس‌زمینه بالای صفحه)
-
-about-portrait.jpg (عکس کنار متن)
-
-تمام ✅
-
-متن‌ها دقیقاً مطابق فایل‌های Word شما (EN و FA)
-
-فونت همان فونت خود سایت (DM Sans + Playfair برای EN، وزیرمتن برای FA)
-
-هیچ بخش دیگری از سایت تغییر نمی‌کند
-
-اگر پس از اجرا، جای چیزی ایراد داشت، اسکرین‌شات بفرستید تا سریع تنظیم کنم. 🎨
-
-کد های کامل اصلاح شده بفرستید میخوام کد قبلی رو حذف کنم و کد جدید جایگزین کنم
-بسیار خب ✅
-از اول، کد کامل هر سه فایل را می‌فرستم تا کل فایل قبلی را حذف و این را جایگزین کنید.
-
-📄 فایل ۱: about.html — کامل جایگزین شود
-html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>About — Fahime Izadian Realism</title>
-
-  <meta
-    name="description"
-    content="About Fahime Izadian — Realism Artist & Art Studio, Qom, Iran"
-  />
-
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="i18n.js"></script>
-  <script defer src="chat-final-v3.js"></script>
-</head>
-
-<body>
-
-  <!-- =========================
-       HEADER
-  ========================== -->
-  <header class="header" id="home">
-    <div class="header-container">
-
-      <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="fa">FA</button>
-      </div>
-
-      <a href="index.html" class="logo">
-        <span class="logo-main">FAHIME IZADIAN</span>
-        <span class="logo-sub">REALISM</span>
-      </a>
-
-      <nav class="desktop-nav">
-        <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
-        <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
-        <a href="prints.html" data-lang-key="nav_prints">Prints</a>
-        <a href="videos.html" data-lang-key="nav_videos">Videos</a>
-        <a href="about.html" data-lang-key="nav_about">About</a>
-        <a href="contact.html" data-lang-key="nav_contact">Contact</a>
-      </nav>
-
-      <button
-        class="menu-toggle"
-        aria-label="Open menu"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-    </div>
-
-    <!-- Mobile Menu -->
-    <nav class="mobile-nav">
-      <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
-      <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
-      <a href="prints.html" data-lang-key="nav_prints">Prints</a>
-      <a href="videos.html" data-lang-key="nav_videos">Videos</a>
-      <a href="about.html" data-lang-key="nav_about">About</a>
-      <a href="contact.html" data-lang-key="nav_contact">Contact</a>
-    </nav>
-
-  </header>
-
-  <!-- =========================
-       PAGE HERO
-  ========================== -->
-  <section class="page-hero" style="background-image: url('about-hero.jpg');">
-    <div class="page-hero-overlay"></div>
-    <div class="page-hero-content">
-      <p class="eyebrow" data-lang-key="about_eyebrow">05 / ABOUT</p>
-      <h1 data-lang-key="about_title">About</h1>
-    </div>
-  </section>
-
-  <!-- =========================
-       ABOUT DETAIL
-  ========================== -->
-  <section class="about-detail section-padding">
-
-    <div class="about-detail-image reveal">
-      <img src="about-portrait.jpg" alt="Fahime Izadian in her studio" />
-    </div>
-
-    <div class="about-detail-content reveal">
-
-      <p class="eyebrow dark" data-lang-key="about_eyebrow_2">
-        TECHNIQUE, STYLE AND VISION
-      </p>
-
-      <h2>
-        <span data-lang-key="about_headline_1">Making space for</span>
-        <em data-lang-key="about_headline_em">observation.</em>
-      </h2>
-
-      <!-- نقل قول شاعرانه -->
-      <blockquote class="about-quote" data-lang-key="about_quote">
-        In the Iranians dwells the art of valor,They bow to none- not even the
-        raging rhinoceros. One in heart, and knowing their Divine Creator,They
-        ask no praise from the stars for their goodness
-      </blockquote>
-
-      <!-- بیوگرافی -->
-      <p class="about-text" data-lang-key="about_bio_1">
-        Fahime Izadian was born in 1980.05.31 in bajak district, Qom her family
-        discovered her talent in painting when she was 3, she was pupil of
-        maestro Narges Ahanin Panjeh as a child and she was only inspired by her
-        , she was smitten with manners and methods OF Dr HosseinTabakhian , who
-        was a graduate of ENGLISH Translation from United states, and became his
-        pupil until she became an adult, she has Bachelor of Arts in ENGLISH
-        LITERATURE from KHORAM ABAD state university ( 2011) and Mater of ARTS
-        in Translation Techniques from TEHRAN SCIENCE and RESEARCH UNIVERSITY
-        (2014) she was hired by National Drilling Company in 2015 as a
-        Translation Senior Expert for INTERNATIONAL contracts in KISH ISLAND ,
-        Mastery over ENGLISH, French, Spanish , Arabic didn't satisfy her,
-        therefore , after years and years , she found absolute power in Silence
-        (Painting) . she started the project of oil painting of Glance of
-        Prophets (Negah-E-Peygambaran) in 2021. Portraits and notes selected by
-        the artist are inspired by her feelings, since the mountains and the
-        worlds are not able to draw the grandeur of glance of prophets, she is
-        creating works of prophets with the hope that the foregoing might lead
-        to emergence of more works of arts in the universe.
-      </p>
-
-      <a href="paintings.html" class="text-link">
-        <span data-lang-key="about_link">Explore the collection</span>
-        <span>→</span>
-      </a>
-
-    </div>
-
-  </section>
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-  <footer class="footer">
-
-    <div class="footer-top">
-
-      <a href="index.html" class="footer-logo">
-        FAHIME IZADIAN REALISM
-      </a>
-
-      <div class="footer-links">
-        <a href="paintings.html" data-lang-key="footer_paintings">Paintings</a>
-        <a href="brushes.html" data-lang-key="footer_brushes">Brushes</a>
-        <a href="prints.html" data-lang-key="footer_prints">Prints</a>
-        <a href="videos.html" data-lang-key="footer_videos">Videos</a>
-        <a href="about.html" data-lang-key="footer_about">About</a>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-      <p>
-        © <span id="year"></span> Fahime Izadian Realism.
-        Realism Artist &amp; Art Studio — Qom, Iran.
-      </p>
-
-      <a href="#home">
-        Back to top ↑
-      </a>
-
-    </div>
-
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
-</body>
-</html>
-📄 فایل ۲: translations.json — کامل جایگزین شود
-json
-{
-  "en": {
-    "nav_paintings": "Paintings",
-    "nav_brushes": "Brushes",
-    "nav_prints": "Prints",
-    "nav_videos": "Videos",
-    "nav_about": "About",
-    "nav_contact": "Contact",
-
-    "hero_eyebrow": "REALISM ART",
-    "hero_title_line1": "FAHIME IZADIAN",
-    "hero_title_line2": "REALISM",
-    "hero_button": "Explore Collection",
-    "hero_scroll": "SCROLL",
-
-    "intro_eyebrow": "THE COLLECTION",
-    "intro_title_1": "Paintings created with",
-    "intro_title_em": "patience, observation",
-    "intro_title_2": "and attention to detail.",
-    "intro_text": "Explore a collection of original works, prints and artistic resources. Replace every image in this template with your own artwork and customize the text to create your personal portfolio.",
-
-    "paintings_eyebrow": "01 / COLLECTION",
-    "paintings_title": "Paintings",
-    "paintings_text": "Discover original paintings and explore the complete collection of available artwork.",
-    "paintings_link": "Discover the collection",
-
-    "brushes_eyebrow": "02 / TOOLS",
-    "brushes_title": "Brushes",
-    "brushes_subtitle": "Fine Detail Professional Brush Set",
-    "brushes_text": "A carefully selected collection of brushes designed for precision, detail and artistic control.",
-    "brushes_link": "Discover the brushes",
-
-    "prints_eyebrow": "03 / LIMITED EDITION",
-    "prints_title": "Prints",
-    "prints_text": "Purchase your limited edition print. Invest and enjoy.",
-    "prints_button": "View Prints",
-
-    "videos_eyebrow": "04 / PROCESS",
-    "videos_title": "Videos",
-    "videos_text": "Watch videos and learn more about the creative process, techniques and ideas behind each artwork.",
-    "videos_link": "Watch videos",
-    "videos_play": "Play",
-
-    "press_eyebrow": "FEATURED IN",
-    "press_title": "Press",
-
-    "newsletter_eyebrow": "STAY CONNECTED",
-    "newsletter_title": "Newsletter",
-    "newsletter_text": "Subscribe now to receive news about:",
-    "newsletter_item_prints": "Prints",
-    "newsletter_item_brushes": "Brushes",
-    "newsletter_item_paintings": "Paintings",
-    "newsletter_item_workshops": "Workshops",
-    "newsletter_placeholder": "Your email address",
-    "newsletter_button": "Subscribe",
-
-    "footer_paintings": "Paintings",
-    "footer_brushes": "Brushes",
-    "footer_prints": "Prints",
-    "footer_videos": "Videos",
-    "footer_about": "About",
-
-    "chat_title": "Artist Support",
-    "chat_status": "● Online",
-    "chat_welcome": "Hi! 👋 Welcome to Fahime Izadian Realism. How can I help you today?",
-    "chat_placeholder": "Type your message...",
-
-    "cta_text": "Learn to Paint",
-
-    "classes_eyebrow": "LEARN WITH US",
-    "classes_title": "Painting Classes",
-    "classes_subtitle": "Join our painting workshops — online or in-person.",
-
-    "filter_all": "All",
-    "filter_online": "Online",
-    "filter_inperson": "In Person",
-    "filter_hybrid": "Hybrid",
-
-    "class1_badge": "Online",
-    "class1_title": "Beginner Painting",
-    "class1_desc": "Learn color, composition and brushwork from scratch.",
-    "class1_day": "Saturdays",
-    "class1_time": "10:00 – 12:00",
-    "class1_loc": "Online (Zoom)",
-    "class1_price": "$49 / session",
-    "class1_btn": "Reserve Spot",
-
-    "class2_badge": "In Person",
-    "class2_title": "Advanced Oil Painting",
-    "class2_desc": "Deepen your technique with oils, glazing and layering.",
-    "class2_day": "Tue & Thu",
-    "class2_time": "18:00 – 20:30",
-    "class2_loc": "Studio, Qom",
-    "class2_price": "$79 / session",
-    "class2_btn": "Reserve Spot",
-
-    "class3_badge": "Online",
-    "class3_title": "Watercolor Workshop",
-    "class3_desc": "Discover the beauty of watercolor — soft, fluid, expressive.",
-    "class3_day": "Fridays",
-    "class3_time": "16:00 – 18:00",
-    "class3_loc": "Online (Google Meet)",
-    "class3_price": "$39 / session",
-    "class3_btn": "Reserve Spot",
-
-    "class4_badge": "Hybrid",
-    "class4_title": "Private Lessons",
-    "class4_desc": "One-on-one sessions tailored to your goals and pace.",
-    "class4_day": "Flexible",
-    "class4_time": "By appointment",
-    "class4_loc": "Online or In Studio",
-    "class4_price": "$120 / session",
-    "class4_btn": "Book Now",
-
-    "about_eyebrow": "05 / ABOUT",
-    "about_title": "About",
-    "about_eyebrow_2": "TECHNIQUE, STYLE AND VISION",
-    "about_headline_1": "Making space for",
-    "about_headline_em": "observation.",
-
-    "about_quote": "In the Iranians dwells the art of valor,They bow to none- not even the raging rhinoceros.\nOne in heart, and knowing their Divine Creator,They ask no praise from the stars for their goodness",
-
-    "about_bio_1": "Fahime Izadian was born in 1980.05.31 in bajak district, Qom her family discovered her talent in painting when she was 3, she was pupil of maestro Narges Ahanin Panjeh as a child and she was only inspired by her , she was smitten with manners and methods OF Dr HosseinTabakhian , who was a graduate of ENGLISH Translation from United states, and became his pupil until she became an adult, she has Bachelor of Arts in ENGLISH LITERATURE from KHORAM ABAD state university ( 2011) and Mater of ARTS in Translation Techniques from TEHRAN SCIENCE and RESEARCH UNIVERSITY (2014) she was hired by National Drilling Company in 2015 as a Translation Senior Expert for INTERNATIONAL contracts in KISH ISLAND , Mastery over ENGLISH, French, Spanish , Arabic didn't satisfy her, therefore , after years and years , she found absolute power in Silence (Painting) . she started the project of oil painting of Glance of Prophets (Negah-E-Peygambaran) in 2021. Portraits and notes selected by the artist are inspired by her feelings, since the mountains and the worlds are not able to draw the grandeur of glance of prophets, she is creating works of prophets with the hope that the foregoing might lead to emergence of more works of arts in the universe.",
-
-    "about_link": "Explore the collection"
-  },
-
-  "fa": {
-    "nav_paintings": "نقاشی‌ها",
-    "nav_brushes": "قلم‌موها",
-    "nav_prints": "چاپ‌ها",
-    "nav_videos": "ویدیوها",
-    "nav_about": "درباره",
-    "nav_contact": "تماس",
-
-    "hero_eyebrow": "هنر رئالیسم",
-    "hero_title_line1": "فهمیه ایزدیان",
-    "hero_title_line2": "رئالیسم",
-    "hero_button": "مشاهده مجموعه",
-    "hero_scroll": "اسکرول",
-
-    "intro_eyebrow": "مجموعه",
-    "intro_title_1": "نقاشی‌هایی خلق‌شده با",
-    "intro_title_em": "صبر و مشاهده",
-    "intro_title_2": "و توجه به جزئیات.",
-    "intro_text": "مجموعه‌ای از آثار اصلی، چاپ‌ها و منابع هنری را کاوش کنید. هر تصویر این قالب را با اثر هنری خود جایگزین کنید و متن را برای ساخت پورتفولیوی شخصی خود سفارشی کنید.",
-
-    "paintings_eyebrow": "۰۱ / مجموعه",
-    "paintings_title": "نقاشی‌ها",
-    "paintings_text": "نقاشی‌های اصلی را کشف کنید و مجموعه کامل آثار موجود را ببینید.",
-    "paintings_link": "کشف مجموعه",
-
-    "brushes_eyebrow": "۰۲ / ابزارها",
-    "brushes_title": "قلم‌موها",
-    "brushes_subtitle": "ست حرفه‌ای قلم‌موی جزئیات دقیق",
-    "brushes_text": "مجموعه‌ای منتخب از قلم‌موها برای دقت، جزئیات و کنترل هنری.",
-    "brushes_link": "کشف قلم‌موها",
-
-    "prints_eyebrow": "۰۳ / نسخه محدود",
-    "prints_title": "چاپ‌ها",
-    "prints_text": "چاپ نسخه محدود خود را بخرید. سرمایه‌گذاری کنید و لذت ببرید.",
-    "prints_button": "مشاهده چاپ‌ها",
-
-    "videos_eyebrow": "۰۴ / فرآیند",
-    "videos_title": "ویدیوها",
-    "videos_text": "ویدیوها را تماشا کنید و درباره فرآیند خلاقانه، تکنیک‌ها و ایده‌های پشت هر اثر بیشتر بدانید.",
-    "videos_link": "تماشای ویدیوها",
-    "videos_play": "پخش",
-
-    "press_eyebrow": "معرفی‌شده در",
-    "press_title": "مطبوعات",
-
-    "newsletter_eyebrow": "در ارتباط بمانید",
-    "newsletter_title": "خبرنامه",
-    "newsletter_text": "همین حالا مشترک شوید تا اخبار دریافت کنید درباره:",
-    "newsletter_item_prints": "چاپ‌ها",
-    "newsletter_item_brushes": "قلم‌موها",
-    "newsletter_item_paintings": "نقاشی‌ها",
-    "newsletter_item_workshops": "کارگاه‌ها",
-    "newsletter_placeholder": "ایمیل شما",
-    "newsletter_button": "عضویت",
-
-    "footer_paintings": "نقاشی‌ها",
-    "footer_brushes": "قلم‌موها",
-    "footer_prints": "چاپ‌ها",
-    "footer_videos": "ویدیوها",
-    "footer_about": "درباره",
-
-    "chat_title": "پشتیبانی هنری",
-    "chat_status": "● آنلاین",
-    "chat_welcome": "سلام! 👋 به فهمیه ایزدیان خوش آمدید. چطور می‌توانم کمکتان کنم؟",
-    "chat_placeholder": "پیام خود را بنویسید...",
-
-    "cta_text": "نقاشی یاد بگیر",
-
-    "classes_eyebrow": "با ما یاد بگیرید",
-    "classes_title": "کلاس‌های نقاشی",
-    "classes_subtitle": "به کارگاه‌های نقاشی ما بپیوندید — آنلاین یا حضوری.",
-
-    "filter_all": "همه",
-    "filter_online": "آنلاین",
-    "filter_inperson": "حضوری",
-    "filter_hybrid": "ترکیبی",
-
-    "class1_badge": "آنلاین",
-    "class1_title": "نقاشی مبتدی",
-    "class1_desc": "رنگ، ترکیب‌بندی و قلم‌زنی را از صفر یاد بگیرید.",
-    "class1_day": "شنبه‌ها",
-    "class1_time": "۱۰:۰۰ – ۱۲:۰۰",
-    "class1_loc": "آنلاین (Zoom)",
-    "class1_price": "۴۹ دلار / جلسه",
-    "class1_btn": "رزرو جا",
-
-    "class2_badge": "حضوری",
-    "class2_title": "نقاشی پیشرفته رنگ روغن",
-    "class2_desc": "تکنیک خود را با رنگ روغن، لعاب‌کاری و لایه‌گذاری عمیق‌تر کنید.",
-    "class2_day": "سه‌شنبه و پنجشنبه",
-    "class2_time": "۱۸:۰۰ – ۲۰:۳۰",
-    "class2_loc": "استودیو، قم",
-    "class2_price": "۷۹ دلار / جلسه",
-    "class2_btn": "رزرو جا",
-
-    "class3_badge": "آنلاین",
-    "class3_title": "کارگاه آبرنگ",
-    "class3_desc": "زیبایی آبرنگ را کشف کنید — نرم، سیال، بیانگر.",
-    "class3_day": "جمعه‌ها",
-    "class3_time": "۱۶:۰۰ – ۱۸:۰۰",
-    "class3_loc": "آنلاین (Google Meet)",
-    "class3_price": "۳۹ دلار / جلسه",
-    "class3_btn": "رزرو جا",
-
-    "class4_badge": "ترکیبی",
-    "class4_title": "درس‌های خصوصی",
-    "class4_desc": "جلسات یک‌به‌یک متناسب با اهداف و سرعت شما.",
-    "class4_day": "انعطاف‌پذیر",
-    "class4_time": "با هماهنگی",
-    "class4_loc": "آنلاین یا در استودیو",
-    "class4_price": "۱۲۰ دلار / جلسه",
-    "class4_btn": "همین حالا رزرو کن",
-
-    "about_eyebrow": "۰۵ / درباره",
-    "about_title": "درباره",
-    "about_eyebrow_2": "تکنیک، سبک و بینش",
-    "about_headline_1": "فضایی برای",
-    "about_headline_em": "مشاهده.",
-
-    "about_quote": "هنر نزد ایرانیان است و بس /ندارند کرگ ژیان را به کس\nهمه یکدلانند و یزدان شناس/ به نیکی ندارند از اختر سپاس",
-
-    "about_bio_1": "فهیمه ایزدیان در تاریخ 10/03/1368 در ایران منطقه باجک به دنیا آمد، از 3 سالگی خانواده اش استعداد او را در نقاشی کشف کردند، او در کودکی شاگرد استاد نرگس آهنین پنجه بود و تنها از او الهام گرفت، او در 6 سالگی شیفته منش و طریقت جناب آقای دکتر حسین طباخیان دانش آموخته فن ترجمه زبان انگلیسی از ایالات متحده آمریکا شد و تا بزرگسالی تحت تعلیم او قرار گرفت، وی دارای مدرک کارشناسی ادبیات زبان انگلیسی از دانشگاه دولتی خرم آباد(1390 ) و کارشناسی ارشد فن ترجمه از وزارت علوم و تحقیقات( 1393) می باشد، وی از سال 1394 به عنوان کارشناس ارشد ترجمه قرارداد های ملی حفاری ایران ( جزیره کیش) شد، او به زبان های انگلیسی، فرانسه، اسپانیایی، عربی تسلط دارد، لیکن اما این مهم عطش روح او را اغنا نکرد، او پس از سال ها و سال ها قدرت مطلقه را در زبان سکوت ( نقاشی) کشف کرد. وی در سال 1400 استارت پروژه نگاه پیغمبران رنگ روغن را زد ؛ تصاویر و توضیحات انتخاب شده توس این هنرمند الهام گرفته از احساسات وی می باشند، زیرا کوه ها و هستی ها قادر به تصویر کشیدن عظمت نگاه پیغمبران نمی باشند. این هنرمند صاحبدل در حال حاضر در حال خلق پرتره های پیغمبران می باشد تا این مهم زمینه ساز منصه ظهور آثار گسترده تری در عالم هستی گردد.",
-
-    "about_link": "مشاهده مجموعه"
-  }
-}
-📄 فایل ۳: style.css — کامل جایگزین شود
-⚠️ این کل فایل CSS قبلی شما + بلوک About است. کامل جایگزین کنید.
-
-css
 /* =====================================
 GOOGLE-LIKE FONT FALLBACK
 ===================================== */
@@ -2067,7 +571,7 @@ FULL IMAGE SECTION
 }
 
 /* =====================================
-ABOUT (HOME)
+ABOUT
 ===================================== */
 
 .about-section {
@@ -2132,155 +636,1164 @@ PRESS
 
   grid-template-columns: repeat(4, 1fr);
 
-  gap: 
-ظاهر سایتتم در یه سری جاها تغییر کرد چرا؟
-حق با شماست — عذرخواهی می‌کنم. 🙏
+  gap: 20px;
 
-بله، در پیام قبلی من به اشتباه کل فایل CSS را بازنویسی کردم و چون کل فایل CSS شما بسیار طولانی بود، من وسط کار آن را ناتمام رها کردم و باعث شدم استایل‌های بعدی (مثل Press, Newsletter, Footer, Classes, Video Modal و...) از بین بروند یا ناقص شوند.
+  max-width: 1500px;
 
-به همین دلیل ظاهر سایت در بعضی جاها تغییر کرد.
+  margin: auto;
+}
 
-🔧 راه‌حل فوری
-فایل style.css خودتان را از حالت قبلی (بکاپ) برگردانید — همان فایلی که قبل از پیام من داشتید و کامل بود.
+.press-card {
+  overflow: hidden;
 
-سپس فقط و فقط این بلوک را به انتهای همان فایل اضافه کنید:
+  background: #eee;
+}
 
-css
+.press-card img {
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+
+  filter: grayscale(100%);
+
+  transition:
+    filter 0.5s ease,
+    transform 0.7s ease;
+}
+
+.press-card:hover img {
+  filter: grayscale(0%);
+
+  transform: scale(1.06);
+}
+
 /* =====================================
-   ABOUT PAGE (Bio — EN / FA)
+NEWSLETTER
 ===================================== */
 
-.about-detail {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  background: var(--cream);
-  align-items: center;
-}
-
-.about-detail-image {
-  overflow: hidden;
-  height: 100%;
-}
-
-.about-detail-image img {
-  width: 100%;
-  height: 100%;
+.newsletter {
   min-height: 700px;
-  object-fit: cover;
+
+  background: var(--black);
+
+  color: var(--white);
+
+  display: grid;
+  place-items: center;
+
+  text-align: center;
+
+  padding: 100px 20px;
 }
 
-.about-detail-content {
-  padding: 100px 8%;
+.newsletter-content {
+  width: min(750px, 100%);
+}
+
+.newsletter h2 {
+  margin-bottom: 25px;
+}
+
+.newsletter > p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-list {
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin: 30px 0 45px;
 }
 
-.about-detail-content h2 {
-  font-size: clamp(2.4rem, 5vw, 4.5rem);
-  margin-bottom: 35px;
+.newsletter-list span {
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  padding: 10px 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.about-detail-content h2 em {
-  font-weight: 400;
+.newsletter-form {
+  display: flex;
+
+  width: min(600px, 100%);
+
+  margin: auto;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.about-quote {
-  white-space: pre-line;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.15rem;
-  line-height: 2;
-  color: #333;
-  border-left: 3px solid #b8956a;
-  padding-left: 22px;
-  margin: 0 0 40px;
+.newsletter-form input {
+  flex: 1;
+
+  background: transparent;
+
+  border: 0;
+
+  outline: none;
+
+  color: var(--white);
+
+  padding: 18px 10px;
 }
 
-.about-text {
-  font-size: 15px;
-  line-height: 2;
-  color: #444;
-  margin-bottom: 24px;
+.newsletter-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.about-text em {
-  font-style: italic;
+.newsletter-form button {
+  border: 0;
+
+  background: transparent;
+
+  color: var(--white);
+
+  cursor: pointer;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  font-size: 10px;
+
+  padding: 0 10px;
 }
 
-.about-detail-content .text-link {
+.form-message {
   margin-top: 20px;
+
+  min-height: 25px;
+
+  font-size: 13px;
+
+  color: rgba(255, 255, 255, 0.7);
 }
 
-html[dir="rtl"] .about-detail-content {
-  text-align: right;
+/* =====================================
+FOOTER
+===================================== */
+
+.footer {
+  background: #0a0a0a;
+
+  color: var(--white);
+
+  padding: 60px 6% 30px;
 }
 
-html[dir="rtl"] .about-quote {
-  border-left: none;
-  border-right: 3px solid #b8956a;
-  padding-left: 0;
-  padding-right: 22px;
-  text-align: right;
+.footer-top {
+  max-width: var(--container);
+
+  margin: auto;
+
+  padding-bottom: 50px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
 }
+
+.footer-logo {
+  font-family: var(--serif);
+
+  font-size: 28px;
+
+  letter-spacing: 1px;
+}
+
+.footer-links {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: flex-end;
+
+  gap: 25px;
+}
+
+.footer-links a {
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  opacity: 0.7;
+
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  max-width: var(--container);
+
+  margin: 25px auto 0;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  font-size: 11px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* =====================================
+REVEAL ANIMATION
+===================================== */
+
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+/* =====================================
+HERO ANIMATION
+===================================== */
+
+@keyframes heroZoom {
+
+  from {
+    transform: scale(1.04);
+  }
+
+  to {
+    transform: scale(1.12);
+  }
+
+}
+
+/* =====================================
+TABLET
+===================================== */
 
 @media (max-width: 900px) {
-  .about-detail {
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-nav {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background: var(--black);
+
+    flex-direction: column;
+
+    padding: 25px 6% 35px;
+
+    gap: 22px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-15px);
+
+    transition: 0.3s ease;
+  }
+
+  .mobile-nav.active {
+    display: flex;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+  }
+
+  .mobile-nav a {
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+  }
+
+  .feature-section,
+  .feature-section.reverse {
     grid-template-columns: 1fr;
   }
 
-  .about-detail-image img {
-    min-height: 500px;
+  .feature-section.reverse .feature-image,
+  .feature-section.reverse .feature-content {
+    order: initial;
   }
 
-  .about-detail-content {
-    padding: 80px 8%;
+  .feature-image img {
+    min-height: 550px;
   }
+
+  .feature-content {
+    padding: 100px 10%;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img {
+    min-height: 600px;
+  }
+
+  .about-content {
+    padding: 100px 10%;
+  }
+
+  .press-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
+
+/* =====================================
+MOBILE
+===================================== */
 
 @media (max-width: 600px) {
-  .about-detail-image img {
-    min-height: 380px;
+
+  .header-container {
+    padding: 20px 6%;
   }
 
-  .about-detail-content {
-    padding: 60px 7%;
+  .logo-main {
+    font-size: 20px;
   }
 
-  .about-quote {
-    font-size: 1rem;
-    padding-left: 16px;
-    margin-bottom: 30px;
+  .hero-content {
+    padding-top: 40px;
   }
 
-  html[dir="rtl"] .about-quote {
-    padding-right: 16px;
-    padding-left: 0;
+  .hero h1 {
+    font-size: clamp(3.7rem, 18vw, 6rem);
   }
 
-  .about-text {
-    font-size: 14px;
-    line-height: 1.9;
+  .scroll-indicator {
+    bottom: 20px;
   }
+
+  .section-padding {
+    padding: 85px 6%;
+  }
+
+  .feature-image img {
+    min-height: 420px;
+  }
+
+  .feature-content {
+    padding: 80px 8%;
+  }
+
+  .feature-content h3 {
+    font-size: 16px;
+  }
+
+  .full-image-section {
+    min-height: 750px;
+  }
+
+  .full-image-content {
+    padding: 30px 20px;
+  }
+
+  .about-image img {
+    min-height: 450px;
+  }
+
+  .about-content {
+    padding: 80px 8%;
+  }
+
+  .press-grid {
+    gap: 10px;
+  }
+
+  .newsletter {
+    min-height: 650px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+
+    border-bottom: 0;
+
+    gap: 15px;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .newsletter-form button {
+    padding: 17px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .footer-top {
+    flex-direction: column;
+
+    gap: 35px;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .play-button {
+    width: 70px;
+    height: 70px;
+  }
+
 }
-✅ حالا فقط این دو فایل باقی می‌مانند:
-#	فایل	کار
-۱	about.html	فایل جدید بسازید (کد پیام قبل)
-۲	translations.json	فقط کلیدهای about_* را به فایل فعلی خودتان اضافه کنید
-۳	style.css	فقط بلوک بالا را به انتها اضافه کنید — بقیه دست نزنید
-۴	i18n.js	دست نزنید ✅
-📌 درس مهم برای این پروژه:
-هرگز کل فایل style.css را جایگزین نکنید، چون خیلی بزرگ است و ممکن است بخشی جا بیفتد.
 
-همیشه فقط بلوک جدید را به انتهای فایل اضافه کنید.
+/* =====================================
+   MULTI-PAGE CONTENT
+===================================== */
 
-🙏 عذرخواهی
-بابت این اشتباه عذرخواهی می‌کنم.
-اگر فایل style.css اصلی خودتان را دارید، لطفاً آن را برگردانید و فقط بلوک بالا را اضافه کنید. اگر ندارید، بگویید تا با هم بخش‌های از دست رفته را از فایل متنی که فرستادید بازسازی کنیم.
+.page-hero {
+  min-height: 58vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+}
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: .55;
+}
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.42);
+}
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 130px 20px 80px;
+}
+.page-hero h1 {
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: .9;
+}
+.page-content {
+  max-width: 1400px;
+  margin: auto;
+  padding: 110px 6%;
+}
+.page-intro {
+  max-width: 850px;
+  margin-bottom: 80px;
+}
+.page-intro h2 {
+  margin-bottom: 25px;
+}
+.page-intro p {
+  color: var(--gray);
+  max-width: 700px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.art-card {
+  background: var(--white);
+  overflow: hidden;
+}
+.art-card img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform .7s ease;
+}
+.art-card:hover img {
+  transform: scale(1.04);
+}
+.art-card-body {
+  padding: 25px;
+}
+.art-card-body h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+.art-card-body p {
+  color: var(--gray);
+  font-size: 14px;
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  align-items: start;
+}
+.info-block h3 {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+.info-block p {
+  color: var(--gray);
+  margin-bottom: 18px;
+}
+.video-grid .art-card img {
+  aspect-ratio: 16 / 10;
+}
+.contact-form {
+  max-width: 750px;
+  display: grid;
+  gap: 18px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  outline: none;
+  padding: 18px 4px;
+}
+.contact-form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+.contact-form button {
+  width: fit-content;
+  border: 0;
+  cursor: pointer;
+  background: var(--black);
+  color: var(--white);
+  padding: 16px 28px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 11px;
+}
+.simple-note {
+  margin-top: 25px;
+  color: var(--gray);
+  min-height: 25px;
+}
 
-آیا فایل style.css اصلی را در جایی ذخیره دارید؟
+@media (max-width: 900px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .info-grid { grid-template-columns: 1fr; gap: 45px; }
+}
+@media (max-width: 600px) {
+  .page-hero { min-height: 52vh; }
+  .card-grid { grid-template-columns: 1fr; }
+  .page-content { padding: 80px 8%; }
+}
+/* =====================================
+   VIDEO CARDS
+===================================== */
 
+.video-card {
+  cursor: pointer;
+}
+
+.video-image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: #111;
+}
+
+.video-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 0.7s ease,
+    filter 0.5s ease;
+}
+
+.video-card:hover .video-image img {
+  transform: scale(1.05);
+  filter: brightness(0.72);
+}
+
+
+/* =====================================
+   VIDEO PLAY BUTTON
+===================================== */
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 72px;
+  height: 72px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
+  background: rgba(17, 17, 17, 0.2);
+
+  backdrop-filter: blur(8px);
+
+  color: #fff;
+
+  display: grid;
+  place-items: center;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.video-play span {
+  font-size: 18px;
+
+  margin-left: 3px;
+}
+
+.video-card:hover .video-play {
+  background: rgba(17, 17, 17, 0.7);
+
+  transform:
+    translate(-50%, -50%)
+    scale(1.08);
+}
+
+
+/* =====================================
+   VIDEO MODAL
+===================================== */
+
+.video-modal {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease;
+}
+
+.video-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Dark background */
+
+.video-modal-backdrop {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.92);
+
+  cursor: pointer;
+}
+
+
+/* Video container */
+
+.video-modal-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, 94vw);
+
+  max-height: 90vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Video */
+
+.video-modal-content video {
+  width: 100%;
+
+  max-height: 85vh;
+
+  display: block;
+
+  background: #000;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Close button */
+
+.video-modal-close {
+  position: absolute;
+
+  top: -55px;
+  right: 0;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: #fff;
+
+  font-size: 30px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.video-modal-close:hover {
+  background: rgba(255, 255, 255, 0.15);
+
+  transform: rotate(90deg);
+}
+
+
+/* Prevent page scrolling while video is open */
+
+body.video-open {
+  overflow: hidden;
+}
+
+
+/* =====================================
+   MOBILE VIDEO
+===================================== */
+
+@media (max-width: 600px) {
+
+  .video-play {
+    width: 60px;
+    height: 60px;
+  }
+
+  .video-play span {
+    font-size: 15px;
+  }
+
+  .video-modal {
+    padding: 20px;
+  }
+
+  .video-modal-content {
+    width: 100%;
+  }
+
+  .video-modal-content video {
+    max-height: 75vh;
+  }
+
+  .video-modal-close {
+    top: -50px;
+    right: 0;
+
+    width: 38px;
+    height: 38px;
+
+    font-size: 25px;
+  }
+
+}
+
+/* =====================================
+   HOMEPAGE VIDEO
+===================================== */
+
+.video-feature {
+  cursor: pointer;
+}
+
+.video-feature img {
+  transition:
+    transform 0.8s ease,
+    filter 0.5s ease;
+}
+
+.video-feature:hover img {
+  transform: scale(1.04);
+  filter: brightness(0.72);
+}
+
+.video-feature .play-button {
+  z-index: 2;
+}
+
+
+/* =====================================
+   VIDEO MODAL
+===================================== */
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.video-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-modal-backdrop {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.92);
+
+  cursor: pointer;
+}
+
+.video-modal-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(1200px, 94vw);
+}
+
+.video-modal-content video {
+  display: block;
+
+  width: 100%;
+  max-height: 85vh;
+
+  background: #000;
+
+  object-fit: contain;
+}
+
+
+/* CLOSE BUTTON */
+
+.video-modal-close {
+  position: absolute;
+
+  top: -55px;
+  right: 0;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 50%;
+
+  background: transparent;
+  color: #fff;
+
+  font-size: 30px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.video-modal-close:hover {
+  background: rgba(255,255,255,0.15);
+  transform: rotate(90deg);
+}
+
+
+/* STOP PAGE SCROLL */
+
+body.video-open {
+  overflow: hidden;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .video-modal {
+    padding: 20px;
+  }
+
+  .video-modal-content video {
+    max-height: 75vh;
+  }
+
+  .video-modal-close {
+    top: -50px;
+
+    width: 38px;
+    height: 38px;
+
+    font-size: 25px;
+  }
+
+}
+
+
+/* =========================
+   FLOATING CTA
+========================== */
+.floating-cta {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #c9a227;
+  color: #111;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(201, 162, 39, 0.4);
+  z-index: 998;
+  transition: all 0.3s ease;
+  animation: ctaPulse 2.5s ease-in-out infinite;
+}
+
+.floating-cta:hover {
+  background: #111;
+  color: #c9a227;
+  transform: translateY(-3px) scale(1.04);
+}
+
+.floating-cta-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 10px 30px rgba(201, 162, 39, 0.4); }
+  50%      { box-shadow: 0 10px 42px rgba(201, 162, 39, 0.85); }
+}
+
+/* =========================
+   CLASSES SECTION
+========================== */
+.classes-section {
+  background: #f7f5f0;
+  overflow: hidden;
+}
+
+.section-subtitle {
+  max-width: 560px;
+  margin: 12px auto 0;
+  text-align: center;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* فیلتر */
+.classes-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0 40px;
+  flex-wrap: wrap;
+  padding: 0 24px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid rgba(17, 17, 17, 0.15);
+  color: #111;
+  padding: 8px 18px;
+  border-radius: 40px;
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+}
+
+.filter-btn:hover { border-color: #111; }
+
+.filter-btn.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* گرید */
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 26px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* کارت */
+.class-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.class-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.13);
+}
+
+.class-card.hidden { display: none; }
+
+/* =========================
+   بخش هنری (بدون عکس!)
+========================== */
+.class-art {
+  position: relative;
+  height: 170px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.class-number {
+  position: absolute;
+  font-size: 130px;
+  font-weight: 800;
+  font-family: 'Georgia', serif;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.18);
+  letter-spacing: -8px;
+  z-index: 1;
+  user-select: none;
+}
+
+.art-shape {
+  position: absolute;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+/* کارت ۱ — گرادیانت گرم + دایره */
+.art-1 {
+  background: linear-gradient(135deg, #1a1a1a 0%, #3a2e1f 60%, #c9a227 140%);
+}
+.art-1 .art-shape {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  background: radial-gradient(circle at 30% 30%, rgba(201, 162, 39, 0.9), transparent 70%);
+}
+.class-card:hover .art-1 .art-shape {
+  transform: scale(1.15) rotate(15deg);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* کارت ۲ — مشکی عمیق + مربع چرخیده */
+.art-2 {
+  background: linear-gradient(135deg, #0d0d0d 0%, #2b2b2b 100%);
+}
+.art-2 .art-shape {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #c9a227;
+  transform: rotate(45deg);
+  background: rgba(201, 162, 39, 0.08);
+}
+.class-card:hover .art-2 .art-shape {
+  transform: rotate(135deg) scale(1.1);
+  background: rgba(201, 162, 39,
 
 =====================================.txt
 /* =====================================
@@ -4395,6 +3908,7 @@ html[dir="rtl"] .text-link span {
 html[dir="rtl"] .desktop-nav,
 html[dir="rtl"] .footer-links {
   direction: rtl;
+}
   /* =====================================
    ABOUT PAGE (Bio — EN / FA)
 ===================================== */
@@ -4478,11 +3992,9 @@ html[dir="rtl"] .about-quote {
   .about-detail {
     grid-template-columns: 1fr;
   }
-
   .about-detail-image img {
     min-height: 500px;
   }
-
   .about-detail-content {
     padding: 80px 8%;
   }
@@ -4492,25 +4004,20 @@ html[dir="rtl"] .about-quote {
   .about-detail-image img {
     min-height: 380px;
   }
-
   .about-detail-content {
     padding: 60px 7%;
   }
-
   .about-quote {
     font-size: 1rem;
     padding-left: 16px;
     margin-bottom: 30px;
   }
-
   html[dir="rtl"] .about-quote {
     padding-right: 16px;
     padding-left: 0;
   }
-
   .about-text {
     font-size: 14px;
     line-height: 1.9;
   }
-}
 }
