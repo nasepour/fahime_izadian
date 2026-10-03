@@ -19,52 +19,51 @@
 <body>
 
   <!-- =========================
+       SIDE MENU (سه‌خطی گوشه)
+  ========================== -->
+  <button
+    class="side-menu-toggle"
+    id="sideMenuToggle"
+    aria-label="Open side menu"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="side-menu" id="sideMenu">
+
+    <a href="index.html" class="side-menu-home" data-lang-key="nav_home">HOME</a>
+
+    <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
+    <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
+    <a href="prints.html" data-lang-key="nav_prints">Prints</a>
+    <a href="videos.html" data-lang-key="nav_videos">Videos</a>
+    <a href="about.html" data-lang-key="nav_about">About</a>
+    <a href="contact.html" data-lang-key="nav_contact">Contact</a>
+
+  </nav>
+
+  <div class="side-menu-backdrop" id="sideMenuBackdrop"></div>
+
+  <!-- =========================
        HEADER
   ========================== -->
   <header class="header" id="home">
     <div class="header-container">
-
-      <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="fa">FA</button>
-      </div>
 
       <a href="index.html" class="logo">
         <span class="logo-main">FAHIME IZADIAN</span>
         <span class="logo-sub">REALISM</span>
       </a>
 
-      <nav class="desktop-nav">
-        <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
-        <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
-        <a href="prints.html" data-lang-key="nav_prints">Prints</a>
-        <a href="videos.html" data-lang-key="nav_videos">Videos</a>
-        <a href="about.html" data-lang-key="nav_about">About</a>
-        <a href="contact.html" data-lang-key="nav_contact">Contact</a>
-      </nav>
-
-      <button
-        class="menu-toggle"
-        aria-label="Open menu"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fa">FA</button>
+      </div>
 
     </div>
-
-    <!-- Mobile Menu -->
-    <nav class="mobile-nav">
-      <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
-      <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
-      <a href="prints.html" data-lang-key="nav_prints">Prints</a>
-      <a href="videos.html" data-lang-key="nav_videos">Videos</a>
-      <a href="about.html" data-lang-key="nav_about">About</a>
-      <a href="contact.html" data-lang-key="nav_contact">Contact</a>
-    </nav>
-
   </header>
 
   <!-- =========================
