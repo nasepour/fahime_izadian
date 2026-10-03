@@ -153,3 +153,43 @@ document.addEventListener('DOMContentLoaded', () => {
   // انیمیشن reveal
   setupRevealAnimation();
 });
+/* =========================================
+   SIDE MENU (سه‌خطی گوشه)
+========================================= */
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('sideMenuToggle');
+  const menu = document.getElementById('sideMenu');
+  const backdrop = document.getElementById('sideMenuBackdrop');
+
+  if (!toggle || !menu || !backdrop) return;
+
+  function openMenu() {
+    menu.classList.add('active');
+    backdrop.classList.add('active');
+    toggle.classList.add('active');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    menu.classList.remove('active');
+    backdrop.classList.remove('active');
+    toggle.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  toggle.addEventListener('click', () => {
+    if (menu.classList.contains('active')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  backdrop.addEventListener('click', closeMenu);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+});
