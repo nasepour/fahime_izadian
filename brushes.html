@@ -6,54 +6,80 @@
   <title>Brushes — Fahime Izadian Realism</title>
   <meta name="description" content="Brushes — Fahime Izadian Realism">
   <link rel="stylesheet" href="style.css">
+  <script defer src="i18n.js"></script>
+  <script defer src="chat-final-v3.js"></script>
 </head>
 <body>
-<header class="header">
-  <div class="header-container">
-    <a href="index.html" class="logo">
-      <span class="logo-main">Fahime Izadian</span>
-      <span class="logo-sub">Realism</span>
-    </a>
-    <nav class="desktop-nav">
-      <a href="paintings.html">Paintings</a>
-      <a href="brushes.html">Brushes</a>
-      <a href="prints.html">Prints</a>
-      <a href="videos.html">Videos</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <nav class="mobile-nav">
-    <a href="paintings.html">Paintings</a>
-    <a href="brushes.html">Brushes</a>
-    <a href="prints.html">Prints</a>
-    <a href="videos.html">Videos</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+
+  <!-- =========================
+       SIDE MENU (سه‌خطی گوشه)
+  ========================== -->
+  <button
+    class="side-menu-toggle"
+    id="sideMenuToggle"
+    aria-label="Open side menu"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="side-menu" id="sideMenu">
+
+    <a href="index.html" class="side-menu-home" data-lang-key="nav_home">HOME</a>
+
+    <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
+    <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
+    <a href="prints.html" data-lang-key="nav_prints">Prints</a>
+    <a href="videos.html" data-lang-key="nav_videos">Videos</a>
+    <a href="about.html" data-lang-key="nav_about">About</a>
+    <a href="contact.html" data-lang-key="nav_contact">Contact</a>
+
   </nav>
-</header>
-<main>
-  <section class="page-hero">
-    <!-- عکس جدید brush-set.jpg -->
-    <div class="page-hero-bg" style="background-image:url('brush-set.jpg');"></div>
-    <div class="page-hero-overlay"></div>
-    <div class="page-hero-content reveal">
-      <p class="eyebrow">02 / TOOLS</p>
-      <h1>Brushes</h1>
+
+  <div class="side-menu-backdrop" id="sideMenuBackdrop"></div>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="header">
+    <div class="header-container">
+
+      <a href="index.html" class="logo">
+        <span class="logo-main">Fahime Izadian</span>
+        <span class="logo-sub">Realism</span>
+      </a>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fa">FA</button>
+      </div>
+
     </div>
-  </section>
-  <section class="page-content">
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image:url('brush-set.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content reveal">
+        <p class="eyebrow" data-lang-key="brushes_eyebrow">02 / TOOLS</p>
+        <h1 data-lang-key="brushes_title">Brushes</h1>
+      </div>
+    </section>
+
+    <section class="page-content">
+
       <div class="page-intro reveal">
         <p class="eyebrow dark">PROFESSIONAL TOOLS</p>
         <h2>Fine Detail <em>Professional Brush Set</em>.</h2>
         <p>Tools selected for controlled and expressive mark-making across a range of surfaces.</p>
       </div>
-      
-      <!-- فقط یک کادر عکس -->
+
       <div class="card-grid">
+
         <article class="art-card reveal">
           <img src="brush-set.jpg" alt="Professional brushes">
           <div class="art-card-body">
@@ -61,27 +87,42 @@
             <p>Tools selected for controlled and expressive mark-making.</p>
           </div>
         </article>
+
       </div>
-      
+
     </section>
-</main>
-<footer class="footer">
-  <div class="footer-top">
-    <a href="index.html" class="footer-logo">Fahime Izadian Realism</a>
-    <div class="footer-links">
-      <a href="paintings.html">Paintings</a>
-      <a href="brushes.html">Brushes</a>
-      <a href="prints.html">Prints</a>
-      <a href="videos.html">Videos</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+
+    <div class="footer-top">
+
+      <a href="index.html" class="footer-logo">Fahime Izadian Realism</a>
+
+      <div class="footer-links">
+        <a href="paintings.html" data-lang-key="footer_paintings">Paintings</a>
+        <a href="brushes.html" data-lang-key="footer_brushes">Brushes</a>
+        <a href="prints.html" data-lang-key="footer_prints">Prints</a>
+        <a href="videos.html" data-lang-key="footer_videos">Videos</a>
+        <a href="about.html" data-lang-key="footer_about">About</a>
+      </div>
+
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© <span id="year"></span> Fahime Izadian Realism. All rights reserved.</p>
-    <a href="#">Back to top ↑</a>
-  </div>
-</footer>
-<script src="script.js"></script>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Fahime Izadian Realism. All rights reserved.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
