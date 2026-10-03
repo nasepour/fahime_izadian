@@ -1,5 +1,6 @@
 {
   "en": {
+    "nav_home": "HOME",
     "nav_paintings": "Paintings",
     "nav_brushes": "Brushes",
     "nav_prints": "Prints",
@@ -126,6 +127,7 @@
   },
 
   "fa": {
+    "nav_home": "خانه",
     "nav_paintings": "نقاشی‌ها",
     "nav_brushes": "قلم‌موها",
     "nav_prints": "چاپ‌ها",
