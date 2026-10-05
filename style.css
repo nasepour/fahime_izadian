@@ -292,11 +292,16 @@ HERO
   inset: 0;
 
   background-size: cover;
-  background-position: center;
+    background-position: center 35%;
+  .hero-bg {
+  position: absolute;
 
-  transform: scale(1.04);
+  inset: 0;
 
-  animation: heroZoom 12s ease-in-out infinite alternate;
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+}
 }
 
 .hero-overlay {
@@ -849,21 +854,6 @@ REVEAL ANIMATION
 .reveal {
   opacity: 1;
   transform: none;
-}
-/* =====================================
-HERO ANIMATION
-===================================== */
-
-@keyframes heroZoom {
-
-  from {
-    transform: scale(1.04);
-  }
-
-  to {
-    transform: scale(1.12);
-  }
-
 }
 /* =====================================
 TABLET
@@ -2331,5 +2321,23 @@ html[dir="rtl"] .about-quote {
   .side-menu a {
     font-size: 14px;
     padding: 18px 0;
+  }
+}
+@media (max-width: 600px) {
+  .hero-bg {
+    background-position: center 25%;
+  }
+}
+  /* روی صفحه‌های خیلی پهن */
+@media (min-width: 1600px) {
+  .hero-bg {
+    background-position: center 40%;
+  }
+}
+
+/* روی تبلت */
+@media (max-width: 900px) and (min-width: 601px) {
+  .hero-bg {
+    background-position: center 30%;
   }
 }
