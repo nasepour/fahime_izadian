@@ -2454,6 +2454,65 @@ html[dir="rtl"] .about-quote {
 }
 
 
+
+.painting-caption h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 15px;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.painting-caption p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  color: #707070;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .paintings-list {
+    padding: 200px 5% 100px;
+    gap: 100px;
+  }
+  .painting-caption {
+    padding: 40px 30px 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .paintings-list {
+    padding: 160px 5% 80px;
+    gap: 80px;
+  }
+  .painting-caption {
+    padding: 30px 20px 40px;
+  }
+  .painting-caption h2 {
+    font-size: 2rem;
+  }
+  .painting-caption p {
+    font-size: 0.8rem;
+  }
+}
+/* ریسپانسیو */
+@media (max-width: 900px) {
+  .paintings-list {
+    padding: 60px 5%;
+    gap: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .paintings-list {
+    padding: 40px 5%;
+    gap: 50px;
+  }
+}
 /* =====================================
    PAINTINGS LIST — فاصله مناسب بین عکس‌ها
 ===================================== */
@@ -2513,9 +2572,11 @@ html[dir="rtl"] .about-quote {
   font-weight: 400;
 }
 
+/* ===== ریسپانسیو ===== */
+
 @media (max-width: 900px) {
   .paintings-list {
-    padding: 200px 5% 100px;
+    padding: 180px 5% 100px;    /* فاصله از هدر حفظ شود */
     gap: 100px;
   }
   .painting-caption {
@@ -2525,7 +2586,7 @@ html[dir="rtl"] .about-quote {
 
 @media (max-width: 600px) {
   .paintings-list {
-    padding: 160px 5% 80px;
+    padding: 140px 5% 80px;     /* فاصله از هدر حفظ شود */
     gap: 80px;
   }
   .painting-caption {
@@ -2536,19 +2597,5 @@ html[dir="rtl"] .about-quote {
   }
   .painting-caption p {
     font-size: 0.8rem;
-  }
-}
-/* ریسپانسیو */
-@media (max-width: 900px) {
-  .paintings-list {
-    padding: 60px 5%;
-    gap: 70px;
-  }
-}
-
-@media (max-width: 600px) {
-  .paintings-list {
-    padding: 40px 5%;
-    gap: 50px;
   }
 }
