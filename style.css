@@ -2344,3 +2344,46 @@ html[dir="rtl"] .about-quote {
     object-position: center 40%;
   }
 }
+/* =====================================
+   ABOUT DETAIL — متن زیر عکس
+===================================== */
+
+.about-detail {
+  display: block;
+  background: var(--cream);
+  padding: 120px 8%;
+}
+
+.about-detail-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-detail-image {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .about-detail {
+    padding: 100px 8%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-detail {
+    padding: 80px 7%;
+  }
+  .about-quote {
+    font-size: 1rem;
+    padding-left: 16px;
+    margin-bottom: 30px;
+  }
+  .about-text {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+}
