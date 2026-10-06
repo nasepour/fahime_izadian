@@ -2050,19 +2050,22 @@ html[dir="rtl"] .footer-links {
   grid-template-columns: 1fr 1fr;
   gap: 0;
   background: var(--cream);
-  align-items: center;
+  align-items: stretch;
 }
 
 .about-detail-image {
   overflow: hidden;
-  height: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .about-detail-image img {
   width: 100%;
-  height: 100%;
-  min-height: 700px;
-  object-fit: cover;
+  height: auto;
+  min-height: unset;
+  object-fit: contain;
+  display: block;
 }
 
 .about-detail-content {
@@ -2125,7 +2128,7 @@ html[dir="rtl"] .about-quote {
     grid-template-columns: 1fr;
   }
   .about-detail-image img {
-    min-height: 500px;
+    min-height: unset;
   }
   .about-detail-content {
     padding: 80px 8%;
@@ -2134,7 +2137,7 @@ html[dir="rtl"] .about-quote {
 
 @media (max-width: 600px) {
   .about-detail-image img {
-    min-height: 380px;
+    min-height: unset;
   }
   .about-detail-content {
     padding: 60px 7%;
