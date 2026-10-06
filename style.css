@@ -2387,3 +2387,68 @@ html[dir="rtl"] .about-quote {
     line-height: 1.9;
   }
 }
+/* =====================================
+   PAINTING BLOCK — عکس کامل، بدون تغییر رنگ، متن زیر عکس
+===================================== */
+
+.painting-block {
+  background: #f4f2ee;
+  padding: 100px 6% 80px;
+  text-align: center;
+}
+
+.painting-image {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.painting-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.painting-caption {
+  margin-top: 40px;
+}
+
+.painting-caption h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.painting-caption p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #707070;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .painting-block {
+    padding: 80px 5% 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .painting-block {
+    padding: 60px 5% 50px;
+  }
+  .painting-caption {
+    margin-top: 25px;
+  }
+  .painting-caption h2 {
+    font-size: 1.8rem;
+  }
+  .painting-caption p {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+  }
+}
