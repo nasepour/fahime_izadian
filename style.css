@@ -2452,3 +2452,43 @@ html[dir="rtl"] .about-quote {
     letter-spacing: 1.5px;
   }
 }
+/* =====================================
+   PAINTINGS LIST — لیست نقاشی‌ها (عکس + نام + توضیح)
+===================================== */
+
+.paintings-list {
+  background: #f4f2ee;
+  padding: 80px 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.painting-item {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.painting-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* ریسپانسیو */
+@media (max-width: 900px) {
+  .paintings-list {
+    padding: 60px 5%;
+    gap: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .paintings-list {
+    padding: 40px 5%;
+    gap: 50px;
+  }
+}
