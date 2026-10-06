@@ -26,16 +26,13 @@
   </button>
 
   <nav class="side-menu" id="sideMenu">
-
     <a href="index.html" class="side-menu-home" data-lang-key="nav_home">HOME</a>
-
     <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
     <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
     <a href="prints.html" data-lang-key="nav_prints">Prints</a>
     <a href="videos.html" data-lang-key="nav_videos">Videos</a>
     <a href="about.html" data-lang-key="nav_about">About</a>
     <a href="contact.html" data-lang-key="nav_contact">Contact</a>
-
   </nav>
 
   <div class="side-menu-backdrop" id="sideMenuBackdrop"></div>
@@ -61,51 +58,55 @@
 
   <main>
 
+    <!-- =========================
+         PAGE HERO
+    ========================== -->
     <section class="page-hero">
-      <div class="page-hero-bg" style="background-image:url('collection-1.jpg');"></div>
+      <div class="page-hero-bg" style="background-image:url('paintings.jpg');"></div>
       <div class="page-hero-overlay"></div>
       <div class="page-hero-content reveal">
-        <p class="eyebrow" data-lang-key="paintings_eyebrow">01 / COLLECTION</p>
-        <h1 data-lang-key="paintings_title">Paintings</h1>
+        <p class="eyebrow">01 / COLLECTION</p>
+        <h1>Paintings</h1>
       </div>
     </section>
 
-    <section class="page-content">
-
-      <div class="page-intro reveal">
-        <p class="eyebrow dark">ORIGINAL WORKS</p>
-        <h2>A collection of <em>paintings</em>.</h2>
-        <p>Explore selected works and discover the ideas, materials and details behind each piece.</p>
+    <!-- =========================
+         نقاشی ۱ — پرتره با عقاب
+    ========================== -->
+    <section class="painting-block">
+      <div class="painting-image">
+        <img src="painting-eagle.jpg" alt="Guardian of the Sea" />
       </div>
-
-      <div class="card-grid">
-
-        <article class="art-card reveal">
-          <img src="collection-1.jpg" alt="Collection I">
-          <div class="art-card-body">
-            <h3>Collection I</h3>
-            <p>Original artwork and studies.</p>
-          </div>
-        </article>
-
-        <article class="art-card reveal">
-          <img src="observation.jpg" alt="Observation">
-          <div class="art-card-body">
-            <h3>Observation</h3>
-            <p>Selected contemporary work.</p>
-          </div>
-        </article>
-
-        <article class="art-card reveal">
-          <img src="vision.jpg" alt="Vision">
-          <div class="art-card-body">
-            <h3>Vision</h3>
-            <p>A study in technique and atmosphere.</p>
-          </div>
-        </article>
-
+      <div class="painting-caption reveal">
+        <h2>Guardian of the Sea</h2>
+        <p>Oil on canvas — 2024</p>
       </div>
+    </section>
 
+    <!-- =========================
+         نقاشی ۲ — Vision
+    ========================== -->
+    <section class="painting-block">
+      <div class="painting-image">
+        <img src="painting-vision.jpg" alt="Vision" />
+      </div>
+      <div class="painting-caption reveal">
+        <h2>Vision</h2>
+        <p>A study in technique and atmosphere</p>
+      </div>
+    </section>
+
+    <!-- =========================
+         نقاشی ۳ — Silence
+    ========================== -->
+    <section class="painting-block">
+      <div class="painting-image">
+        <img src="painting-silence.jpg" alt="Silence" />
+      </div>
+      <div class="painting-caption reveal">
+        <h2>Silence</h2>
+        <p>Oil on canvas — 2023</p>
+      </div>
     </section>
 
   </main>
@@ -131,7 +132,7 @@
 
     <div class="footer-bottom">
       <p>© <span id="year"></span> Fahime Izadian Realism. All rights reserved.</p>
-      <a href="#top">Back to top ↑</a>
+      <a href="#">Back to top ↑</a>
     </div>
 
   </footer>
