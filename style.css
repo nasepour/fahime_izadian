@@ -2452,16 +2452,18 @@ html[dir="rtl"] .about-quote {
     letter-spacing: 1.5px;
   }
 }
+
+
 /* =====================================
-   PAINTINGS LIST — لیست نقاشی‌ها (عکس + نام + توضیح)
+   PAINTINGS LIST — فاصله مناسب بین عکس‌ها
 ===================================== */
 
 .paintings-list {
   background: #f4f2ee;
-  padding: 80px 6%;
+  padding: 240px 6% 120px;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 120px;
 }
 
 .painting-item {
@@ -2469,6 +2471,15 @@ html[dir="rtl"] .about-quote {
   margin: 0 auto;
   width: 100%;
   text-align: center;
+  background: #ffffff;
+  padding: 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.painting-image {
+  width: 100%;
+  margin: 0;
 }
 
 .painting-image img {
@@ -2478,6 +2489,55 @@ html[dir="rtl"] .about-quote {
   object-fit: contain;
 }
 
+.painting-caption {
+  padding: 50px 40px 60px;
+  background: #ffffff;
+}
+
+.painting-caption h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 15px;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.painting-caption p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  color: #707070;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .paintings-list {
+    padding: 200px 5% 100px;
+    gap: 100px;
+  }
+  .painting-caption {
+    padding: 40px 30px 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .paintings-list {
+    padding: 160px 5% 80px;
+    gap: 80px;
+  }
+  .painting-caption {
+    padding: 30px 20px 40px;
+  }
+  .painting-caption h2 {
+    font-size: 2rem;
+  }
+  .painting-caption p {
+    font-size: 0.8rem;
+  }
+}
 /* ریسپانسیو */
 @media (max-width: 900px) {
   .paintings-list {
