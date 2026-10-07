@@ -1,309 +1,483 @@
-{
-  "en": {
-    "nav_home": "HOME",
-    "nav_paintings": "Paintings",
-    "nav_brushes": "Brushes",
-    "nav_prints": "Prints",
-    "nav_videos": "Videos",
-    "nav_about": "About",
-    "nav_contact": "Contact",
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    "hero_eyebrow": "REALISM ART",
-    "hero_title_line1": "FAHIME IZADIAN",
-    "hero_title_line2": "REALISM",
-    "hero_button": "Explore Collection",
-    "hero_scroll": "SCROLL",
+  <title>Fahime Izadian Realism</title>
 
-    "intro_eyebrow": "THE COLLECTION",
-    "intro_title_1": "Paintings created with",
-    "intro_title_em": "patience, observation",
-    "intro_title_2": "and attention to detail.",
-    "intro_text": "Explore a collection of original works, prints and artistic resources. Replace every image in this template with your own artwork and customize the text to create your personal portfolio.",
+  <meta
+    name="description"
+    content="Realism Artist & Art Studio — Qom, Iran"
+  />
 
-    "paintings_eyebrow": "01 / COLLECTION",
-    "paintings_title": "Paintings",
-    "paintings_text": "Discover original paintings and explore the complete collection of available artwork.",
-    "paintings_link": "Discover the collection",
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="i18n.js"></script>
+  <script defer src="chat-final-v3.js"></script>
+</head>
 
-    "painting_1_title": "collection i",
-    "painting_1_desc": "a study in light and detail",
-    "painting_2_title": "observation",
-    "painting_2_desc": "moments of quiet attention",
-    "painting_3_title": "vision",
-    "painting_3_desc": "silence, memory and atmosphere",
-    "painting_4_title": "guardian of the sea",
-    "painting_4_desc": "a dialogue between silence and strength",
-    "painting_5_title": "sanctuary",
-    "painting_5_desc": "a quiet bond, painted in light",
-    "painting_6_title": "moonlit gaze",
-    "painting_6_desc": "a golden figure between memory and moonlight",
-    "painting_7_title": "veiled presence",
-    "painting_7_desc": "two souls held in shadow and silence",
-    "painting_8_title": "the maker",
-    "painting_8_desc": "hands shaping what the eyes cannot see",
-    "painting_9_title": "the gathering",
-    "painting_9_desc": "four figures around a quiet flame",
-    "painting_10_title": "reflection",
-    "painting_10_desc": "a mind wandering toward the sea",
-    "painting_11_title": "crimson portrait",
-    "painting_11_desc": "a seated figure dressed in heritage and light",
-    "painting_12_title": "azure dream",
-    "painting_12_desc": "a blue gown drifting toward the horizon",
-    "painting_13_title": "golden crown",
-    "painting_13_desc": "a queen remembered in gold and shadow",
+<body>
 
-    "brushes_eyebrow": "02 / TOOLS",
-    "brushes_title": "Brushes",
-    "brushes_subtitle": "Fine Detail Professional Brush Set",
-    "brushes_text": "A carefully selected collection of brushes designed for precision, detail and artistic control.",
-    "brushes_link": "Discover the brushes",
+  <!-- =========================
+       SIDE MENU (سه‌خطی گوشه)
+  ========================== -->
+  <button
+    class="side-menu-toggle"
+    id="sideMenuToggle"
+    aria-label="Open side menu"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    "prints_eyebrow": "03 / LIMITED EDITION",
-    "prints_title": "Prints",
-    "prints_text": "Purchase your limited edition print. Invest and enjoy.",
-    "prints_button": "View Prints",
+  <nav class="side-menu" id="sideMenu">
 
-    "videos_eyebrow": "04 / PROCESS",
-    "videos_title": "Videos",
-    "videos_text": "Watch videos and learn more about the creative process, techniques and ideas behind each artwork.",
-    "videos_link": "Watch videos",
-    "videos_play": "Play",
+    <a href="index.html" class="side-menu-home" data-lang-key="nav_home">HOME</a>
 
-    "press_eyebrow": "FEATURED IN",
-    "press_title": "Art Collection",
+    <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
+    <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
+    <a href="prints.html" data-lang-key="nav_prints">Portraits</a>
+    <a href="videos.html" data-lang-key="nav_videos">Videos</a>
+    <a href="about.html" data-lang-key="nav_about">About</a>
+    <a href="contact.html" data-lang-key="nav_contact">Contact</a>
 
-    "newsletter_eyebrow": "STAY CONNECTED",
-    "newsletter_title": "Newsletter",
-    "newsletter_text": "Subscribe now to receive news about:",
-    "newsletter_item_prints": "Prints",
-    "newsletter_item_brushes": "Brushes",
-    "newsletter_item_paintings": "Paintings",
-    "newsletter_item_workshops": "Workshops",
-    "newsletter_placeholder": "Your email address",
-    "newsletter_button": "Subscribe",
+  </nav>
 
-    "footer_paintings": "Paintings",
-    "footer_brushes": "Brushes",
-    "footer_prints": "Prints",
-    "footer_videos": "Videos",
-    "footer_about": "About",
+  <div class="side-menu-backdrop" id="sideMenuBackdrop"></div>
 
-    "chat_title": "Artist Support",
-    "chat_status": "● Online",
-    "chat_welcome": "Hi! 👋 Welcome to Fahime Izadian Realism. How can I help you today?",
-    "chat_placeholder": "Type your message...",
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="header" id="home">
+    <div class="header-container">
 
-    "cta_text": "Learn to Paint",
+      <a href="#home" class="logo">
+        <span class="logo-main">FAHIME IZADIAN</span>
+        <span class="logo-sub">REALISM</span>
+      </a>
 
-    "classes_eyebrow": "LEARN WITH US",
-    "classes_title": "Painting Classes",
-    "classes_subtitle": "Join our painting workshops — online or in-person.",
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fa">FA</button>
+      </div>
 
-    "filter_all": "All",
-    "filter_online": "Online",
-    "filter_inperson": "In Person",
-    "filter_hybrid": "Hybrid",
+    </div>
+  </header>
 
-    "class1_badge": "Online",
-    "class1_title": "Beginner Painting",
-    "class1_desc": "Learn color, composition and brushwork from scratch.",
-    "class1_day": "Saturdays",
-    "class1_time": "10:00 – 12:00",
-    "class1_loc": "Online (Zoom)",
-    "class1_price": "$49 / session",
-    "class1_btn": "Reserve Spot",
+  <!-- =========================
+       HERO
+  ========================== -->
+  <section class="hero">
 
-    "class2_badge": "In Person",
-    "class2_title": "Advanced Oil Painting",
-    "class2_desc": "Deepen your technique with oils, glazing and layering.",
-    "class2_day": "Tue & Thu",
-    "class2_time": "18:00 – 20:30",
-    "class2_loc": "Studio, Qom",
-    "class2_price": "$79 / session",
-    "class2_btn": "Reserve Spot",
+    <div class="hero-bg">
+      <img src="hero.jpg" alt="Fahime Izadian painting in studio" />
+    </div>
 
-    "class3_badge": "Online",
-    "class3_title": "Watercolor Workshop",
-    "class3_desc": "Discover the beauty of watercolor — soft, fluid, expressive.",
-    "class3_day": "Fridays",
-    "class3_time": "16:00 – 18:00",
-    "class3_loc": "Online (Google Meet)",
-    "class3_price": "$39 / session",
-    "class3_btn": "Reserve Spot",
+    <div class="hero-overlay"></div>
 
-    "class4_badge": "Hybrid",
-    "class4_title": "Private Lessons",
-    "class4_desc": "One-on-one sessions tailored to your goals and pace.",
-    "class4_day": "Flexible",
-    "class4_time": "By appointment",
-    "class4_loc": "Online or In Studio",
-    "class4_price": "$120 / session",
-    "class4_btn": "Book Now",
+    <div class="hero-content">
 
-    "about_eyebrow": "05 / ABOUT",
-    "about_title": "About",
-    "about_eyebrow_2": "TECHNIQUE, STYLE AND VISION",
-    "about_headline_1": "Making space for",
-    "about_headline_em": "observation.",
+      <p class="eyebrow" data-lang-key="hero_eyebrow">REALISM ART</p>
 
-    "about_quote": "In the Iranians dwells the art of valor,They bow to none- not even the raging rhinoceros.\nOne in heart, and knowing their Divine Creator,They ask no praise from the stars for their goodness",
+      <a href="paintings.html" class="button button-light" data-lang-key="hero_button">
+        Explore Collection
+      </a>
 
-    "about_bio_1": "Fahime Izadian was born in 1980.05.31 in bajak district, Qom her family discovered her talent in painting when she was 3, she was pupil of maestro Narges Ahanin Panjeh as a child and she was only inspired by her , she was smitten with manners and methods OF Dr HosseinTabakhian , who was a graduate of ENGLISH Translation from United states, and became his pupil until she became an adult, she has Bachelor of Arts in ENGLISH LITERATURE from KHORAM ABAD state university ( 2011) and Mater of ARTS in Translation Techniques from TEHRAN SCIENCE and RESEARCH UNIVERSITY (2014) she was hired by National Drilling Company in 2015 as a Translation Senior Expert for INTERNATIONAL contracts in KISH ISLAND , Mastery over ENGLISH, French, Spanish , Arabic didn't satisfy her, therefore , after years and years , she found absolute power in Silence (Painting) . she started the project of oil painting of Glance of Prophets (Negah-E-Peygambaran) in 2021. Portraits and notes selected by the artist are inspired by her feelings, since the mountains and the worlds are not able to draw the grandeur of glance of prophets, she is creating works of prophets with the hope that the foregoing might lead to emergence of more works of arts in the universe.",
+    </div>
 
-    "about_link": "Explore the collection"
-  },
+    <div class="scroll-indicator">
+      <span data-lang-key="hero_scroll">SCROLL</span>
+      <div></div>
+    </div>
 
-  "fa": {
-    "nav_home": "خانه",
-    "nav_paintings": "نقاشی‌ها",
-    "nav_brushes": "قلم‌موها",
-    "nav_prints": "چاپ‌ها",
-    "nav_videos": "ویدیوها",
-    "nav_about": "درباره",
-    "nav_contact": "تماس",
+  </section>
 
-    "hero_eyebrow": "هنر رئالیسم",
-    "hero_title_line1": "فهمیه ایزدیان",
-    "hero_title_line2": "رئالیسم",
-    "hero_button": "مشاهده مجموعه",
-    "hero_scroll": "اسکرول",
+  <!-- =========================
+       INTRO
+  ========================== -->
+  <section class="intro section-padding">
 
-    "intro_eyebrow": "مجموعه",
-    "intro_title_1": "نقاشی‌هایی خلق‌شده با",
-    "intro_title_em": "صبر و مشاهده",
-    "intro_title_2": "و توجه به جزئیات.",
-    "intro_text": "مجموعه‌ای از آثار اصلی، چاپ‌ها و منابع هنری را کاوش کنید. هر تصویر این قالب را با اثر هنری خود جایگزین کنید و متن را برای ساخت پورتفولیوی شخصی خود سفارشی کنید.",
+    <div class="intro-content reveal">
 
-    "paintings_eyebrow": "۰۱ / مجموعه",
-    "paintings_title": "نقاشی‌ها",
-    "paintings_text": "نقاشی‌های اصلی را کشف کنید و مجموعه کامل آثار موجود را ببینید.",
-    "paintings_link": "کشف مجموعه",
+      <p class="eyebrow dark" data-lang-key="intro_eyebrow">THE COLLECTION</p>
 
-    "painting_1_title": "مجموعه یک",
-    "painting_1_desc": "مطالعه‌ای در نور و جزئیات",
-    "painting_2_title": "مشاهده",
-    "painting_2_desc": "لحظه‌هایی از توجه آرام",
-    "painting_3_title": "چشم‌انداز",
-    "painting_3_desc": "سکوت، خاطره و فضا",
-    "painting_4_title": "نگهبان دریا",
-    "painting_4_desc": "گفتگویی میان سکوت و قدرت",
-    "painting_5_title": "پناهگاه",
-    "painting_5_desc": "پیوندی آرام، در نور",
-    "painting_6_title": "نگاه مهتابی",
-    "painting_6_desc": "پیکری زرین میان خاطره و مهتاب",
-    "painting_7_title": "حضور پوشیده",
-    "painting_7_desc": "دو روح در سایه و سکوت",
-    "painting_8_title": "آفریننده",
-    "painting_8_desc": "دستانی که آنچه چشم نمی‌بیند را شکل می‌دهند",
-    "painting_9_title": "گردهمایی",
-    "painting_9_desc": "چهار چهره گرد شعله‌ای آرام",
-    "painting_10_title": "تأمل",
-    "painting_10_desc": "ذهنی که به سوی دریا می‌رود",
-    "painting_11_title": "پرتره سرخ",
-    "painting_11_desc": "پیکری نشسته، آراسته به میراث و نور",
-    "painting_12_title": "رؤیای لاجوردی",
-    "painting_12_desc": "جامه‌ای آبی که به سوی افق می‌رود",
-    "painting_13_title": "تاج زرین",
-    "painting_13_desc": "ملکه‌ای که در زر و سایه به یاد می‌آید",
+      <h2>
+        <span data-lang-key="intro_title_1">Paintings created with</span>
+        <em data-lang-key="intro_title_em">patience, observation</em>
+        <span data-lang-key="intro_title_2">and attention to detail.</span>
+      </h2>
 
-    "brushes_eyebrow": "۰۲ / ابزارها",
-    "brushes_title": "قلم‌موها",
-    "brushes_subtitle": "ست حرفه‌ای قلم‌موی جزئیات دقیق",
-    "brushes_text": "مجموعه‌ای منتخب از قلم‌موها برای دقت، جزئیات و کنترل هنری.",
-    "brushes_link": "کشف قلم‌موها",
+      <p class="intro-text" data-lang-key="intro_text">
+        Explore a collection of original works, prints and artistic
+        resources. Replace every image in this template with your own
+        artwork and customize the text to create your personal portfolio.
+      </p>
 
-    "prints_eyebrow": "۰۳ / نسخه محدود",
-    "prints_title": "چاپ‌ها",
-    "prints_text": "چاپ نسخه محدود خود را بخرید. سرمایه‌گذاری کنید و لذت ببرید.",
-    "prints_button": "مشاهده چاپ‌ها",
+    </div>
 
-    "videos_eyebrow": "۰۴ / فرآیند",
-    "videos_title": "ویدیوها",
-    "videos_text": "ویدیوها را تماشا کنید و درباره فرآیند خلاقانه، تکنیک‌ها و ایده‌های پشت هر اثر بیشتر بدانید.",
-    "videos_link": "تماشای ویدیوها",
-    "videos_play": "پخش",
+  </section>
 
-    "press_eyebrow": "معرفی‌شده در",
-    "press_title": "مجموعه هنری",
+  <!-- =========================
+       PAINTINGS
+  ========================== -->
+  <section class="feature-section" id="paintings">
 
-    "newsletter_eyebrow": "در ارتباط بمانید",
-    "newsletter_title": "خبرنامه",
-    "newsletter_text": "همین حالا مشترک شوید تا اخبار دریافت کنید درباره:",
-    "newsletter_item_prints": "چاپ‌ها",
-    "newsletter_item_brushes": "قلم‌موها",
-    "newsletter_item_paintings": "نقاشی‌ها",
-    "newsletter_item_workshops": "کارگاه‌ها",
-    "newsletter_placeholder": "ایمیل شما",
-    "newsletter_button": "عضویت",
+    <div class="feature-image reveal">
+      <img
+        src="paintings.jpg"
+        alt="Paintings collection"
+      />
+    </div>
 
-    "footer_paintings": "نقاشی‌ها",
-    "footer_brushes": "قلم‌موها",
-    "footer_prints": "چاپ‌ها",
-    "footer_videos": "ویدیوها",
-    "footer_about": "درباره",
+    <div class="feature-content reveal">
 
-    "chat_title": "پشتیبانی هنری",
-    "chat_status": "● آنلاین",
-    "chat_welcome": "سلام! 👋 به فهمیه ایزدیان خوش آمدید. چطور می‌توانم کمکتان کنم؟",
-    "chat_placeholder": "پیام خود را بنویسید...",
+      <p class="eyebrow dark" data-lang-key="paintings_eyebrow">01 / COLLECTION</p>
 
-    "cta_text": "نقاشی یاد بگیر",
+      <h2 data-lang-key="paintings_title">Paintings</h2>
 
-    "classes_eyebrow": "با ما یاد بگیرید",
-    "classes_title": "کلاس‌های نقاشی",
-    "classes_subtitle": "به کارگاه‌های نقاشی ما بپیوندید — آنلاین یا حضوری.",
+      <p data-lang-key="paintings_text">
+        Discover original paintings and explore the complete collection
+        of available artwork.
+      </p>
 
-    "filter_all": "همه",
-    "filter_online": "آنلاین",
-    "filter_inperson": "حضوری",
-    "filter_hybrid": "ترکیبی",
+      <a href="paintings.html" class="text-link">
+        <span data-lang-key="paintings_link">Discover the collection</span>
+        <span>→</span>
+      </a>
 
-    "class1_badge": "آنلاین",
-    "class1_title": "نقاشی مبتدی",
-    "class1_desc": "رنگ، ترکیب‌بندی و قلم‌زنی را از صفر یاد بگیرید.",
-    "class1_day": "شنبه‌ها",
-    "class1_time": "۱۰:۰۰ – ۱۲:۰۰",
-    "class1_loc": "آنلاین (Zoom)",
-    "class1_price": "۴۹ دلار / جلسه",
-    "class1_btn": "رزرو جا",
+    </div>
 
-    "class2_badge": "حضوری",
-    "class2_title": "نقاشی پیشرفته رنگ روغن",
-    "class2_desc": "تکنیک خود را با رنگ روغن، لعاب‌کاری و لایه‌گذاری عمیق‌تر کنید.",
-    "class2_day": "سه‌شنبه و پنجشنبه",
-    "class2_time": "۱۸:۰۰ – ۲۰:۳۰",
-    "class2_loc": "استودیو، قم",
-    "class2_price": "۷۹ دلار / جلسه",
-    "class2_btn": "رزرو جا",
+  </section>
 
-    "class3_badge": "آنلاین",
-    "class3_title": "کارگاه آبرنگ",
-    "class3_desc": "زیبایی آبرنگ را کشف کنید — نرم، سیال، بیانگر.",
-    "class3_day": "جمعه‌ها",
-    "class3_time": "۱۶:۰۰ – ۱۸:۰۰",
-    "class3_loc": "آنلاین (Google Meet)",
-    "class3_price": "۳۹ دلار / جلسه",
-    "class3_btn": "رزرو جا",
+  <!-- =========================
+       BRUSHES
+  ========================== -->
+  <section class="feature-section reverse" id="brushes">
 
-    "class4_badge": "ترکیبی",
-    "class4_title": "درس‌های خصوصی",
-    "class4_desc": "جلسات یک‌به‌یک متناسب با اهداف و سرعت شما.",
-    "class4_day": "انعطاف‌پذیر",
-    "class4_time": "با هماهنگی",
-    "class4_loc": "آنلاین یا در استودیو",
-    "class4_price": "۱۲۰ دلار / جلسه",
-    "class4_btn": "همین حالا رزرو کن",
+    <div class="feature-image reveal">
+      <img
+        src="brushes.jpg"
+        alt="Professional brushes"
+      />
+    </div>
 
-    "about_eyebrow": "۰۵ / درباره",
-    "about_title": "درباره",
-    "about_eyebrow_2": "تکنیک، سبک و بینش",
-    "about_headline_1": "فضایی برای",
-    "about_headline_em": "مشاهده.",
+    <div class="feature-content reveal">
 
-    "about_quote": "هنر نزد ایرانیان است و بس /ندارند کرگ ژیان را به کس\nهمه یکدلانند و یزدان شناس/ به نیکی ندارند از اختر سپاس",
+      <p class="eyebrow dark" data-lang-key="brushes_eyebrow">02 / TOOLS</p>
 
-    "about_bio_1": "فهیمه ایزدیان در تاریخ 10/03/1368 در ایران منطقه باجک به دنیا آمد، از 3 سالگی خانواده اش استعداد او را در نقاشی کشف کردند، او در کودکی شاگرد استاد نرگس آهنین پنجه بود و تنها از او الهام گرفت، او در 6 سالگی شیفته منش و طریقت جناب آقای دکتر حسین طباخیان دانش آموخته فن ترجمه زبان انگلیسی از ایالات متحده آمریکا شد و تا بزرگسالی تحت تعلیم او قرار گرفت، وی دارای مدرک کارشناسی ادبیات زبان انگلیسی از دانشگاه دولتی خرم آباد(1390 ) و کارشناسی ارشد فن ترجمه از وزارت علوم و تحقیقات( 1393) می باشد، وی از سال 1394 به عنوان کارشناس ارشد ترجمه قرارداد های ملی حفاری ایران ( جزیره کیش) شد، او به زبان های انگلیسی، فرانسه، اسپانیایی، عربی تسلط دارد، لیکن اما این مهم عطش روح او را اغنا نکرد، او پس از سال ها و سال ها قدرت مطلقه را در زبان سکوت ( نقاشی) کشف کرد. وی در سال 1400 استارت پروژه نگاه پیغمبران رنگ روغن را زد ؛ تصاویر و توضیحات انتخاب شده توس این هنرمند الهام گرفته از احساسات وی می باشند، زیرا کوه ها و هستی ها قادر به تصویر کشیدن عظمت نگاه پیغمبران نمی باشند. این هنرمند صاحبدل در حال حاضر در حال خلق پرتره های پیغمبران می باشد تا این مهم زمینه ساز منصه ظهور آثار گسترده تری در عالم هسته گردد.",
+      <h2 data-lang-key="brushes_title">Brushes</h2>
 
-    "about_link": "مشاهده مجموعه"
-  }
-}
+      <h3 data-lang-key="brushes_subtitle">Fine Detail Professional Brush Set</h3>
+
+      <p data-lang-key="brushes_text">
+        A carefully selected collection of brushes designed for precision,
+        detail and artistic control.
+      </p>
+
+      <a href="brushes.html" class="text-link">
+        <span data-lang-key="brushes_link">Discover the brushes</span>
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       PORTRAITS
+  ========================== -->
+  <section class="full-image-section" id="prints">
+
+    <div
+      class="full-image-bg"
+      style="background-image: url('prints.jpg');"
+    ></div>
+
+    <div class="full-image-overlay"></div>
+
+    <div class="full-image-content reveal">
+
+      <p class="eyebrow" data-lang-key="prints_eyebrow">03 / PORTRAITS</p>
+
+      <h2 data-lang-key="prints_title">Portraits</h2>
+
+      <p data-lang-key="prints_text">
+        Discover a collection of portrait works.
+        <br />
+        Character, emotion and presence.
+      </p>
+
+      <a href="prints.html" class="button button-light" data-lang-key="prints_button">
+        View Portraits
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       VIDEO MODAL
+  ========================== -->
+  <div class="video-modal" id="videoModal">
+
+    <div class="video-modal-backdrop"></div>
+
+    <div class="video-modal-content">
+
+      <button
+        class="video-modal-close"
+        id="videoModalClose"
+        type="button"
+        aria-label="Close video"
+      >
+        ×
+      </button>
+
+      <video
+        id="modalVideo"
+        controls
+        playsinline
+      >
+        <source
+          id="modalVideoSource"
+          src=""
+          type="video/mp4"
+        />
+
+        Your browser does not support HTML5 video.
+      </video>
+
+    </div>
+
+  </div>
+
+  <!-- =========================
+       ART COLLECTION
+  ========================== -->
+  <section class="press-section section-padding">
+
+    <div class="section-heading reveal">
+      <p class="eyebrow dark" data-lang-key="press_eyebrow">FEATURED IN</p>
+      <h2 data-lang-key="press_title">Art Collection</h2>
+    </div>
+
+    <div class="press-grid">
+
+      <div class="press-card reveal">
+        <img src="press-1.jpg" alt="Press feature 1" />
+      </div>
+
+      <div class="press-card reveal">
+        <img src="press-2.jpg" alt="Press feature 2" />
+      </div>
+
+      <div class="press-card reveal">
+        <img src="press-3.jpg" alt="Press feature 3" />
+      </div>
+
+      <div class="press-card reveal">
+        <img src="press-4.jpg" alt="Press feature 4" />
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       NEWSLETTER
+  ========================== -->
+  <section class="newsletter" id="newsletter">
+
+    <div class="newsletter-content reveal">
+
+      <p class="eyebrow" data-lang-key="newsletter_eyebrow">STAY CONNECTED</p>
+
+      <h2 data-lang-key="newsletter_title">Newsletter</h2>
+
+      <p data-lang-key="newsletter_text">
+        Subscribe now to receive news about:
+      </p>
+
+      <div class="newsletter-list">
+        <span data-lang-key="newsletter_item_prints">Portraits</span>
+        <span data-lang-key="newsletter_item_brushes">Brushes</span>
+        <span data-lang-key="newsletter_item_paintings">Paintings</span>
+        <span data-lang-key="newsletter_item_workshops">Workshops</span>
+      </div>
+
+      <form class="newsletter-form">
+
+        <input
+          type="email"
+          data-lang-key="newsletter_placeholder"
+          placeholder="Your email address"
+          required
+        />
+
+        <button type="submit" data-lang-key="newsletter_button">
+          Subscribe
+        </button>
+
+      </form>
+
+      <p class="form-message"></p>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+
+    <div class="footer-top">
+
+      <a href="#home" class="footer-logo">
+        FAHIME IZADIAN REALISM
+      </a>
+
+      <div class="footer-links">
+        <a href="paintings.html" data-lang-key="footer_paintings">Paintings</a>
+        <a href="brushes.html" data-lang-key="footer_brushes">Brushes</a>
+        <a href="prints.html" data-lang-key="footer_prints">Portraits</a>
+        <a href="videos.html" data-lang-key="footer_videos">Videos</a>
+        <a href="about.html" data-lang-key="footer_about">About</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>
+        © <span id="year"></span> Fahime Izadian Realism.
+        Realism Artist &amp; Art Studio — Qom, Iran.
+      </p>
+
+      <a href="#home">
+        Back to top ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+  <!-- =========================
+       FLOATING CTA
+  ========================== -->
+  <a href="#classes" class="floating-cta" aria-label="Learn to Paint">
+    <span class="floating-cta-icon">🎨</span>
+    <span class="floating-cta-text" data-lang-key="cta_text">Learn to Paint</span>
+  </a>
+
+  <!-- =========================
+       CLASSES / WORKSHOPS
+  ========================== -->
+  <section class="classes-section section-padding" id="classes">
+
+    <div class="section-heading reveal">
+      <p class="eyebrow dark" data-lang-key="classes_eyebrow">LEARN WITH US</p>
+      <h2 data-lang-key="classes_title">Painting Classes</h2>
+      <p class="section-subtitle" data-lang-key="classes_subtitle">
+        Join our painting workshops — online or in-person.
+      </p>
+    </div>
+
+    <div class="classes-filter reveal">
+      <button class="filter-btn active" data-filter="all" data-lang-key="filter_all">All</button>
+      <button class="filter-btn" data-filter="online" data-lang-key="filter_online">Online</button>
+      <button class="filter-btn" data-filter="in-person" data-lang-key="filter_inperson">In Person</button>
+      <button class="filter-btn" data-filter="hybrid" data-lang-key="filter_hybrid">Hybrid</button>
+    </div>
+
+    <div class="classes-grid">
+
+      <!-- کلاس ۱ -->
+      <div class="class-card" data-type="online">
+        <div class="class-art art-1">
+          <span class="class-number">01</span>
+          <div class="art-shape"></div>
+          <span class="class-badge online" data-lang-key="class1_badge">Online</span>
+        </div>
+        <div class="class-body">
+          <h3 data-lang-key="class1_title">Beginner Painting</h3>
+          <p class="class-desc" data-lang-key="class1_desc">Learn color, composition and brushwork from scratch.</p>
+          <ul class="class-info">
+            <li><span>📅</span> <span data-lang-key="class1_day">Saturdays</span></li>
+            <li><span>🕒</span> <span data-lang-key="class1_time">10:00 – 12:00</span></li>
+            <li><span>💻</span> <span data-lang-key="class1_loc">Online (Zoom)</span></li>
+            <li><span>💰</span> <span data-lang-key="class1_price">$49 / session</span></li>
+          </ul>
+          <a href="contact.html" class="button-dark" data-lang-key="class1_btn">Reserve Spot</a>
+        </div>
+      </div>
+
+      <!-- کلاس ۲ -->
+      <div class="class-card" data-type="in-person">
+        <div class="class-art art-2">
+          <span class="class-number">02</span>
+          <div class="art-shape"></div>
+          <span class="class-badge in-person" data-lang-key="class2_badge">In Person</span>
+        </div>
+        <div class="class-body">
+          <h3 data-lang-key="class2_title">Advanced Oil Painting</h3>
+          <p class="class-desc" data-lang-key="class2_desc">Deepen your technique with oils, glazing and layering.</p>
+          <ul class="class-info">
+            <li><span>📅</span> <span data-lang-key="class2_day">Tue &amp; Thu</span></li>
+            <li><span>🕒</span> <span data-lang-key="class2_time">18:00 – 20:30</span></li>
+            <li><span>🏛️</span> <span data-lang-key="class2_loc">Studio, Tehran</span></li>
+            <li><span>💰</span> <span data-lang-key="class2_price">$79 / session</span></li>
+          </ul>
+          <a href="contact.html" class="button-dark" data-lang-key="class2_btn">Reserve Spot</a>
+        </div>
+      </div>
+
+      <!-- کلاس ۳ -->
+      <div class="class-card" data-type="online">
+        <div class="class-art art-3">
+          <span class="class-number">03</span>
+          <div class="art-shape"></div>
+          <span class="class-badge online" data-lang-key="class3_badge">Online</span>
+        </div>
+        <div class="class-body">
+          <h3 data-lang-key="class3_title">Watercolor Workshop</h3>
+          <p class="class-desc" data-lang-key="class3_desc">Discover the beauty of watercolor — soft, fluid, expressive.</p>
+          <ul class="class-info">
+            <li><span>📅</span> <span data-lang-key="class3_day">Fridays</span></li>
+            <li><span>🕒</span> <span data-lang-key="class3_time">16:00 – 18:00</span></li>
+            <li><span>💻</span> <span data-lang-key="class3_loc">Online (Google Meet)</span></li>
+            <li><span>💰</span> <span data-lang-key="class3_price">$39 / session</span></li>
+          </ul>
+          <a href="contact.html" class="button-dark" data-lang-key="class3_btn">Reserve Spot</a>
+        </div>
+      </div>
+
+      <!-- کلاس ۴ -->
+      <div class="class-card" data-type="hybrid">
+        <div class="class-art art-4">
+          <span class="class-number">04</span>
+          <div class="art-shape"></div>
+          <span class="class-badge hybrid" data-lang-key="class4_badge">Hybrid</span>
+        </div>
+        <div class="class-body">
+          <h3 data-lang-key="class4_title">Private Lessons</h3>
+          <p class="class-desc" data-lang-key="class4_desc">One-on-one sessions tailored to your goals and pace.</p>
+          <ul class="class-info">
+            <li><span>📅</span> <span data-lang-key="class4_day">Flexible</span></li>
+            <li><span>🕒</span> <span data-lang-key="class4_time">By appointment</span></li>
+            <li><span>🌐</span> <span data-lang-key="class4_loc">Online or In Studio</span></li>
+            <li><span>💰</span> <span data-lang-key="class4_price">$120 / session</span></li>
+          </ul>
+          <a href="contact.html" class="button-dark" data-lang-key="class4_btn">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
