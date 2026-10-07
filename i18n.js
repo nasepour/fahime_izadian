@@ -153,6 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // انیمیشن reveal
   setupRevealAnimation();
 });
+
 /* =========================================
    SIDE MENU (سه‌خطی گوشه)
 ========================================= */
