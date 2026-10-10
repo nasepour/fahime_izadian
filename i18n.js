@@ -43,22 +43,22 @@ function applyTranslation(el, value) {
     return;
   }
 
-  // 4) اگر <a> یا <button> است → فقط متن‌های مستقیم را عوض کن،
-  //    آیکون‌ها (مثل → و ▶) دست‌نخورده بمانند
+     // 4) اگر <a> یا <button> است → فقط متن‌های مستقیم را عوض کن،
+  //    آیکون‌ها (مثل → و ▶) و عناصر data-lang-key داخلی دست‌نخورده بمانند
   if (el.tagName === 'A' || el.tagName === 'BUTTON') {
+
+    // اگه داخلش عنصر data-lang-key داره، ترجمه‌ی خودش جدا انجام میشه
+    if (el.querySelector('[data-lang-key]')) {
+      return;
+    }
+
+    // فقط TextNodeهای مستقیم (نه داخل span) رو ترجمه کن
     const textNodes = Array.from(el.childNodes).filter(
       node => node.nodeType === Node.TEXT_NODE && node.textContent.trim() !== ''
     );
 
     if (textNodes.length > 0) {
       textNodes[0].textContent = value;
-      return;
-    }
-
-    // اگر متن مستقیم نبود، اولین span بدون data-lang-key را عوض کن
-    const fallback = el.querySelector('span:not([data-lang-key])');
-    if (fallback) {
-      fallback.textContent = value;
       return;
     }
   }
