@@ -1065,7 +1065,7 @@ MOBILE
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center 30%;
   opacity: .55;
 }
 
