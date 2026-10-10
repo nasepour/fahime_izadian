@@ -2122,13 +2122,13 @@ html[dir="rtl"] .side-menu a:hover {
   padding-right: 8px;
 }
 
-/* ---------- فلش‌های دکمه‌ها ---------- */
-html[dir="rtl"] .text-link span {
+/* ---------- فلش‌های دکمه‌ها (فقط فلش آخر، نه متن) ---------- */
+html[dir="rtl"] .text-link > span:last-child:not([data-lang-key]) {
   transform: scaleX(-1);
   display: inline-block;
 }
 
-html[dir="rtl"] .text-link:hover span {
+html[dir="rtl"] .text-link:hover > span:last-child:not([data-lang-key]) {
   transform: scaleX(-1) translateX(7px);
 }
 
