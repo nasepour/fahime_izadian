@@ -47,8 +47,8 @@
     <div class="header-container">
 
       <a href="index.html" class="logo">
-        <span class="logo-main">Fahime Izadian</span>
-        <span class="logo-sub">Realism</span>
+        <span class="logo-main" data-lang-key="logo_main">Fahime Izadian</span>
+        <span class="logo-sub" data-lang-key="logo_sub">Realism</span>
       </a>
 
       <div class="lang-switcher">
@@ -65,28 +65,31 @@
       <div class="page-hero-bg" style="background-image:url('contact.jpg');"></div>
       <div class="page-hero-overlay"></div>
       <div class="page-hero-content reveal">
-        <p class="eyebrow">06 / CONTACT</p>
-        <h1>Contact</h1>
+        <p class="eyebrow" data-lang-key="contact_eyebrow">06 / CONTACT</p>
+        <h1 data-lang-key="contact_title">Contact</h1>
       </div>
     </section>
 
     <section class="page-content">
 
       <div class="page-intro reveal">
-        <p class="eyebrow dark">GET IN TOUCH</p>
-        <h2>Let's talk about <em>art.</em></h2>
-        <p>Use the form below for exhibitions, commissions, collaborations or general enquiries.</p>
+        <p class="eyebrow dark" data-lang-key="contact_intro_eyebrow">GET IN TOUCH</p>
+        <h2>
+          <span data-lang-key="contact_intro_title">Let's talk about</span>
+          <em data-lang-key="contact_intro_em">art.</em>
+        </h2>
+        <p data-lang-key="contact_intro_text">Use the form below for exhibitions, commissions, collaborations or general enquiries.</p>
       </div>
 
       <form
         class="contact-form reveal"
         onsubmit="event.preventDefault(); document.querySelector('.simple-note').textContent='Thank you! Your message has been received.'; this.reset();"
       >
-        <input type="text" placeholder="Your name" required>
-        <input type="email" placeholder="Your email address" required>
-        <input type="text" placeholder="Subject" required>
-        <textarea placeholder="Your message" required></textarea>
-        <button type="submit">Send message</button>
+        <input type="text" data-lang-key="contact_placeholder_name" placeholder="Your name" required>
+        <input type="email" data-lang-key="contact_placeholder_email" placeholder="Your email address" required>
+        <input type="text" data-lang-key="contact_placeholder_subject" placeholder="Subject" required>
+        <textarea data-lang-key="contact_placeholder_message" placeholder="Your message" required></textarea>
+        <button type="submit" data-lang-key="contact_send">Send message</button>
         <p class="simple-note"></p>
       </form>
 
@@ -101,7 +104,7 @@
 
     <div class="footer-top">
 
-      <a href="index.html" class="footer-logo">Fahime Izadian Realism</a>
+      <a href="index.html" class="footer-logo" data-lang-key="footer_logo">Fahime Izadian Realism</a>
 
       <div class="footer-links">
         <a href="paintings.html" data-lang-key="footer_paintings">Paintings</a>
