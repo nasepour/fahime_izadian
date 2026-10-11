@@ -83,14 +83,14 @@
 
       <form
         class="contact-form reveal"
-        onsubmit="event.preventDefault(); document.querySelector('.simple-note').textContent='Thank you! Your message has been received.'; this.reset();"
+        onsubmit="event.preventDefault(); const note = document.querySelector('.simple-note'); const lang = localStorage.getItem('siteLang') || 'en'; note.textContent = lang === 'fa' ? 'متشکرم! پیام شما دریافت شد.' : 'Thank you! Your message has been received.'; this.reset();"
       >
         <input type="text" data-lang-key="contact_placeholder_name" placeholder="Your name" required>
         <input type="email" data-lang-key="contact_placeholder_email" placeholder="Your email address" required>
         <input type="text" data-lang-key="contact_placeholder_subject" placeholder="Subject" required>
         <textarea data-lang-key="contact_placeholder_message" placeholder="Your message" required></textarea>
         <button type="submit" data-lang-key="contact_send">Send message</button>
-        <p class="simple-note"></p>
+        <p class="simple-note" data-lang-key="contact_success"></p>
       </form>
 
     </section>
