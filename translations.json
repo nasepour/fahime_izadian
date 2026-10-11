@@ -1,5 +1,9 @@
 {
   "en": {
+    "logo_main": "FAHIME IZADIAN",
+    "logo_sub": "REALISM",
+    "footer_logo": "FAHIME IZADIAN REALISM",
+
     "nav_home": "HOME",
     "nav_paintings": "Paintings",
     "nav_brushes": "Brushes",
@@ -154,6 +158,10 @@
   },
 
   "fa": {
+    "logo_main": "فهیمه ایزدیان",
+    "logo_sub": "رئالیسم",
+    "footer_logo": "فهیمه ایزدیان رئالیسم",
+
     "nav_home": "خانه",
     "nav_paintings": "نقاشی‌ها",
     "nav_brushes": "قلم‌موها",
