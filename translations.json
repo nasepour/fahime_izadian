@@ -91,6 +91,12 @@
     "videos_link": "Watch videos",
     "videos_play": "Play",
 
+    "videos_intro_eyebrow": "THE PROCESS",
+    "videos_intro_title": "Inside the <em>studio.</em>",
+    "videos_intro_text": "Watch selected videos and learn more about techniques, ideas and the creative process behind the work.",
+    "video_card_title": "Studio Process",
+    "video_card_desc": "Painting and process documentation.",
+
     "press_eyebrow": "FEATURED IN",
     "press_title": "Art Collection",
 
@@ -281,6 +287,12 @@
     "videos_text": "ویدیوها را تماشا کنید و درباره فرآیند خلاقانه، تکنیک‌ها و ایده‌های پشت هر اثر بیشتر بدانید.",
     "videos_link": "تماشای ویدیوها",
     "videos_play": "پخش",
+
+    "videos_intro_eyebrow": "فرآیند",
+    "videos_intro_title": "درون <em>استودیو.</em>",
+    "videos_intro_text": "ویدیوهای منتخب را تماشا کنید و درباره تکنیک‌ها، ایده‌ها و فرآیند خلاقانه‌ی پشت آثار بیشتر بدانید.",
+    "video_card_title": "فرآیند استودیو",
+    "video_card_desc": "مستندسازی نقاشی و فرآیند.",
 
     "press_eyebrow": "معرفی‌شده در",
     "press_title": "مجموعه هنری",
