@@ -3308,3 +3308,105 @@ html[dir="rtl"] .info-block {
     left: 16px !important;
   }
 }
+/* ==========================================
+   Brushes Page Only
+   (هدر دقیقاً هم‌اندازه‌ی About)
+========================================== */
+
+/* ---------- پس‌زمینه‌ی کل صفحه ---------- */
+.brushes-page,
+.brushes-page body {
+  background: #141414 !important;
+}
+
+/* ---------- هدر: تیره، یکدست، بدون خط، sticky ---------- */
+.brushes-page .header,
+.brushes-page .header.scrolled {
+  position: sticky !important;
+  top: 0;
+  background: #141414 !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+/* ---------- هدر: دقیقاً هم‌اندازه‌ی About ---------- */
+.brushes-page .header-container {
+  padding: 24px 6% !important;
+}
+
+.brushes-page .logo-main {
+  font-size: 24px !important;
+}
+
+.brushes-page .logo-sub {
+  font-size: 8px !important;
+  margin-top: 6px !important;
+}
+
+.brushes-page .side-menu-toggle {
+  top: 24px !important;
+  left: 24px !important;
+}
+
+/* ---------- عکس: بدون فاصله از هدر ---------- */
+.brushes-page .about-hero-image {
+  width: 100%;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  background: #141414;
+  display: block;
+  line-height: 0;
+}
+
+.brushes-page .about-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 90vh;
+  margin: 0;
+}
+
+/* ---------- کلمه Brushes زیر عکس ---------- */
+.brushes-page .about-hero-caption {
+  background: #141414;
+  text-align: center;
+  padding: 70px 20px 80px;
+}
+
+/* ---------- محتوای Brushes ---------- */
+.brushes-page .page-content {
+  background: #141414 !important;
+  color: #ffffff !important;
+}
+
+/* ---------- کارت‌های قلم‌مو: تیره ---------- */
+.brushes-page .art-card {
+  background: #1c1c1c !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+.brushes-page .art-card-body h3 {
+  color: #ffffff !important;
+}
+
+.brushes-page .art-card-body p {
+  color: #a0a0a0 !important;
+}
+
+/* ---------- ریسپانسیو ---------- */
+@media (max-width: 900px) {
+  .brushes-page .header-container {
+    padding: 20px 6% !important;
+  }
+  .brushes-page .about-hero-caption {
+    padding: 50px 20px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brushes-page .side-menu-toggle {
+    top: 18px !important;
+    left: 16px !important;
+  }
+}
