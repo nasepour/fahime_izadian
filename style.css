@@ -2101,7 +2101,43 @@ html[dir="rtl"] .side-menu {
   direction: rtl;
 }
 
-/* ---------- منوی کناری در RTL از راست باز بشه ---------- */
+/* ---------- هدر: چیدمان درست در RTL ---------- */
+/* 
+   در RTL:
+   - منوی سه‌خطی → گوشه‌ی بالا-راست
+   - دکمه‌های زبان → گوشه‌ی بالا-چپ
+   - لوگو → وسط
+*/
+
+html[dir="rtl"] .header-container {
+  flex-direction: row-reverse;
+}
+
+/* لوگو در RTL در وسط بماند */
+html[dir="rtl"] .logo {
+  text-align: center;
+  align-items: center;
+}
+
+/* دکمه‌های زبان در RTL → گوشه‌ی چپ */
+html[dir="rtl"] .lang-switcher {
+  margin-inline-start: 16px;
+  margin-inline-end: auto;
+  order: -1; /* اول در DOM، ولی به‌خاطر row-reverse می‌رود سمت چپ */
+}
+
+/* در RTL ترتیب دکمه‌ها را برعکس کن تا FA سمت راست باشد */
+html[dir="rtl"] .lang-switcher {
+  flex-direction: row-reverse;
+}
+
+/* منوی سه‌خطی → گوشه‌ی بالا-راست */
+html[dir="rtl"] .side-menu-toggle {
+  left: auto;
+  right: 24px;
+}
+
+/* منوی کناری در RTL از راست باز بشه */
 html[dir="rtl"] .side-menu {
   left: auto;
   right: 0;
@@ -2112,17 +2148,12 @@ html[dir="rtl"] .side-menu.active {
   transform: translateX(0);
 }
 
-html[dir="rtl"] .side-menu-toggle {
-  left: auto;
-  right: 24px;
-}
-
 html[dir="rtl"] .side-menu a:hover {
   padding-left: 0;
   padding-right: 8px;
 }
 
-/* ---------- فلش‌های دکمه‌ها (فقط فلش آخر، نه متن) ---------- */
+/* ---------- فلش‌های دکمه‌ها ---------- */
 html[dir="rtl"] .text-link > span:last-child:not([data-lang-key]) {
   transform: scaleX(-1);
   display: inline-block;
@@ -2164,14 +2195,58 @@ html[dir="rtl"] .lang-switcher {
   letter-spacing: 1px !important;
 }
 
+/* ---------- hero و محتواهای راست‌چین ---------- */
+html[dir="rtl"] .hero-content,
+html[dir="rtl"] .page-hero-content,
+html[dir="rtl"] .page-intro,
+html[dir="rtl"] .intro-content,
+html[dir="rtl"] .feature-content,
+html[dir="rtl"] .about-content,
+html[dir="rtl"] .about-detail-content,
+html[dir="rtl"] .newsletter-content {
+  text-align: right;
+}
+
+/* ---------- کارت‌های هنری و متنی ---------- */
+html[dir="rtl"] .art-card-body,
+html[dir="rtl"] .class-body,
+html[dir="rtl"] .info-block {
+  text-align: right;
+}
+
+/* ---------- فوتر ---------- */
+html[dir="rtl"] .footer-top {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .footer-links {
+  justify-content: flex-start;
+}
+
+html[dir="rtl"] .footer-bottom {
+  flex-direction: row-reverse;
+}
+
 /* ---------- ریسپانسیو ---------- */
+@media (max-width: 900px) {
+  html[dir="rtl"] .header-container {
+    padding-left: 6%;
+    padding-right: 70px; /* فضای برای منوی سه‌خطی در راست */
+  }
+}
+
 @media (max-width: 768px) {
   html[dir="rtl"] .floating-cta {
     left: auto;
     right: 16px;
   }
+
   html[dir="rtl"] .side-menu-toggle {
     right: 16px;
+  }
+
+  html[dir="rtl"] .header-container {
+    padding-right: 65px;
   }
 }
 /* =====================================
