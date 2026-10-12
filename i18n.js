@@ -32,27 +32,29 @@ function applyTranslation(el, value) {
     return;
   }
 
-  // 2) اگر aria-label دارد و فرزند داخلی ندارد → فقط aria-label را عوض کن
+  // 2) اگر title دارد و فرزند داخلی ندارد → فقط title را عوض کن
+  if (el.hasAttribute('title') && el.children.length === 0) {
+    el.setAttribute('title', value);
+    return;
+  }
+
+  // 3) اگر aria-label دارد و فرزند داخلی ندارد → فقط aria-label را عوض کن
   if (el.hasAttribute('aria-label') && el.children.length === 0) {
     el.setAttribute('aria-label', value);
     return;
   }
 
-  // 3) اگر داخلش عنصری با data-lang-key هست → خودش جدا ترجمه می‌شود
+  // 4) اگر داخلش عنصری با data-lang-key هست → خودش جدا ترجمه می‌شود
   if (el.querySelector('[data-lang-key]')) {
     return;
   }
 
-     // 4) اگر <a> یا <button> است → فقط متن‌های مستقیم را عوض کن،
-  //    آیکون‌ها (مثل → و ▶) و عناصر data-lang-key داخلی دست‌نخورده بمانند
+  // 5) اگر <a> یا <button> است → فقط متن‌های مستقیم را عوض کن
   if (el.tagName === 'A' || el.tagName === 'BUTTON') {
-
-    // اگه داخلش عنصر data-lang-key داره، ترجمه‌ی خودش جدا انجام میشه
     if (el.querySelector('[data-lang-key]')) {
       return;
     }
 
-    // فقط TextNodeهای مستقیم (نه داخل span) رو ترجمه کن
     const textNodes = Array.from(el.childNodes).filter(
       node => node.nodeType === Node.TEXT_NODE && node.textContent.trim() !== ''
     );
@@ -63,8 +65,9 @@ function applyTranslation(el, value) {
     }
   }
 
-  // 5) حالت پیش‌فرض → کل متن عنصر را عوض کن
-  el.textContent = value;
+  // 6) حالت پیش‌فرض → کل محتوای HTML را عوض کن
+  //    (برای حفظ تگ‌هایی مثل <em> و آیکون‌هایی مثل ↑)
+  el.innerHTML = value;
 }
 
 /* -----------------------------------------
@@ -80,7 +83,6 @@ async function setLanguage(lang) {
       return;
     }
 
-    // ترجمه همه عناصر دارای data-lang-key
     document.querySelectorAll('[data-lang-key]').forEach(el => {
       const key = el.getAttribute('data-lang-key');
       const value = texts[key];
@@ -88,17 +90,14 @@ async function setLanguage(lang) {
       applyTranslation(el, value);
     });
 
-    // ذخیره در localStorage
     localStorage.setItem('siteLang', lang);
 
-    // تنظیم lang و dir روی <html>
     document.documentElement.setAttribute('lang', lang);
     document.documentElement.setAttribute(
       'dir',
       RTL_LANGS.includes(lang) ? 'rtl' : 'ltr'
     );
 
-    // آپدیت دکمه‌های زبان
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
     });
@@ -134,14 +133,12 @@ function setupRevealAnimation() {
    راه‌اندازی اولیه
 ----------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
-  // زبان ذخیره‌شده یا زبان مرورگر
   const savedLang =
     localStorage.getItem('siteLang') ||
     (navigator.language.startsWith('fa') ? 'fa' : DEFAULT_LANG);
 
   setLanguage(savedLang);
 
-  // کلیک روی دکمه‌های زبان
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -150,7 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // انیمیشن reveal
   setupRevealAnimation();
 });
 
