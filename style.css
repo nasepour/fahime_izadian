@@ -2771,3 +2771,55 @@ html[dir="rtl"] .about-quote {
     font-size: 0.8rem;
   }
 }
+/* ==========================================
+   RTL FINAL OVERRIDES
+   باید در آخرین خط فایل باشد تا همه چیز را override کند
+========================================== */
+
+html[dir="rtl"] .side-menu-toggle {
+  left: auto !important;
+  right: 24px !important;
+}
+
+html[dir="rtl"] .side-menu {
+  left: auto !important;
+  right: 0 !important;
+  transform: translateX(105%) !important;
+}
+
+html[dir="rtl"] .side-menu.active {
+  transform: translateX(0) !important;
+}
+
+html[dir="rtl"] .header-container {
+  flex-direction: row-reverse !important;
+  padding-left: 6% !important;
+  padding-right: 90px !important;
+}
+
+html[dir="rtl"] .lang-switcher {
+  margin-inline-start: 16px !important;
+  margin-inline-end: auto !important;
+  flex-direction: row-reverse !important;
+}
+
+html[dir="rtl"] .logo {
+  text-align: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  html[dir="rtl"] .header-container {
+    padding-left: 6% !important;
+    padding-right: 70px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html[dir="rtl"] .side-menu-toggle {
+    right: 16px !important;
+  }
+  html[dir="rtl"] .header-container {
+    padding-right: 65px !important;
+  }
+}
