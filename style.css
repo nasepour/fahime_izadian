@@ -3018,3 +3018,57 @@ html[dir="rtl"] .class-body,
 html[dir="rtl"] .info-block {
   text-align: inherit;
 }
+/* ==========================================
+   ABOUT PAGE 
+========================================== */
+
+/* عکس بدون متن */
+.about-hero-image {
+  width: 100%;
+  padding-top: 90px;      /* فاصله از هدر فیکس */
+  background: #141414;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 90vh;
+}
+
+/* کلمه About زیر عکس */
+.about-hero-caption {
+  background: #141414;
+  text-align: center;
+  padding: 50px 20px 60px;
+}
+
+.about-hero-caption h1 {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ریسپانسیو */
+@media (max-width: 900px) {
+  .about-hero-image {
+    padding-top: 80px;
+  }
+  .about-hero-caption {
+    padding: 40px 20px 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero-image {
+    padding-top: 70px;
+  }
+  .about-hero-caption h1 {
+    font-size: 2.5rem;
+  }
+}
