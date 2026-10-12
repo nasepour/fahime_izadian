@@ -3410,3 +3410,105 @@ html[dir="rtl"] .info-block {
     left: 16px !important;
   }
 }
+/* ==========================================
+   Prints (Portraits) Page Only
+   (هدر دقیقاً هم‌اندازه‌ی About)
+========================================== */
+
+/* ---------- پس‌زمینه‌ی کل صفحه ---------- */
+.prints-page,
+.prints-page body {
+  background: #141414 !important;
+}
+
+/* ---------- هدر: تیره، یکدست، بدون خط، sticky ---------- */
+.prints-page .header,
+.prints-page .header.scrolled {
+  position: sticky !important;
+  top: 0;
+  background: #141414 !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+/* ---------- هدر: دقیقاً هم‌اندازه‌ی About ---------- */
+.prints-page .header-container {
+  padding: 24px 6% !important;
+}
+
+.prints-page .logo-main {
+  font-size: 24px !important;
+}
+
+.prints-page .logo-sub {
+  font-size: 8px !important;
+  margin-top: 6px !important;
+}
+
+.prints-page .side-menu-toggle {
+  top: 24px !important;
+  left: 24px !important;
+}
+
+/* ---------- عکس: بدون فاصله از هدر ---------- */
+.prints-page .about-hero-image {
+  width: 100%;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  background: #141414;
+  display: block;
+  line-height: 0;
+}
+
+.prints-page .about-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 90vh;
+  margin: 0;
+}
+
+/* ---------- کلمه Portraits زیر عکس ---------- */
+.prints-page .about-hero-caption {
+  background: #141414;
+  text-align: center;
+  padding: 70px 20px 80px;
+}
+
+/* ---------- محتوای Portraits ---------- */
+.prints-page .page-content {
+  background: #141414 !important;
+  color: #ffffff !important;
+}
+
+/* ---------- کارت‌های Portrait: تیره ---------- */
+.prints-page .art-card {
+  background: #1c1c1c !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+.prints-page .art-card-body h3 {
+  color: #ffffff !important;
+}
+
+.prints-page .art-card-body p {
+  color: #a0a0a0 !important;
+}
+
+/* ---------- ریسپانسیو ---------- */
+@media (max-width: 900px) {
+  .prints-page .header-container {
+    padding: 20px 6% !important;
+  }
+  .prints-page .about-hero-caption {
+    padding: 50px 20px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .prints-page .side-menu-toggle {
+    top: 18px !important;
+    left: 16px !important;
+  }
+}
