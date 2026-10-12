@@ -3072,3 +3072,76 @@ html[dir="rtl"] .info-block {
     font-size: 2.5rem;
   }
 }
+/* ==========================================
+    About Page Only
+   (فونت About دست‌نخورده می‌مونه)
+========================================== */
+
+/* ---------- پس‌زمینه‌ی کل صفحه ---------- */
+.about-page,
+.about-page body {
+  background: #1a1a1a !important;
+}
+
+/* ---------- هدر: تیره، یکدست، بدون خط، sticky ---------- */
+.about-page .header,
+.about-page .header.scrolled {
+  position: sticky !important;
+  top: 0;
+  background: #1a1a1a !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+/* ---------- منوی سه‌خطی: داخل هدر، عمودی وسط ---------- */
+.about-page .side-menu-toggle {
+  position: absolute !important;
+  top: 50% !important;
+  left: 24px !important;
+  transform: translateY(-50%) !important;
+}
+
+/* ---------- عکس: بدون فاصله از هدر ---------- */
+.about-page .about-hero-image {
+  width: 100%;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  background: #1a1a1a;
+  display: block;
+  line-height: 0;
+}
+
+.about-page .about-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 90vh;
+  margin: 0;
+}
+
+/* ---------- کلمه About زیر عکس (فونت دست‌نخورده) ---------- */
+.about-page .about-hero-caption {
+  background: #1a1a1a;
+  text-align: center;
+  padding: 70px 20px 80px;
+}
+
+/* ---------- بخش بیوگرافی: همرنگ پس‌زمینه ---------- */
+.about-page .about-detail {
+  background: #1a1a1a !important;
+}
+
+.about-page .about-detail-content {
+  background: #1a1a1a;
+}
+
+/* ---------- ریسپانسیو ---------- */
+@media (max-width: 900px) {
+  .about-page .side-menu-toggle {
+    left: 16px !important;
+  }
+  .about-page .about-hero-caption {
+    padding: 50px 20px 60px;
+  }
+}
