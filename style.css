@@ -2998,3 +2998,23 @@ html[dir="rtl"] .about-quote {
   background: rgba(201, 162, 39, 0.9) !important;
   color: #111111 !important;
 }
+/* ==========================================
+   FIX — برگرداندن چینش متن‌ها به حالت قبل
+========================================== */
+
+html[dir="rtl"] .hero-content,
+html[dir="rtl"] .page-hero-content,
+html[dir="rtl"] .intro-content {
+  text-align: center;
+}
+
+html[dir="rtl"] .page-intro,
+html[dir="rtl"] .feature-content,
+html[dir="rtl"] .about-content,
+html[dir="rtl"] .about-detail-content,
+html[dir="rtl"] .newsletter-content,
+html[dir="rtl"] .art-card-body,
+html[dir="rtl"] .class-body,
+html[dir="rtl"] .info-block {
+  text-align: inherit;
+}
