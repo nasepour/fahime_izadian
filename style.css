@@ -2823,3 +2823,178 @@ html[dir="rtl"] .logo {
     padding-right: 65px !important;
   }
 }
+/* ==========================================
+   DARK THEME OVERRIDE — Mark Black + White Text
+   این بلوک باید در آخرین خط فایل باشد
+========================================== */
+
+:root {
+  --black: #0d0d0d;
+  --white: #ffffff;
+  --cream: #141414;        /* پس‌زمینه اصلی سایت */
+  --gray: #b8b8b8;         /* متن‌های خاکستری روشن‌تر */
+  --border: rgba(255, 255, 255, 0.15);
+}
+
+/* ---------- بدنه و پس‌زمینه‌های اصلی ---------- */
+body {
+  background: #141414 !important;
+  color: #ffffff !important;
+}
+
+/* ---------- سکشن‌هایی که پس‌زمینه روشن داشتند ---------- */
+.intro,
+.feature-content,
+.about-section,
+.about-detail,
+.press-section,
+.painting-block,
+.paintings-list,
+.classes-section,
+.page-content,
+.page-hero {
+  background: #141414 !important;
+  color: #ffffff !important;
+}
+
+/* کارت‌های سفید */
+.painting-item,
+.painting-caption,
+.art-card,
+.class-card,
+.press-card,
+.painting-block {
+  background: #1c1c1c !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ---------- تیترها ---------- */
+h1, h2, h3, h4, h5, h6,
+.painting-caption h2,
+.art-card-body h3,
+.class-body h3,
+.info-block h3,
+.about-content h2,
+.feature-content h2,
+.feature-content h3 {
+  color: #ffffff !important;
+}
+
+/* ---------- متن‌های عمومی ---------- */
+p, span, li, label,
+.intro-text,
+.feature-content p,
+.about-content p,
+.about-text,
+.about-quote,
+.page-intro p,
+.painting-caption p,
+.section-subtitle,
+.class-desc,
+.class-info li,
+.art-card-body p,
+.info-block p,
+.simple-note,
+.form-message {
+  color: #d6d6d6 !important;
+}
+
+/* متن‌های خاکستری کمرنگ‌تر */
+.eyebrow,
+.eyebrow.dark,
+.painting-caption p {
+  color: #a0a0a0 !important;
+}
+
+/* ---------- هدر ---------- */
+.header.scrolled {
+  background: rgba(13, 13, 13, 0.97) !important;
+}
+
+/* ---------- فوتر ---------- */
+.footer {
+  background: #0a0a0a !important;
+}
+
+/* ---------- دکمه‌ها ---------- */
+.button-light {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+.button-light:hover {
+  background: #c9a227 !important;
+  color: #111111 !important;
+}
+
+.button-dark,
+.contact-form button {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+.button-dark:hover {
+  background: #c9a227 !important;
+  color: #111111 !important;
+}
+
+/* دکمه‌های فیلتر */
+.filter-btn {
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+}
+.filter-btn:hover {
+  border-color: #ffffff !important;
+}
+.filter-btn.active {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-color: #ffffff !important;
+}
+
+/* ---------- خطوط و حاشیه‌ها ---------- */
+.class-info {
+  border-top-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.about-quote {
+  border-left-color: #c9a227 !important;
+  color: #d6d6d6 !important;
+}
+html[dir="rtl"] .about-quote {
+  border-right-color: #c9a227 !important;
+}
+
+/* ---------- فرم‌ها ---------- */
+.newsletter,
+.next-session {
+  background: #0a0a0a !important;
+}
+
+.contact-form input,
+.contact-form textarea {
+  color: #ffffff !important;
+  border-bottom-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* ---------- لینک‌های متنی ---------- */
+.text-link {
+  color: #ffffff !important;
+  border-bottom-color: #ffffff !important;
+}
+
+/* ---------- برچسب‌های کلاس ---------- */
+.class-badge.online,
+.class-badge.hybrid {
+  background: rgba(255, 255, 255, 0.92) !important;
+  color: #111111 !important;
+}
+.class-badge.in-person {
+  background: rgba(201, 162, 39, 0.9) !important;
+  color: #111111 !important;
+}
