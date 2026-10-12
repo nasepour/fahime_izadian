@@ -3019,13 +3019,13 @@ html[dir="rtl"] .info-block {
   text-align: inherit;
 }
 /* ==========================================
-   ABOUT PAGE 
+   ABOUT PAGE
 ========================================== */
 
 /* عکس بدون متن */
 .about-hero-image {
   width: 100%;
-  padding-top: 90px;      /* فاصله از هدر فیکس */
+  padding-top: 150px;      /* فاصله از هدر فیکس — بیشتر شد */
   background: #141414;
 }
 
@@ -3057,7 +3057,7 @@ html[dir="rtl"] .info-block {
 /* ریسپانسیو */
 @media (max-width: 900px) {
   .about-hero-image {
-    padding-top: 80px;
+    padding-top: 130px;
   }
   .about-hero-caption {
     padding: 40px 20px 50px;
@@ -3066,7 +3066,7 @@ html[dir="rtl"] .info-block {
 
 @media (max-width: 600px) {
   .about-hero-image {
-    padding-top: 70px;
+    padding-top: 120px;
   }
   .about-hero-caption h1 {
     font-size: 2.5rem;
