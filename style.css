@@ -3270,3 +3270,41 @@ html[dir="rtl"] .info-block {
     padding: 50px 20px 60px;
   }
 }
+/* ==========================================
+   FIX — هدر Paintings دقیقاً هم‌اندازه‌ی About
+========================================== */
+
+/* پدینگ هدر Paintings = پدینگ هدر About */
+.paintings-page .header-container {
+  padding: 24px 6% !important;
+}
+
+/* لوگو: هم‌اندازه‌ی About */
+.paintings-page .logo-main {
+  font-size: 24px !important;
+}
+
+.paintings-page .logo-sub {
+  font-size: 8px !important;
+  margin-top: 6px !important;
+}
+
+/* آیکون منوی سه‌خطی: هم‌موقعیت About */
+.paintings-page .side-menu-toggle {
+  top: 24px !important;
+  left: 24px !important;
+}
+
+/* ---------- ریسپانسیو (مثل About) ---------- */
+@media (max-width: 900px) {
+  .paintings-page .header-container {
+    padding: 20px 6% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .paintings-page .side-menu-toggle {
+    top: 18px !important;
+    left: 16px !important;
+  }
+}
