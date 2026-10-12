@@ -9,7 +9,7 @@
   <script defer src="i18n.js"></script>
   <script defer src="chat-final-v3.js"></script>
 </head>
-<body>
+<body class="contact-page">
 
   <!-- =========================
        SIDE MENU (سه‌خطی گوشه)
@@ -61,13 +61,18 @@
 
   <main>
 
-    <section class="page-hero">
-      <div class="page-hero-bg" style="background-image:url('contact.jpg');"></div>
-      <div class="page-hero-overlay"></div>
-      <div class="page-hero-content reveal">
-        <p class="eyebrow" data-lang-key="contact_eyebrow">06 / CONTACT</p>
-        <h1 data-lang-key="contact_title">Contact</h1>
-      </div>
+    <!-- =========================
+         عکس Contact — بدون هیچ متنی روی عکس
+    ========================== -->
+    <section class="about-hero-image">
+      <img src="contact.jpg" alt="Contact — Fahime Izadian">
+    </section>
+
+    <!-- =========================
+         کلمه Contact زیر عکس
+    ========================== -->
+    <section class="about-hero-caption reveal">
+      <h1 data-lang-key="contact_title">Contact</h1>
     </section>
 
     <section class="page-content">
@@ -124,7 +129,7 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = document.getElementById('year').textContent || new Date().getFullYear();
   </script>
 
 </body>
