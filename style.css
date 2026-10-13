@@ -3618,3 +3618,86 @@ html[dir="rtl"] .info-block {
     left: 16px !important;
   }
 }
+/* ==========================================
+   Prints (Portraits) — چیدمان مثل Paintings
+   (با کپشن قابل شخصی‌سازی در آینده)
+========================================== */
+
+/* لیست پرتره‌ها */
+.prints-page .paintings-list {
+  background: #141414 !important;
+  padding: 100px 6% 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+/* کارت پرتره */
+.prints-page .painting-item {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  background: #1c1c1c !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4) !important;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+/* عکس کامل و بدون برش */
+.prints-page .painting-image img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+/* کپشن — آماده برای متن جدید */
+.prints-page .painting-caption {
+  padding: 40px 40px 50px;
+  background: #1c1c1c !important;
+  text-align: center;
+}
+
+.prints-page .painting-caption h2 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 500;
+  color: #ffffff !important;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.prints-page .painting-caption p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  color: #a0a0a0 !important;
+  margin: 0;
+}
+
+/* ریسپانسیو */
+@media (max-width: 900px) {
+  .prints-page .paintings-list {
+    padding: 80px 5% 100px;
+    gap: 80px;
+  }
+  .prints-page .painting-caption {
+    padding: 30px 25px 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .prints-page .paintings-list {
+    padding: 60px 5% 80px;
+    gap: 60px;
+  }
+  .prints-page .painting-caption {
+    padding: 25px 20px 35px;
+  }
+  .prints-page .painting-caption h2 {
+    font-size: 1.8rem;
+  }
+  .prints-page .painting-caption p {
+    font-size: 0.85rem;
+  }
+}
