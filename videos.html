@@ -1,3 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Videos — Fahime Izadian Realism</title>
+  <meta name="description" content="Videos — Fahime Izadian Realism">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="i18n.js"></script>
+  <script defer src="chat-final-v3.js"></script>
+</head>
+
+<body class="videos-page">
+
+  <button
+    class="side-menu-toggle"
+    id="sideMenuToggle"
+    aria-label="Open side menu"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="side-menu" id="sideMenu">
+    <a href="index.html" class="side-menu-home" data-lang-key="nav_home">HOME</a>
+    <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
+    <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
+    <a href="prints.html" data-lang-key="nav_prints">Portraits</a>
+    <a href="videos.html" data-lang-key="nav_videos">Videos</a>
+    <a href="about.html" data-lang-key="nav_about">About</a>
+    <a href="contact.html" data-lang-key="nav_contact">Contact</a>
+  </nav>
+
+  <div class="side-menu-backdrop" id="sideMenuBackdrop"></div>
+
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-main" data-lang-key="logo_main">Fahime Izadian</span>
+        <span class="logo-sub" data-lang-key="logo_sub">Realism</span>
+      </a>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fa">FA</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================
+         عکس Videos — بدون هیچ متنی روی عکس
+    ========================== -->
+    <section class="about-hero-image">
+      <img src="videos.jpg" alt="Videos — Fahime Izadian">
+    </section>
+
+    <!-- =========================
+         کلمه Videos زیر عکس
+    ========================== -->
+    <section class="about-hero-caption reveal">
+      <h1 data-lang-key="videos_title">Videos</h1>
+    </section>
+
+    <section class="page-content">
+
+      <div class="page-intro reveal">
+        <p class="eyebrow dark" data-lang-key="videos_intro_eyebrow">THE PROCESS</p>
+        <h2 data-lang-key="videos_intro_title">Inside the <em>studio.</em></h2>
+        <p data-lang-key="videos_intro_text">
+          Watch selected videos and learn more about techniques,
+          ideas and the creative process behind the work.
+        </p>
+      </div>
+
       <div class="card-grid video-grid">
 
         <!-- VIDEO 01 -->
@@ -72,11 +151,9 @@
           </div>
         </article>
 
-        <!-- =============================================
-             VIDEO 07 قبلاً حذف شده — بلوک آن کاملاً پاک شد
-             ============================================= -->
+        <!-- VIDEO 07 (قبلاً حذف شده) -->
 
-        <!-- VIDEO 08 (اکنون به عنوان شماره 07 نمایش داده می‌شود) -->
+        <!-- VIDEO 08 (اکنون شماره 07) -->
         <article class="art-card video-card reveal" data-video="video-08.mp4">
           <div class="video-image">
             <img src="video-08.jpg" alt="Studio Process 07">
@@ -221,3 +298,78 @@
         </article>
 
       </div>
+
+    </section>
+
+  </main>
+
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-backdrop"></div>
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="videoModalClose" aria-label="Close video">×</button>
+      <video id="modalVideo" controls playsinline>
+        <source id="modalVideoSource" src="" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <a href="index.html" class="footer-logo" data-lang-key="footer_logo">Fahime Izadian Realism</a>
+      <div class="footer-links">
+        <a href="paintings.html" data-lang-key="footer_paintings">Paintings</a>
+        <a href="brushes.html" data-lang-key="footer_brushes">Brushes</a>
+        <a href="prints.html" data-lang-key="footer_prints">Portraits</a>
+        <a href="videos.html" data-lang-key="footer_videos">Videos</a>
+        <a href="about.html" data-lang-key="footer_about">About</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> <span data-lang-key="footer_copyright">Fahime Izadian Realism. All rights reserved.</span></p>
+      <a href="#top" data-lang-key="footer_back_to_top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const videoCards = document.querySelectorAll(".video-card");
+    const videoModal = document.getElementById("videoModal");
+    const modalVideo = document.getElementById("modalVideo");
+    const modalVideoSource = document.getElementById("modalVideoSource");
+    const videoModalClose = document.getElementById("videoModalClose");
+    const videoModalBackdrop = document.querySelector(".video-modal-backdrop");
+
+    function openVideo(videoPath) {
+      modalVideoSource.src = videoPath;
+      modalVideo.load();
+      videoModal.classList.add("active");
+      document.body.classList.add("video-open");
+      modalVideo.play().catch(() => {});
+    }
+
+    function closeVideo() {
+      modalVideo.pause();
+      modalVideo.currentTime = 0;
+      modalVideoSource.src = "";
+      videoModal.classList.remove("active");
+      document.body.classList.remove("video-open");
+    }
+
+    videoCards.forEach(card => {
+      card.addEventListener("click", function () {
+        openVideo(this.dataset.video);
+      });
+    });
+
+    videoModalClose.addEventListener("click", closeVideo);
+    videoModalBackdrop.addEventListener("click", closeVideo);
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeVideo();
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
