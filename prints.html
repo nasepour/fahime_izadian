@@ -1,391 +1,140 @@
-{
-  "en": {
-    "logo_main": "FAHIME IZADIAN",
-    "logo_sub": "REALISM",
-    "footer_logo": "FAHIME IZADIAN REALISM",
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portraits — Fahime Izadian Realism</title>
+  <meta name="description" content="Portraits — Fahime Izadian Realism">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="i18n.js"></script>
+  <script defer src="chat-final-v3.js"></script>
+</head>
+<body class="prints-page">
 
-    "nav_home": "HOME",
-    "nav_paintings": "Paintings",
-    "nav_brushes": "Brushes",
-    "nav_prints": "Portraits",
-    "nav_videos": "Videos",
-    "nav_about": "About",
-    "nav_contact": "Contact",
+  <!-- =========================
+       SIDE MENU
+  ========================== -->
+  <button
+    class="side-menu-toggle"
+    id="sideMenuToggle"
+    aria-label="Open side menu"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    "hero_eyebrow": "REALISM ART",
-    "hero_title_line1": "FAHIME IZADIAN",
-    "hero_title_line2": "REALISM",
-    "hero_button": "Explore Collection",
-    "hero_scroll": "SCROLL",
+  <nav class="side-menu" id="sideMenu">
 
-    "intro_eyebrow": "THE COLLECTION",
-    "intro_title_1": "Paintings created with",
-    "intro_title_em": "patience, observation",
-    "intro_title_2": "and attention to detail.",
-    "intro_text": "Explore a collection of original works, portraits and artistic resources. Replace every image in this template with your own artwork and customize the text to create your personal portfolio.",
+    <a href="index.html" class="side-menu-home" data-lang-key="nav_home">HOME</a>
 
-    "paintings_eyebrow": "01 / COLLECTION",
-    "paintings_title": "Paintings",
-    "paintings_text": "Discover original paintings and explore the complete collection of available artwork.",
-    "paintings_link": "Discover the collection",
+    <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
+    <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
+    <a href="prints.html" data-lang-key="nav_prints">Portraits</a>
+    <a href="videos.html" data-lang-key="nav_videos">Videos</a>
+    <a href="about.html" data-lang-key="nav_about">About</a>
+    <a href="contact.html" data-lang-key="nav_contact">Contact</a>
 
-    "painting_1_title": "collection i",
-    "painting_1_desc": "a study in light and detail",
-    "painting_2_title": "observation",
-    "painting_2_desc": "moments of quiet attention",
-    "painting_3_title": "vision",
-    "painting_3_desc": "silence, memory and atmosphere",
-    "painting_4_title": "guardian of the sea",
-    "painting_4_desc": "a dialogue between silence and strength",
-    "painting_5_title": "sanctuary",
-    "painting_5_desc": "a quiet bond, painted in light",
-    "painting_6_title": "moonlit gaze",
-    "painting_6_desc": "a golden figure between memory and moonlight",
-    "painting_7_title": "veiled presence",
-    "painting_7_desc": "two souls held in shadow and silence",
-    "painting_8_title": "the maker",
-    "painting_8_desc": "hands shaping what the eyes cannot see",
-    "painting_9_title": "the gathering",
-    "painting_9_desc": "four figures around a quiet flame",
-    "painting_10_title": "reflection",
-    "painting_10_desc": "a mind wandering toward the sea",
-    "painting_11_title": "crimson portrait",
-    "painting_11_desc": "a seated figure dressed in heritage and light",
-    "painting_12_title": "azure dream",
-    "painting_12_desc": "a blue gown drifting toward the horizon",
-    "painting_13_title": "golden crown",
-    "painting_13_desc": "a queen remembered in gold and shadow",
+  </nav>
 
-    "brushes_eyebrow": "02 / TOOLS",
-    "brushes_title": "Brushes",
-    "brushes_subtitle": "Fine Detail Professional Brush Set",
-    "brushes_text": "A carefully selected collection of brushes designed for precision, detail and artistic control.",
-    "brushes_link": "Discover the brushes",
+  <div class="side-menu-backdrop" id="sideMenuBackdrop"></div>
 
-    "brushes_intro_eyebrow": "PROFESSIONAL TOOLS",
-    "brushes_intro_title_1": "Fine Detail",
-    "brushes_intro_title_em": "Professional Brush Set",
-    "brushes_intro_text": "Tools selected for controlled and expressive mark-making across a range of surfaces.",
-    "brushes_card_title": "Professional Brush Set",
-    "brushes_card_desc": "Tools selected for controlled and expressive mark-making.",
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="header">
+    <div class="header-container">
 
-    "prints_eyebrow": "03 / PORTRAITS",
-    "prints_title": "Portraits",
-    "prints_text": "Discover a collection of portrait works. Character, emotion and presence.",
-    "prints_button": "View Portraits",
+      <a href="index.html" class="logo">
+        <span class="logo-main" data-lang-key="logo_main">Fahime Izadian</span>
+        <span class="logo-sub" data-lang-key="logo_sub">Realism</span>
+      </a>
 
-    "prints_intro_eyebrow": "PORTRAIT COLLECTION",
-    "prints_intro_title": "Character, emotion <em>and presence.</em>",
-    "prints_intro_text": "Discover a collection of portrait works, where each face tells a story of character, emotion and presence.",
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fa">FA</button>
+      </div>
 
-    "print_vision_title": "vision",
-    "print_vision_text": "SILENCE, MEMORY AND ATMOSPHERE",
-    "print_guardian_title": "guardian of the sea",
-    "print_guardian_text": "A DIALOGUE BETWEEN SILENCE AND STRENGTH",
+    </div>
+  </header>
 
-    "videos_eyebrow": "04 / PROCESS",
-    "videos_title": "Videos",
-    "videos_text": "Watch videos and learn more about the creative process, techniques and ideas behind each artwork.",
-    "videos_link": "Watch videos",
-    "videos_play": "Play",
+  <main>
 
-    "videos_intro_eyebrow": "THE PROCESS",
-    "videos_intro_title": "Inside the <em>studio.</em>",
-    "videos_intro_text": "Watch selected videos and learn more about techniques, ideas and the creative process behind the work.",
-    "video_card_title": "Studio Process",
-    "video_card_desc": "Painting and process documentation.",
+    <!-- =========================
+         عکس هدر Portraits
+    ========================== -->
+    <section class="about-hero-image">
+      <img src="artworkprint.jpg" alt="Portraits — Fahime Izadian">
+    </section>
 
-    "press_eyebrow": "FEATURED IN",
-    "press_title": "Art Collection",
+    <!-- =========================
+         کلمه Portraits زیر عکس
+    ========================== -->
+    <section class="about-hero-caption reveal">
+      <h1 data-lang-key="prints_title">Portraits</h1>
+    </section>
 
-    "newsletter_eyebrow": "STAY CONNECTED",
-    "newsletter_title": "Newsletter",
-    "newsletter_text": "Subscribe now to receive news about:",
-    "newsletter_item_prints": "Portraits",
-    "newsletter_item_brushes": "Brushes",
-    "newsletter_item_paintings": "Paintings",
-    "newsletter_item_workshops": "Workshops",
-    "newsletter_placeholder": "Your email address",
-    "newsletter_button": "Subscribe",
+    <!-- =========================
+         لیست پرتره‌ها (فقط دو عکس جدید)
+    ========================== -->
+    <section class="paintings-list">
 
-    "footer_paintings": "Paintings",
-    "footer_brushes": "Brushes",
-    "footer_prints": "Portraits",
-    "footer_videos": "Videos",
-    "footer_about": "About",
-    "footer_copyright": "Fahime Izadian Realism. All rights reserved.",
-    "footer_back_to_top": "Back to top ↑",
+      <!-- ✅ عکس اول — vision.jpg -->
+      <article class="painting-item reveal">
+        <div class="painting-image">
+          <img src="vision.jpg" alt="Vision">
+        </div>
+        <div class="painting-caption">
+          <h2 data-lang-key="print_vision_title">vision</h2>
+          <p data-lang-key="print_vision_text">SILENCE, MEMORY AND ATMOSPHERE</p>
+        </div>
+      </article>
 
-    "chat_title": "Artist Support",
-    "chat_status": "● Online",
-    "chat_welcome": "Hi! 👋 Welcome to Fahime Izadian Realism. How can I help you today?",
-    "chat_placeholder": "Type your message...",
+      <!-- ✅ عکس دوم — guardianofthesea.jpg -->
+      <article class="painting-item reveal">
+        <div class="painting-image">
+          <img src="guardianofthesea.jpg" alt="Guardian of the Sea">
+        </div>
+        <div class="painting-caption">
+          <h2 data-lang-key="print_guardian_title">guardian of the sea</h2>
+          <p data-lang-key="print_guardian_text">A DIALOGUE BETWEEN SILENCE AND STRENGTH</p>
+        </div>
+      </article>
 
-    "cta_text": "Learn to Paint",
+    </section>
 
-    "classes_eyebrow": "LEARN WITH US",
-    "classes_title": "Painting Classes",
-    "classes_subtitle": "Join our painting workshops — online or in-person.",
+  </main>
 
-    "filter_all": "All",
-    "filter_online": "Online",
-    "filter_inperson": "In Person",
-    "filter_hybrid": "Hybrid",
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
 
-    "class1_badge": "Online",
-    "class1_title": "Beginner Painting",
-    "class1_desc": "Learn color, composition and brushwork from scratch.",
-    "class1_day": "Saturdays",
-    "class1_time": "10:00 – 12:00",
-    "class1_loc": "Online (Zoom)",
-    "class1_price": "$49 / session",
-    "class1_btn": "Reserve Spot",
+    <div class="footer-top">
 
-    "class2_badge": "In Person",
-    "class2_title": "Advanced Oil Painting",
-    "class2_desc": "Deepen your technique with oils, glazing and layering.",
-    "class2_day": "Tue & Thu",
-    "class2_time": "18:00 – 20:30",
-    "class2_loc": "Studio, Qom",
-    "class2_price": "$79 / session",
-    "class2_btn": "Reserve Spot",
+      <a href="index.html" class="footer-logo" data-lang-key="footer_logo">Fahime Izadian Realism</a>
 
-    "class3_badge": "Online",
-    "class3_title": "Watercolor Workshop",
-    "class3_desc": "Discover the beauty of watercolor — soft, fluid, expressive.",
-    "class3_day": "Fridays",
-    "class3_time": "16:00 – 18:00",
-    "class3_loc": "Online (Google Meet)",
-    "class3_price": "$39 / session",
-    "class3_btn": "Reserve Spot",
+      <div class="footer-links">
+        <a href="paintings.html" data-lang-key="footer_paintings">Paintings</a>
+        <a href="brushes.html" data-lang-key="footer_brushes">Brushes</a>
+        <a href="prints.html" data-lang-key="footer_prints">Portraits</a>
+        <a href="videos.html" data-lang-key="footer_videos">Videos</a>
+        <a href="about.html" data-lang-key="footer_about">About</a>
+      </div>
 
-    "class4_badge": "Hybrid",
-    "class4_title": "Private Lessons",
-    "class4_desc": "One-on-one sessions tailored to your goals and pace.",
-    "class4_day": "Flexible",
-    "class4_time": "By appointment",
-    "class4_loc": "Online or In Studio",
-    "class4_price": "$120 / session",
-    "class4_btn": "Book Now",
+    </div>
 
-    "about_eyebrow": "05 / ABOUT",
-    "about_title": "About",
-    "about_eyebrow_2": "TECHNIQUE, STYLE AND VISION",
-    "about_headline_1": "Making space for",
-    "about_headline_em": "observation.",
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> <span data-lang-key="footer_copyright">Fahime Izadian Realism. All rights reserved.</span></p>
+      <a href="#top" data-lang-key="footer_back_to_top">Back to top ↑</a>
+    </div>
 
-    "about_quote": "In the Iranians dwells the art of valor,\nThey bow to none — not even the raging rhinoceros.\nOne in heart, and knowing their Divine Creator,\nThey ask no praise from the stars for their goodness.",
+  </footer>
 
-    "about_bio_1": "Fahime Izadian was born in 1980.05.31 in bajak district, Qom her family discovered her talent in painting when she was 3, she was pupil of maestro Narges Ahanin Panjeh as a child and she was only inspired by her , she was smitten with manners and methods OF Dr HosseinTabakhian , who was a graduate of ENGLISH Translation from United states, and became his pupil until she became an adult, she has Bachelor of Arts in ENGLISH LITERATURE from KHORAM ABAD state university ( 2011) and Mater of ARTS in Translation Techniques from TEHRAN SCIENCE and RESEARCH UNIVERSITY (2014) she was hired by National Drilling Company in 2015 as a Translation Senior Expert for INTERNATIONAL contracts in KISH ISLAND , Mastery over ENGLISH, French, Spanish , Arabic didn't satisfy her, therefore , after years and years , she found absolute power in Silence (Painting) . she started the project of oil painting of Glance of Prophets (Negah-E-Peygambaran) in 2021. Portraits and notes selected by the artist are inspired by her feelings, since the mountains and the worlds are not able to draw the grandeur of glance of prophets, she is creating works of prophets with the hope that the foregoing might lead to emergence of more works of arts in the universe.",
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
-    "about_link": "Explore the collection",
-
-    "contact_eyebrow": "06 / CONTACT",
-    "contact_title": "Contact",
-    "contact_intro_eyebrow": "GET IN TOUCH",
-    "contact_intro_title": "Let's talk about",
-    "contact_intro_em": "art.",
-    "contact_intro_text": "Use the form below for exhibitions, commissions, collaborations or general enquiries.",
-    "contact_placeholder_name": "Your name",
-    "contact_placeholder_email": "Your email address",
-    "contact_placeholder_subject": "Subject",
-    "contact_placeholder_message": "Your message",
-    "contact_send": "Send message",
-    "contact_success": "Thank you! Your message has been received."
-  },
-
-  "fa": {
-    "logo_main": "فهیمه ایزدیان",
-    "logo_sub": "رئالیسم",
-    "footer_logo": "فهیمه ایزدیان رئالیسم",
-
-    "nav_home": "خانه",
-    "nav_paintings": "نقاشی‌ها",
-    "nav_brushes": "قلم‌موها",
-    "nav_prints": "پرتره‌ها",
-    "nav_videos": "ویدیوها",
-    "nav_about": "درباره",
-    "nav_contact": "تماس",
-
-    "hero_eyebrow": "هنر رئالیسم",
-    "hero_title_line1": "فهیمه ایزدیان",
-    "hero_title_line2": "رئالیسم",
-    "hero_button": "مشاهده مجموعه",
-    "hero_scroll": "اسکرول",
-
-    "intro_eyebrow": "مجموعه",
-    "intro_title_1": "نقاشی‌هایی خلق‌شده با",
-    "intro_title_em": "صبر و مشاهده",
-    "intro_title_2": "و توجه به جزئیات.",
-    "intro_text": "مجموعه‌ای از آثار اصلی، پرتره‌ها و منابع هنری را کاوش کنید. هر تصویر این قالب را با اثر هنری خود جایگزین کنید و متن را برای ساخت پورتفولیوی شخصی خود سفارشی کنید.",
-
-    "paintings_eyebrow": "۰۱ / مجموعه",
-    "paintings_title": "نقاشی‌ها",
-    "paintings_text": "نقاشی‌های اصلی را کشف کنید و مجموعه کامل آثار موجود را ببینید.",
-    "paintings_link": "کشف مجموعه",
-
-    "painting_1_title": "مجموعه یک",
-    "painting_1_desc": "مطالعه‌ای در نور و جزئیات",
-    "painting_2_title": "مشاهده",
-    "painting_2_desc": "لحظه‌هایی از توجه آرام",
-    "painting_3_title": "چشم‌انداز",
-    "painting_3_desc": "سکوت، خاطره و فضا",
-    "painting_4_title": "نگهبان دریا",
-    "painting_4_desc": "گفتگویی میان سکوت و قدرت",
-    "painting_5_title": "پناهگاه",
-    "painting_5_desc": "پیوندی آرام، در نور",
-    "painting_6_title": "نگاه مهتابی",
-    "painting_6_desc": "پیکری زرین میان خاطره و مهتاب",
-    "painting_7_title": "حضور پوشیده",
-    "painting_7_desc": "دو روح در سایه و سکوت",
-    "painting_8_title": "آفریننده",
-    "painting_8_desc": "دستانی که آنچه چشم نمی‌بیند را شکل می‌دهند",
-    "painting_9_title": "گردهمایی",
-    "painting_9_desc": "چهار چهره گرد شعله‌ای آرام",
-    "painting_10_title": "تأمل",
-    "painting_10_desc": "ذهنی که به سوی دریا می‌رود",
-    "painting_11_title": "پرتره سرخ",
-    "painting_11_desc": "پیکری نشسته، آراسته به میراث و نور",
-    "painting_12_title": "رؤیای لاجوردی",
-    "painting_12_desc": "جامه‌ای آبی که به سوی افق می‌رود",
-    "painting_13_title": "تاج زرین",
-    "painting_13_desc": "ملکه‌ای که در زر و سایه به یاد می‌آید",
-
-    "brushes_eyebrow": "۰۲ / ابزارها",
-    "brushes_title": "قلم‌موها",
-    "brushes_subtitle": "ست حرفه‌ای قلم‌موی جزئیات دقیق",
-    "brushes_text": "مجموعه‌ای منتخب از قلم‌موها برای دقت، جزئیات و کنترل هنری.",
-    "brushes_link": "کشف قلم‌موها",
-
-    "brushes_intro_eyebrow": "ابزار حرفه‌ای",
-    "brushes_intro_title_1": "جزئیات دقیق",
-    "brushes_intro_title_em": "ست حرفه‌ای قلم‌مو",
-    "brushes_intro_text": "ابزارهایی منتخب برای خلق ضربه‌های کنترل‌شده و بیانگر روی سطوح گوناگون.",
-    "brushes_card_title": "ست حرفه‌ای قلم‌مو",
-    "brushes_card_desc": "ابزارهایی منتخب برای خلق ضربه‌های کنترل‌شده و بیانگر.",
-
-    "prints_eyebrow": "۰۳ / پرتره‌ها",
-    "prints_title": "پرتره‌ها",
-    "prints_text": "مجموعه‌ای از پرتره‌ها؛ شخصیت، احساس و حضور.",
-    "prints_button": "مشاهده پرتره‌ها",
-
-    "prints_intro_eyebrow": "مجموعه پرتره",
-    "prints_intro_title": "شخصیت، احساس <em>و حضور.</em>",
-    "prints_intro_text": "مجموعه‌ای از پرتره‌ها را کشف کنید، جایی که هر چهره داستانی از شخصیت، احساس و حضور را روایت می‌کند.",
-
-    "print_vision_title": "چشم‌انداز",
-    "print_vision_text": "سکوت، خاطره و فضا",
-    "print_guardian_title": "نگهبان دریا",
-    "print_guardian_text": "گفتگویی میان سکوت و استواری",
-
-    "videos_eyebrow": "۰۴ / فرآیند",
-    "videos_title": "ویدیوها",
-    "videos_text": "ویدیوها را تماشا کنید و درباره فرآیند خلاقانه، تکنیک‌ها و ایده‌های پشت هر اثر بیشتر بدانید.",
-    "videos_link": "تماشای ویدیوها",
-    "videos_play": "پخش",
-
-    "videos_intro_eyebrow": "فرآیند",
-    "videos_intro_title": "درون <em>استودیو.</em>",
-    "videos_intro_text": "ویدیوهای منتخب را تماشا کنید و درباره تکنیک‌ها، ایده‌ها و فرآیند خلاقانه‌ی پشت آثار بیشتر بدانید.",
-    "video_card_title": "فرآیند استودیو",
-    "video_card_desc": "مستندسازی نقاشی و فرآیند.",
-
-    "press_eyebrow": "معرفی‌شده در",
-    "press_title": "مجموعه هنری",
-
-    "newsletter_eyebrow": "در ارتباط بمانید",
-    "newsletter_title": "خبرنامه",
-    "newsletter_text": "همین حالا مشترک شوید تا اخبار دریافت کنید درباره:",
-    "newsletter_item_prints": "پرتره‌ها",
-    "newsletter_item_brushes": "قلم‌موها",
-    "newsletter_item_paintings": "نقاشی‌ها",
-    "newsletter_item_workshops": "کارگاه‌ها",
-    "newsletter_placeholder": "ایمیل شما",
-    "newsletter_button": "عضویت",
-
-    "footer_paintings": "نقاشی‌ها",
-    "footer_brushes": "قلم‌موها",
-    "footer_prints": "پرتره‌ها",
-    "footer_videos": "ویدیوها",
-    "footer_about": "درباره",
-    "footer_copyright": "فهیمه ایزدیان رئالیسم. تمامی حقوق محفوظ است.",
-    "footer_back_to_top": "بازگشت به بالا ↑",
-
-    "chat_title": "پشتیبانی هنری",
-    "chat_status": "● آنلاین",
-    "chat_welcome": "سلام! 👋 به فهیمه ایزدیان رئالیسم خوش آمدید. چطور می‌توانم کمکتان کنم؟",
-    "chat_placeholder": "پیام خود را بنویسید...",
-
-    "cta_text": "نقاشی یاد بگیر",
-
-    "classes_eyebrow": "با ما یاد بگیرید",
-    "classes_title": "کلاس‌های نقاشی",
-    "classes_subtitle": "به کارگاه‌های نقاشی ما بپیوندید — آنلاین یا حضوری.",
-
-    "filter_all": "همه",
-    "filter_online": "آنلاین",
-    "filter_inperson": "حضوری",
-    "filter_hybrid": "ترکیبی",
-
-    "class1_badge": "آنلاین",
-    "class1_title": "نقاشی مبتدی",
-    "class1_desc": "رنگ، ترکیب‌بندی و قلم‌زنی را از صفر یاد بگیرید.",
-    "class1_day": "شنبه‌ها",
-    "class1_time": "۱۰:۰۰ – ۱۲:۰۰",
-    "class1_loc": "آنلاین (Zoom)",
-    "class1_price": "۴۹ دلار / جلسه",
-    "class1_btn": "رزرو جا",
-
-    "class2_badge": "حضوری",
-    "class2_title": "نقاشی پیشرفته رنگ روغن",
-    "class2_desc": "تکنیک خود را با رنگ روغن، لعاب‌کاری و لایه‌گذاری عمیق‌تر کنید.",
-    "class2_day": "سه‌شنبه و پنجشنبه",
-    "class2_time": "۱۸:۰۰ – ۲۰:۳۰",
-    "class2_loc": "استودیو، قم",
-    "class2_price": "۷۹ دلار / جلسه",
-    "class2_btn": "رزرو جا",
-
-    "class3_badge": "آنلاین",
-    "class3_title": "کارگاه آبرنگ",
-    "class3_desc": "زیبایی آبرنگ را کشف کنید — نرم، سیال، بیانگر.",
-    "class3_day": "جمعه‌ها",
-    "class3_time": "۱۶:۰۰ – ۱۸:۰۰",
-    "class3_loc": "آنلاین (Google Meet)",
-    "class3_price": "۳۹ دلار / جلسه",
-    "class3_btn": "رزرو جا",
-
-    "class4_badge": "ترکیبی",
-    "class4_title": "درس‌های خصوصی",
-    "class4_desc": "جلسات یک‌به‌یک متناسب با اهداف و سرعت شما.",
-    "class4_day": "انعطاف‌پذیر",
-    "class4_time": "با هماهنگی",
-    "class4_loc": "آنلاین یا در استودیو",
-    "class4_price": "۱۲۰ دلار / جلسه",
-    "class4_btn": "همین حالا رزرو کن",
-
-    "about_eyebrow": "۰۵ / درباره",
-    "about_title": "درباره",
-    "about_eyebrow_2": "تکنیک، سبک و بینش",
-    "about_headline_1": "فضایی برای",
-    "about_headline_em": "مشاهده.",
-
-    "about_quote": "هنر نزد ایرانیان است و بس / ندارند کرگ ژیان را به کس\nهمه یکدلانند و یزدان‌شناس / به نیکی ندارند از اختر سپاس",
-
-    "about_bio_1": "فهیمه ایزدیان در تاریخ ۱۰/۰۳/۱۳۶۸ در ایران، منطقه باجک به دنیا آمد. از ۳ سالگی خانواده‌اش استعداد او را در نقاشی کشف کردند، او در کودکی شاگرد استاد نرگس آهن پنجه بود و تنها از او الهام گرفت. او در ۶ سالگی شیفته مشی و طریقت جناب آقای دکتر حسین طباطبیان دانش آموخته فن ترجمه زبان انگلیسی از ایالات متحده آمریکا شد و تا بزرگسالی تحت تعلیم او قرار گرفت. وی دارای مدرک کارشناسی ادبیات زبان انگلیسی از دانشگاه دولتی خرم آباد (۱۳۹۰) و کارشناسی ارشد فن ترجمه از وزارت علوم و تحقیقات (۱۳۹۳) می‌باشد. وی از سال ۱۳۹۴ به عنوان کارشناس ارشد ترجمه قراردادهای ملی حفاری ایران (جزیره کیش) مشغول به کار شد. او به زبان‌های انگلیسی، فرانسه، اسپانیایی، عربی تسلط دارد، لیکن اما این مهم عرش روح او را اقناع نکرد، او پس از سال‌ها و سال‌ها قدر مطلق را در زبان سکوت (نقاش) کشف کرد. وی در سال ۱۴۰۰ استارت پروژه نگاه پیغمبران رنگ روغن را زد؛ تصاویر و توضیحات انتخاب شده توسط این هنرمند الهام گرفته از احساسات وی می‌باشند، زیرا کوه‌ها و هستی قادر به تصویر کشیدن عظمت نگاه پیغمبران نمی‌باشند. این هنرمند صاحب‌دل در حال حاضر در حال خلق پرتره‌های پیغمبران می‌باشد تا این مهم زمینه‌ساز منصه ظهور آثار گسترده‌تری در عالم هستی گردد.",
-
-    "about_link": "مشاهده مجموعه",
-
-    "contact_eyebrow": "۰۶ / تماس",
-    "contact_title": "تماس",
-    "contact_intro_eyebrow": "در ارتباط باشید",
-    "contact_intro_title": "بیایید صحبت کنیم درباره",
-    "contact_intro_em": "هنر.",
-    "contact_intro_text": "از فرم زیر برای نمایشگاه‌ها، سفارش‌ها، همکاری‌ها یا سوالات عمومی استفاده کنید.",
-    "contact_placeholder_name": "نام شما",
-    "contact_placeholder_email": "ایمیل شما",
-    "contact_placeholder_subject": "موضوع",
-    "contact_placeholder_message": "پیام شما",
-    "contact_send": "ارسال پیام",
-    "contact_success": "متشکرم! پیام شما دریافت شد."
-  }
-}
+</body>
+</html>
