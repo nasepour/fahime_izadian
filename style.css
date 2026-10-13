@@ -3701,3 +3701,69 @@ html[dir="rtl"] .info-block {
     font-size: 0.85rem;
   }
 }
+/* ==========================================
+   FIX — LTR (انگلیسی) هدر
+   جلوگیری از تداخل منوی سه‌خطی با لوگو
+========================================== */
+
+/* در LTR: فاصله از چپ برای منوی سه‌خطی */
+html[dir="ltr"] .header-container,
+html:not([dir="rtl"]) .header-container {
+  padding-left: 90px !important;
+  padding-right: 6% !important;
+}
+
+/* لوگو در LTR از چپ شروع بشه */
+html[dir="ltr"] .logo,
+html:not([dir="rtl"]) .logo {
+  text-align: left;
+  align-items: flex-start;
+}
+
+/* دکمه‌های زبان در LTR → گوشه راست */
+html[dir="ltr"] .lang-switcher,
+html:not([dir="rtl"]) .lang-switcher {
+  margin-inline-start: auto !important;
+  margin-inline-end: 16px !important;
+  flex-direction: row !important;
+}
+
+/* منوی سه‌خطی در LTR → گوشه چپ */
+html[dir="ltr"] .side-menu-toggle,
+html:not([dir="rtl"]) .side-menu-toggle {
+  left: 24px !important;
+  right: auto !important;
+}
+
+/* منوی کشویی در LTR از چپ باز بشه */
+html[dir="ltr"] .side-menu,
+html:not([dir="rtl"]) .side-menu {
+  left: 0 !important;
+  right: auto !important;
+  transform: translateX(-105%) !important;
+}
+
+html[dir="ltr"] .side-menu.active,
+html:not([dir="rtl"]) .side-menu.active {
+  transform: translateX(0) !important;
+}
+
+/* ریسپانسیو LTR */
+@media (max-width: 900px) {
+  html[dir="ltr"] .header-container,
+  html:not([dir="rtl"]) .header-container {
+    padding-left: 70px !important;
+    padding-right: 6% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html[dir="ltr"] .side-menu-toggle,
+  html:not([dir="rtl"]) .side-menu-toggle {
+    left: 16px !important;
+  }
+  html[dir="ltr"] .header-container,
+  html:not([dir="rtl"]) .header-container {
+    padding-left: 65px !important;
+  }
+}
