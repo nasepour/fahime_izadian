@@ -180,11 +180,13 @@ HEADER
 
   margin: auto;
 
-  padding: 24px 6%;
+  padding: 24px 6% 24px 90px;   /* ← padding-left بزرگ‌تر برای منوی سه‌خطی */
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  gap: 15px;                     /* ← فاصله بین لوگو و دکمه‌ها */
 
   color: var(--white);
 }
@@ -194,22 +196,29 @@ HEADER
   flex-direction: column;
 
   line-height: 1;
+
+  flex-shrink: 0;              /* ← جلوگیری از فشرده شدن */
+  max-width: 100%;
 }
 
 .logo-main {
   font-family: var(--serif);
 
-  font-size: 24px;
+  font-size: clamp(0.85rem, 2.4vw, 1.5rem);  /* ← اندازه واکنش‌گرا */
 
-  letter-spacing: 2px;
+  letter-spacing: 0.08em;
+
+  white-space: nowrap;          /* ← جلوگیری از دو خط شدن */
 }
 
 .logo-sub {
   margin-top: 6px;
 
-  font-size: 8px;
+  font-size: clamp(0.5rem, 1.4vw, 0.6rem);
 
-  letter-spacing: 3px;
+  letter-spacing: 0.3em;
+
+  white-space: nowrap;
 }
 
 .desktop-nav {
@@ -950,12 +959,19 @@ MOBILE
 @media (max-width: 600px) {
 
   .header-container {
-    padding: 20px 6%;
-  }
+  padding: 20px 6% 20px 65px;   /* ← فاصله از منوی سه‌خطی در موبایل */
+  gap: 10px;
+}
 
   .logo-main {
-    font-size: 20px;
-  }
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.logo-sub {
+  font-size: 0.55rem;
+  letter-spacing: 0.25em;
+}
 
   .hero-content {
     padding-top: 40px;
@@ -2795,6 +2811,12 @@ html[dir="rtl"] .header-container {
   flex-direction: row-reverse !important;
   padding-left: 6% !important;
   padding-right: 90px !important;
+  gap: 15px !important;
+}
+
+html[dir="rtl"] .logo-main,
+html[dir="rtl"] .logo-sub {
+  white-space: nowrap !important;
 }
 
 html[dir="rtl"] .lang-switcher {
@@ -3786,6 +3808,16 @@ html:not([dir="rtl"]) .side-menu.active {
   border: none;
   border-radius: 0;
   object-fit: contain;
+}
+@media (max-width: 768px) {
+  html[dir="ltr"] .side-menu-toggle,
+  html:not([dir="rtl"]) .side-menu-toggle {
+    left: 16px !important;
+  }
+  html[dir="ltr"] .header-container,
+  html:not([dir="rtl"]) .header-container {
+    padding-left: 65px !important;
+  }
 }
 /* =========================
    ART COLLECTION — Pure Image
