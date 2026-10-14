@@ -3884,8 +3884,7 @@ html:not([dir="rtl"]) .side-menu.active {
   }
 }
 /* ==========================================
-   ⚡ UNIVERSAL HEADER — همه صفحات دقیقاً یک شکل
-   این کد همه کدهای قبلی را override می‌کند
+    UNIVERSAL HEADER
 ========================================== */
 
 /* ---------- ارتفاع و پدینگ هدر — همه صفحات ---------- */
@@ -4044,6 +4043,77 @@ html[dir="rtl"] .logo-sub {
   html[dir="rtl"] .logo-sub {
     font-size: 6px !important;
     letter-spacing: 1.5px !important;
+  }
+
+  html[dir="rtl"] .lang-btn {
+    padding: 3px 6px !important;
+    font-size: 8px !important;
+    min-width: 24px !important;
+  }
+
+  html[dir="rtl"] .lang-switcher {
+    gap: 4px !important;
+  }
+}
+/* ==========================================
+    FIX — لوگو در فارسی روی منو نیفتد
+========================================== */
+
+/* ---------- فارسی دسکتاپ و لپ‌تاپ ---------- */
+html[dir="rtl"] .header-container {
+  padding-right: 130px !important;    /* ← فاصله بیشتر از منو */
+  padding-left: 6% !important;
+  flex-direction: row-reverse !important;
+  gap: 20px !important;
+}
+
+html[dir="rtl"] .logo-main {
+  font-size: 20px !important;         /* ← کوچک‌تر */
+  letter-spacing: 1px !important;
+  white-space: nowrap !important;
+}
+
+html[dir="rtl"] .logo-sub {
+  font-size: 7px !important;
+  letter-spacing: 2px !important;
+  white-space: nowrap !important;
+}
+
+/* ---------- فارسی موبایل ---------- */
+@media (max-width: 900px) {
+  html[dir="rtl"] .header-container {
+    padding-right: 100px !important;
+    padding-left: 5% !important;
+    gap: 10px !important;
+  }
+
+  html[dir="rtl"] .logo-main {
+    font-size: 18px !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  html[dir="rtl"] .logo-sub {
+    font-size: 6px !important;
+    letter-spacing: 1.5px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  html[dir="rtl"] .header-container {
+    padding-right: 85px !important;
+    padding-left: 5% !important;
+    gap: 8px !important;
+    min-height: 60px !important;
+  }
+
+  html[dir="rtl"] .logo-main {
+    font-size: 15px !important;
+    letter-spacing: 0 !important;
+  }
+
+  html[dir="rtl"] .logo-sub {
+    font-size: 5.5px !important;
+    letter-spacing: 1px !important;
   }
 
   html[dir="rtl"] .lang-btn {
