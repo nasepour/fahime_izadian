@@ -3884,30 +3884,23 @@ html:not([dir="rtl"]) .side-menu.active {
   }
 }
 /* ==========================================
-    UNIVERSAL HEADER
+    FINAL HEADER FIX — همه دستگاه‌ها، همه زبان‌ها
+   لپ‌تاپ + دسکتاپ + تبلت + موبایل
 ========================================== */
 
-/* ---------- ارتفاع و پدینگ هدر — همه صفحات ---------- */
-.header-container,
-.about-page .header-container,
-.contact-page .header-container,
-.paintings-page .header-container,
-.brushes-page .header-container,
-.prints-page .header-container,
-.videos-page .header-container,
-body .header-container,
-header .header-container {
+/* ---------- هدر پایه — انگلیسی (LTR) ---------- */
+.header-container {
   padding: 24px 6% 24px 90px !important;
   min-height: 72px !important;
-  height: auto !important;
   gap: 15px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
   box-sizing: border-box !important;
+  width: 100% !important;
 }
 
-/* ---------- لوگو — اندازه ثابت در همه صفحات ---------- */
+/* ---------- لوگو ---------- */
 .logo {
   flex-shrink: 0 !important;
   display: flex !important;
@@ -3916,31 +3909,26 @@ header .header-container {
 }
 
 .logo-main {
-  font-family: var(--serif) !important;
   font-size: 24px !important;
   letter-spacing: 2px !important;
-  line-height: 1 !important;
   white-space: nowrap !important;
-  text-transform: uppercase !important;
+  line-height: 1 !important;
 }
 
 .logo-sub {
   font-size: 8px !important;
   letter-spacing: 3px !important;
   margin-top: 6px !important;
-  line-height: 1 !important;
   white-space: nowrap !important;
-  text-transform: uppercase !important;
+  line-height: 1 !important;
 }
 
-/* ---------- دکمه‌های EN/FA — کوچک و ثابت ---------- */
+/* ---------- دکمه‌های EN/FA ---------- */
 .lang-switcher {
   display: flex !important;
   gap: 5px !important;
   align-items: center !important;
   flex-shrink: 0 !important;
-  margin-inline-start: auto !important;
-  margin-inline-end: 0 !important;
 }
 
 .lang-btn {
@@ -3949,12 +3937,11 @@ header .header-container {
   min-width: 32px !important;
   letter-spacing: 0.8px !important;
   line-height: 1 !important;
-  border-radius: 3px !important;
+  text-align: center !important;
   font-family: 'DM Sans', sans-serif !important;
-  text-transform: uppercase !important;
 }
 
-/* ---------- منوی سه‌خطی — موقعیت ثابت ---------- */
+/* ---------- منوی سه‌خطی ---------- */
 .side-menu-toggle {
   position: fixed !important;
   top: 24px !important;
@@ -3964,11 +3951,12 @@ header .header-container {
 }
 
 /* ==========================================
-   RTL — فارسی: فاصله از سمت راست
-========================================== */
+   فارسی (RTL) — لپ‌تاپ و دسکتاپ
+   ========================================== */
 html[dir="rtl"] .header-container {
   flex-direction: row-reverse !important;
-  padding: 24px 6% 24px 90px !important;
+  padding: 24px 140px 24px 6% !important;    /* ← ۱۴۰px برای لپ‌تاپ امن‌تر */
+  gap: 20px !important;
 }
 
 html[dir="rtl"] .side-menu-toggle {
@@ -3976,27 +3964,69 @@ html[dir="rtl"] .side-menu-toggle {
   right: 24px !important;
 }
 
-html[dir="rtl"] .logo-main,
-html[dir="rtl"] .logo-sub {
+html[dir="rtl"] .logo-main {
+  font-size: 20px !important;
+  letter-spacing: 1px !important;
   white-space: nowrap !important;
 }
 
+html[dir="rtl"] .logo-sub {
+  font-size: 7px !important;
+  letter-spacing: 2px !important;
+  white-space: nowrap !important;
+}
+
+html[dir="rtl"] .lang-switcher {
+  margin-inline-start: 0 !important;
+  margin-inline-end: auto !important;
+  flex-direction: row-reverse !important;
+}
+
 /* ==========================================
-   موبایل — همه صفحات
-========================================== */
-@media (max-width: 768px) {
-  .header-container,
-  .about-page .header-container,
-  .contact-page .header-container,
-  .paintings-page .header-container,
-  .brushes-page .header-container,
-  .prints-page .header-container,
-  .videos-page .header-container,
-  body .header-container,
-  header .header-container {
-    padding: 18px 5% 18px 70px !important;
-    min-height: 60px !important;
-    gap: 10px !important;
+   💻 لپ‌تاپ متوسط (900px – 1200px)
+   ========================================== */
+@media (max-width: 1200px) {
+  .header-container {
+    padding: 22px 5% 22px 85px !important;
+    min-height: 68px !important;
+    gap: 12px !important;
+  }
+
+  .logo-main {
+    font-size: 22px !important;
+    letter-spacing: 1.8px !important;
+  }
+
+  .logo-sub {
+    font-size: 7.5px !important;
+    letter-spacing: 2.8px !important;
+  }
+
+  /* فارسی */
+  html[dir="rtl"] .header-container {
+    padding: 22px 130px 22px 5% !important;
+    gap: 15px !important;
+  }
+
+  html[dir="rtl"] .logo-main {
+    font-size: 19px !important;
+    letter-spacing: 1px !important;
+  }
+
+  html[dir="rtl"] .logo-sub {
+    font-size: 6.5px !important;
+    letter-spacing: 1.8px !important;
+  }
+}
+
+/* ==========================================
+   📱 تبلت (600px – 900px)
+   ========================================== */
+@media (max-width: 900px) {
+  .header-container {
+    padding: 20px 5% 20px 75px !important;
+    min-height: 64px !important;
+    gap: 12px !important;
   }
 
   .logo-main {
@@ -4011,7 +4041,7 @@ html[dir="rtl"] .logo-sub {
   }
 
   .lang-btn {
-    padding: 3px 7px !important;
+    padding: 3px 8px !important;
     font-size: 9px !important;
     min-width: 28px !important;
   }
@@ -4020,14 +4050,12 @@ html[dir="rtl"] .logo-sub {
     top: 18px !important;
     left: 16px !important;
   }
-}
 
-/* موبایل — فارسی */
-@media (max-width: 768px) {
+  /* فارسی */
   html[dir="rtl"] .header-container {
-    padding: 18px 5% 18px 70px !important;
-    min-height: 60px !important;
-    gap: 8px !important;
+    padding: 20px 115px 20px 5% !important;
+    gap: 12px !important;
+    min-height: 64px !important;
   }
 
   html[dir="rtl"] .side-menu-toggle {
@@ -4041,67 +4069,40 @@ html[dir="rtl"] .logo-sub {
   }
 
   html[dir="rtl"] .logo-sub {
-    font-size: 6px !important;
+    font-size: 6.5px !important;
     letter-spacing: 1.5px !important;
   }
-
-  html[dir="rtl"] .lang-btn {
-    padding: 3px 6px !important;
-    font-size: 8px !important;
-    min-width: 24px !important;
-  }
-
-  html[dir="rtl"] .lang-switcher {
-    gap: 4px !important;
-  }
 }
+
 /* ==========================================
-    FIX — لوگو در فارسی روی منو نیفتد
-========================================== */
-
-/* ---------- فارسی دسکتاپ و لپ‌تاپ ---------- */
-html[dir="rtl"] .header-container {
-  padding-right: 130px !important;    /* ← فاصله بیشتر از منو */
-  padding-left: 6% !important;
-  flex-direction: row-reverse !important;
-  gap: 20px !important;
-}
-
-html[dir="rtl"] .logo-main {
-  font-size: 20px !important;         /* ← کوچک‌تر */
-  letter-spacing: 1px !important;
-  white-space: nowrap !important;
-}
-
-html[dir="rtl"] .logo-sub {
-  font-size: 7px !important;
-  letter-spacing: 2px !important;
-  white-space: nowrap !important;
-}
-
-/* ---------- فارسی موبایل ---------- */
-@media (max-width: 900px) {
-  html[dir="rtl"] .header-container {
-    padding-right: 100px !important;
-    padding-left: 5% !important;
+   📱 موبایل (تا 600px)
+   ========================================== */
+@media (max-width: 600px) {
+  .header-container {
+    padding: 18px 5% 18px 70px !important;
+    min-height: 60px !important;
     gap: 10px !important;
   }
 
-  html[dir="rtl"] .logo-main {
+  .logo-main {
     font-size: 18px !important;
-    letter-spacing: 0.5px !important;
+    letter-spacing: 1px !important;
   }
 
-  html[dir="rtl"] .logo-sub {
+  .logo-sub {
     font-size: 6px !important;
-    letter-spacing: 1.5px !important;
+    letter-spacing: 2px !important;
   }
-}
 
-@media (max-width: 600px) {
+  .lang-btn {
+    padding: 3px 6px !important;
+    font-size: 8px !important;
+    min-width: 26px !important;
+  }
+
+  /* فارسی */
   html[dir="rtl"] .header-container {
-    padding-right: 85px !important;
-    padding-left: 5% !important;
+    padding: 18px 95px 18px 5% !important;
     gap: 8px !important;
     min-height: 60px !important;
   }
@@ -4117,9 +4118,9 @@ html[dir="rtl"] .logo-sub {
   }
 
   html[dir="rtl"] .lang-btn {
-    padding: 3px 6px !important;
+    padding: 3px 5px !important;
     font-size: 8px !important;
-    min-width: 24px !important;
+    min-width: 22px !important;
   }
 
   html[dir="rtl"] .lang-switcher {
