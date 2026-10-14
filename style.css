@@ -3883,3 +3883,88 @@ html:not([dir="rtl"]) .side-menu.active {
     max-width: 100%;
   }
 }
+/* ==========================================
+   ⚡ FINAL UNIVERSAL FIX — همه صفحات، همه زبان‌ها
+========================================== */
+
+/* ---------- هدر: هم‌اندازه در همه صفحات ---------- */
+.header-container {
+  padding: 24px 6% 24px 90px !important;
+  min-height: 72px !important;
+  gap: 15px !important;
+}
+
+/* ---------- لوگو: اندازه ثابت ---------- */
+.logo {
+  flex-shrink: 0 !important;
+}
+
+.logo-main {
+  font-size: 24px !important;
+  letter-spacing: 2px !important;
+  white-space: nowrap !important;
+}
+
+.logo-sub {
+  font-size: 8px !important;
+  letter-spacing: 3px !important;
+  margin-top: 6px !important;
+  white-space: nowrap !important;
+}
+
+/* ---------- دکمه‌های EN/FA: کوچک‌تر ---------- */
+.lang-btn {
+  padding: 4px 9px !important;
+  font-size: 10px !important;
+  min-width: 32px !important;
+  letter-spacing: 0.8px !important;
+}
+
+.lang-switcher {
+  gap: 5px !important;
+  flex-shrink: 0 !important;
+}
+
+/* ---------- موبایل ---------- */
+@media (max-width: 600px) {
+  .header-container {
+    padding: 18px 5% 18px 65px !important;
+    min-height: 60px !important;
+    gap: 10px !important;
+  }
+
+  .logo-main {
+    font-size: 20px !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  .logo-sub {
+    font-size: 7px !important;
+    letter-spacing: 2.5px !important;
+  }
+
+  .lang-btn {
+    padding: 3px 7px !important;
+    font-size: 9px !important;
+    min-width: 28px !important;
+  }
+}
+
+/* ---------- فارسی (RTL) ---------- */
+html[dir="rtl"] .header-container {
+  flex-direction: row-reverse !important;
+  padding: 24px 6% 24px 90px !important;
+}
+
+html[dir="rtl"] .logo-main,
+html[dir="rtl"] .logo-sub {
+  white-space: nowrap !important;
+}
+
+@media (max-width: 600px) {
+  html[dir="rtl"] .header-container {
+    padding: 18px 5% 18px 65px !important;
+    min-height: 60px !important;
+    gap: 10px !important;
+  }
+}
