@@ -3884,51 +3884,118 @@ html:not([dir="rtl"]) .side-menu.active {
   }
 }
 /* ==========================================
-    FINAL UNIVERSAL FIX — همه صفحات، همه زبان‌ها
+   ⚡ UNIVERSAL HEADER — همه صفحات دقیقاً یک شکل
+   این کد همه کدهای قبلی را override می‌کند
 ========================================== */
 
-/* ---------- هدر: هم‌اندازه در همه صفحات ---------- */
-.header-container {
+/* ---------- ارتفاع و پدینگ هدر — همه صفحات ---------- */
+.header-container,
+.about-page .header-container,
+.contact-page .header-container,
+.paintings-page .header-container,
+.brushes-page .header-container,
+.prints-page .header-container,
+.videos-page .header-container,
+body .header-container,
+header .header-container {
   padding: 24px 6% 24px 90px !important;
   min-height: 72px !important;
+  height: auto !important;
   gap: 15px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-sizing: border-box !important;
 }
 
-/* ---------- لوگو: اندازه ثابت ---------- */
+/* ---------- لوگو — اندازه ثابت در همه صفحات ---------- */
 .logo {
   flex-shrink: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  line-height: 1 !important;
 }
 
 .logo-main {
+  font-family: var(--serif) !important;
   font-size: 24px !important;
   letter-spacing: 2px !important;
+  line-height: 1 !important;
   white-space: nowrap !important;
+  text-transform: uppercase !important;
 }
 
 .logo-sub {
   font-size: 8px !important;
   letter-spacing: 3px !important;
   margin-top: 6px !important;
+  line-height: 1 !important;
   white-space: nowrap !important;
+  text-transform: uppercase !important;
 }
 
-/* ---------- دکمه‌های EN/FA: کوچک‌تر ---------- */
+/* ---------- دکمه‌های EN/FA — کوچک و ثابت ---------- */
+.lang-switcher {
+  display: flex !important;
+  gap: 5px !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: 0 !important;
+}
+
 .lang-btn {
   padding: 4px 9px !important;
   font-size: 10px !important;
   min-width: 32px !important;
   letter-spacing: 0.8px !important;
+  line-height: 1 !important;
+  border-radius: 3px !important;
+  font-family: 'DM Sans', sans-serif !important;
+  text-transform: uppercase !important;
 }
 
-.lang-switcher {
-  gap: 5px !important;
-  flex-shrink: 0 !important;
+/* ---------- منوی سه‌خطی — موقعیت ثابت ---------- */
+.side-menu-toggle {
+  position: fixed !important;
+  top: 24px !important;
+  left: 24px !important;
+  right: auto !important;
+  z-index: 9999 !important;
 }
 
-/* ---------- موبایل ---------- */
-@media (max-width: 600px) {
-  .header-container {
-    padding: 18px 5% 18px 65px !important;
+/* ==========================================
+   RTL — فارسی: فاصله از سمت راست
+========================================== */
+html[dir="rtl"] .header-container {
+  flex-direction: row-reverse !important;
+  padding: 24px 6% 24px 90px !important;
+}
+
+html[dir="rtl"] .side-menu-toggle {
+  left: auto !important;
+  right: 24px !important;
+}
+
+html[dir="rtl"] .logo-main,
+html[dir="rtl"] .logo-sub {
+  white-space: nowrap !important;
+}
+
+/* ==========================================
+   موبایل — همه صفحات
+========================================== */
+@media (max-width: 768px) {
+  .header-container,
+  .about-page .header-container,
+  .contact-page .header-container,
+  .paintings-page .header-container,
+  .brushes-page .header-container,
+  .prints-page .header-container,
+  .videos-page .header-container,
+  body .header-container,
+  header .header-container {
+    padding: 18px 5% 18px 70px !important;
     min-height: 60px !important;
     gap: 10px !important;
   }
@@ -3941,6 +4008,7 @@ html:not([dir="rtl"]) .side-menu.active {
   .logo-sub {
     font-size: 7px !important;
     letter-spacing: 2.5px !important;
+    margin-top: 4px !important;
   }
 
   .lang-btn {
@@ -3948,23 +4016,43 @@ html:not([dir="rtl"]) .side-menu.active {
     font-size: 9px !important;
     min-width: 28px !important;
   }
+
+  .side-menu-toggle {
+    top: 18px !important;
+    left: 16px !important;
+  }
 }
 
-/* ---------- فارسی (RTL) ---------- */
-html[dir="rtl"] .header-container {
-  flex-direction: row-reverse !important;
-  padding: 24px 6% 24px 90px !important;
-}
-
-html[dir="rtl"] .logo-main,
-html[dir="rtl"] .logo-sub {
-  white-space: nowrap !important;
-}
-
-@media (max-width: 600px) {
+/* موبایل — فارسی */
+@media (max-width: 768px) {
   html[dir="rtl"] .header-container {
-    padding: 18px 5% 18px 65px !important;
+    padding: 18px 5% 18px 70px !important;
     min-height: 60px !important;
-    gap: 10px !important;
+    gap: 8px !important;
+  }
+
+  html[dir="rtl"] .side-menu-toggle {
+    right: 16px !important;
+    left: auto !important;
+  }
+
+  html[dir="rtl"] .logo-main {
+    font-size: 17px !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  html[dir="rtl"] .logo-sub {
+    font-size: 6px !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  html[dir="rtl"] .lang-btn {
+    padding: 3px 6px !important;
+    font-size: 8px !important;
+    min-width: 24px !important;
+  }
+
+  html[dir="rtl"] .lang-switcher {
+    gap: 4px !important;
   }
 }
