@@ -3767,3 +3767,23 @@ html:not([dir="rtl"]) .side-menu.active {
     padding-left: 65px !important;
   }
 }
+.about-hero-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  object-fit: contain;
+}
