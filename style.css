@@ -3787,3 +3787,67 @@ html:not([dir="rtl"]) .side-menu.active {
   border-radius: 0;
   object-fit: contain;
 }
+/* =========================
+   ART COLLECTION — Pure Image
+========================== */
+.gallery-feature {
+  background: radial-gradient(ellipse at center, #1a1a1a 0%, #0a0a0a 70%);
+  padding: 120px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-feature::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.gallery-image {
+  position: relative;
+  max-width: 560px;
+  width: 100%;
+  z-index: 1;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.8s ease;
+}
+
+.gallery-image:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow:
+    0 45px 100px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(212, 175, 55, 0.2);
+}
+
+.gallery-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .gallery-feature {
+    padding: 70px 15px;
+  }
+
+  .gallery-image {
+    max-width: 100%;
+  }
+}
