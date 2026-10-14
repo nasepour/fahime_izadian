@@ -4127,3 +4127,58 @@ html[dir="rtl"] .lang-switcher {
     gap: 4px !important;
   }
 }
+/* ==========================================
+    LOGO SIZE — اندازه ثابت در همه صفحات
+========================================== */
+html body .logo-main {
+  font-size: 24px !important;
+  letter-spacing: 2px !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+}
+
+html body .logo-sub {
+  font-size: 8px !important;
+  letter-spacing: 3px !important;
+  margin-top: 6px !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+}
+
+/* فارسی */
+html[dir="rtl"] body .logo-main {
+  font-size: 20px !important;
+  letter-spacing: 1px !important;
+}
+
+html[dir="rtl"] body .logo-sub {
+  font-size: 7px !important;
+  letter-spacing: 2px !important;
+}
+
+/* لپ‌تاپ */
+@media (max-width: 1200px) {
+  html body .logo-main { font-size: 22px !important; letter-spacing: 1.8px !important; }
+  html body .logo-sub { font-size: 7.5px !important; letter-spacing: 2.8px !important; }
+
+  html[dir="rtl"] body .logo-main { font-size: 19px !important; letter-spacing: 1px !important; }
+  html[dir="rtl"] body .logo-sub { font-size: 6.5px !important; letter-spacing: 1.8px !important; }
+}
+
+/* تبلت */
+@media (max-width: 900px) {
+  html body .logo-main { font-size: 20px !important; letter-spacing: 1.5px !important; }
+  html body .logo-sub { font-size: 7px !important; letter-spacing: 2.5px !important; margin-top: 4px !important; }
+
+  html[dir="rtl"] body .logo-main { font-size: 17px !important; letter-spacing: 0.5px !important; }
+  html[dir="rtl"] body .logo-sub { font-size: 6.5px !important; letter-spacing: 1.5px !important; }
+}
+
+/* موبایل */
+@media (max-width: 600px) {
+  html body .logo-main { font-size: 18px !important; letter-spacing: 1px !important; }
+  html body .logo-sub { font-size: 6px !important; letter-spacing: 2px !important; }
+
+  html[dir="rtl"] body .logo-main { font-size: 15px !important; letter-spacing: 0 !important; }
+  html[dir="rtl"] body .logo-sub { font-size: 5.5px !important; letter-spacing: 1px !important; }
+}
