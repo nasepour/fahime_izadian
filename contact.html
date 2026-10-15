@@ -12,7 +12,7 @@
 <body class="contact-page">
 
   <!-- =========================
-       SIDE MENU (سه‌خطی گوشه)
+       SIDE MENU
   ========================== -->
   <button
     class="side-menu-toggle"
@@ -62,45 +62,81 @@
   <main>
 
     <!-- =========================
-         عکس Contact — بدون هیچ متنی روی عکس
+         عکس Contact
     ========================== -->
     <section class="about-hero-image">
       <img src="contact.jpg" alt="Contact — Fahime Izadian">
     </section>
 
-        <!-- =========================
-         CONTACT INFO — راه‌های ارتباطی
+    <!-- =========================
+         کلمه Contact زیر عکس
     ========================== -->
-    <section class="contact-info-block reveal">
+    <section class="about-hero-caption reveal">
+      <h1 data-lang-key="contact_title">Contact</h1>
+    </section>
 
-      <h3 class="contact-info-title">راه‌های ارتباطی</h3>
+    <!-- =========================
+         محتوای فرم تماس
+    ========================== -->
+    <section class="page-content">
 
-      <div class="contact-list">
-
-        <!-- شماره تماس — کلیک → اپ Phone -->
-        <a href="tel:+989121234567" class="contact-item" aria-label="تماس تلفنی">
-          <span class="label">شماره تماس</span>
-          <span class="sep">:</span>
-          <span class="value">۰۹۱۲ ۱۲۳ ۴۵۶۷</span>
-        </a>
-
-        <!-- ایمیل — کلیک → اپ Email -->
-        <a href="mailto:fahime.izadian@gmail.com" class="contact-item" aria-label="ارسال ایمیل">
-          <span class="label">ایمیل</span>
-          <span class="sep">:</span>
-          <span class="value">fahime.izadian@gmail.com</span>
-        </a>
-
-        <!-- اینستاگرام — کلیک → اپ/سایت Instagram -->
-        <a href="https://instagram.com/fahime.izadian" target="_blank" rel="noopener" class="contact-item" aria-label="صفحه اینستاگرام">
-          <span class="label">اینستاگرام</span>
-          <span class="sep">:</span>
-          <span class="value">@fahime.izadian</span>
-        </a>
-
+      <div class="page-intro reveal">
+        <p class="eyebrow dark" data-lang-key="contact_intro_eyebrow">GET IN TOUCH</p>
+        <h2>
+          <span data-lang-key="contact_intro_title">Let's talk about</span>
+          <em data-lang-key="contact_intro_em">art.</em>
+        </h2>
+        <p data-lang-key="contact_intro_text">Use the form below for exhibitions, commissions, collaborations or general enquiries.</p>
       </div>
 
+      <form
+        class="contact-form reveal"
+        onsubmit="event.preventDefault(); const note = document.querySelector('.simple-note'); const lang = localStorage.getItem('siteLang') || 'en'; note.textContent = lang === 'fa' ? 'متشکرم! پیام شما دریافت شد.' : 'Thank you! Your message has been received.'; this.reset();"
+      >
+        <input type="text" data-lang-key="contact_placeholder_name" placeholder="Your name" required>
+        <input type="email" data-lang-key="contact_placeholder_email" placeholder="Your email address" required>
+        <input type="text" data-lang-key="contact_placeholder_subject" placeholder="Subject" required>
+        <textarea data-lang-key="contact_placeholder_message" placeholder="Your message" required></textarea>
+        <button type="submit" data-lang-key="contact_send">Send message</button>
+        <p class="simple-note" data-lang-key="contact_success"></p>
+      </form>
+
+      <!-- =========================
+           CONTACT INFO — راه‌های ارتباطی
+      ========================== -->
+      <section class="contact-info-block reveal">
+
+        <h3 class="contact-info-title">راه‌های ارتباطی</h3>
+
+        <div class="contact-list">
+
+          <!-- شماره تماس — کلیک → اپ Phone -->
+          <a href="tel:+989121234567" class="contact-item" aria-label="تماس تلفنی">
+            <span class="label">شماره تماس</span>
+            <span class="sep">:</span>
+            <span class="value">۰۹۱۲ ۱۲۳ ۴۵۶۷</span>
+          </a>
+
+          <!-- ایمیل — کلیک → اپ Email -->
+          <a href="mailto:fahime.izadian@gmail.com" class="contact-item" aria-label="ارسال ایمیل">
+            <span class="label">ایمیل</span>
+            <span class="sep">:</span>
+            <span class="value">fahime.izadian@gmail.com</span>
+          </a>
+
+          <!-- اینستاگرام — کلیک → اپ/سایت Instagram -->
+          <a href="https://instagram.com/fahime.izadian" target="_blank" rel="noopener" class="contact-item" aria-label="صفحه اینستاگرام">
+            <span class="label">اینستاگرام</span>
+            <span class="sep">:</span>
+            <span class="value">@fahime.izadian</span>
+          </a>
+
+        </div>
+
+      </section>
+
     </section>
+
   </main>
 
   <!-- =========================
