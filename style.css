@@ -4307,3 +4307,212 @@ html[dir="rtl"] .contact-item .value {
     font-size: 0.82rem;
   }
 }
+/* ==========================================
+   CONTACT INFO BLOCK — راه‌های ارتباطی
+   قابل کلیک — چپ در انگلیسی، راست در فارسی
+========================================== */
+
+/* ---------- بلوک اصلی ---------- */
+.contact-info-block {
+  margin-top: 80px;
+  padding: 50px 0 80px;
+  border-top: 1px solid rgba(201, 162, 39, 0.25);
+  max-width: 750px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ---------- عنوان بخش ---------- */
+.contact-info-title {
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9a227;
+  margin: 0 0 30px 0;
+  font-weight: 500;
+}
+
+.contact-info-title::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #c9a227;
+  margin-top: 15px;
+  opacity: 0.6;
+}
+
+/* عنوان فارسی */
+html[dir="rtl"] .contact-info-title {
+  font-family: 'Estedad', 'Vazirmatn', sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 600;
+  text-align: right;
+}
+
+html[dir="rtl"] .contact-info-title::after {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* ---------- جای کلی بلوک ---------- */
+html[dir="ltr"] .contact-info-block,
+html:not([dir="rtl"]) .contact-info-block {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+html[dir="rtl"] .contact-info-block {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
+/* ---------- لیست ---------- */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ---------- هر آیتم — قابل کلیک ---------- */
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 0;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  direction: ltr;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.12);
+  font-size: clamp(0.82rem, 1.5vw, 0.95rem);
+  position: relative;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+/* نقطه طلایی هاور */
+.contact-item::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-4px);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c9a227;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover::before {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* جای کلی آیتم‌ها */
+html[dir="ltr"] .contact-item,
+html:not([dir="rtl"]) .contact-item {
+  justify-content: flex-start;
+}
+
+html[dir="rtl"] .contact-item {
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .contact-item::before {
+  left: auto;
+  right: -14px;
+}
+
+/* ---------- برچسب ---------- */
+.contact-item .label {
+  color: #a0a0a0;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  transition: color 0.35s ease;
+  white-space: nowrap;
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+html[dir="rtl"] .contact-item .label {
+  font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+}
+
+/* ---------- جداکننده ---------- */
+.contact-item .sep {
+  color: #666;
+  transition: color 0.35s ease;
+}
+
+/* ---------- مقدار ---------- */
+.contact-item .value {
+  color: #ffffff;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  transition: color 0.35s ease;
+  direction: ltr;
+  unicode-bidi: embed;
+  white-space: nowrap;
+}
+
+html[dir="rtl"] .contact-item .value {
+  font-family: 'DM Sans', 'Vazirmatn', sans-serif;
+}
+
+/* ---------- هاور ---------- */
+.contact-item:hover {
+  border-bottom-color: #c9a227;
+}
+
+html[dir="ltr"] .contact-item:hover {
+  padding-left: 10px;
+}
+
+html[dir="rtl"] .contact-item:hover {
+  padding-right: 10px;
+}
+
+.contact-item:hover .label,
+.contact-item:hover .sep,
+.contact-item:hover .value {
+  color: #c9a227;
+}
+
+/* ---------- موبایل ---------- */
+@media (max-width: 600px) {
+  .contact-info-block {
+    margin-top: 60px;
+    padding: 40px 0 60px;
+    max-width: 100%;
+  }
+
+  .contact-info-title {
+    font-size: 0.75rem;
+    letter-spacing: 2.5px;
+  }
+
+  html[dir="rtl"] .contact-info-title {
+    font-size: 0.95rem;
+  }
+
+  .contact-item {
+    padding: 16px 0;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .contact-item::before {
+    display: none;
+  }
+}
