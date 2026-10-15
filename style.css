@@ -4182,3 +4182,128 @@ html[dir="rtl"] body .logo-sub {
   html[dir="rtl"] body .logo-main { font-size: 15px !important; letter-spacing: 0 !important; }
   html[dir="rtl"] body .logo-sub { font-size: 5.5px !important; letter-spacing: 1px !important; }
 }
+/* ==========================================
+   CONTACT INFO BLOCK
+   پایین صفحه تماس — انگلیسی چپ، فارسی راست
+========================================== */
+.contact-info-block {
+  margin-top: 70px;
+  padding: 50px 25px 80px;
+  border-top: 1px solid rgba(201, 162, 39, 0.25);
+  max-width: 480px;
+  box-sizing: border-box;
+}
+
+/* ====== انگلیسی (LTR): چپ‌چین ====== */
+html[dir="ltr"] .contact-info-block,
+html:not([dir="rtl"]) .contact-info-block {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* ====== فارسی (RTL): راست‌چین ====== */
+html[dir="rtl"] .contact-info-block {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
+/* لیست عمودی */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* هر آیتم — flexbox افقی، ترتیب داخلی همیشه LTR */
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 0;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  direction: ltr;          /* ← کلید حل مشکل: ترتیب داخلی حفظ */
+}
+
+/* جای کلی آیتم‌ها بر اساس زبان */
+html[dir="ltr"] .contact-item,
+html:not([dir="rtl"]) .contact-item {
+  justify-content: flex-start;   /* چپ */
+}
+
+html[dir="rtl"] .contact-item {
+  justify-content: flex-end;     /* راست */
+}
+
+/* label — متن فارسی داخلش باید RTL باشه */
+.contact-item .label {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: color 0.35s ease;
+  white-space: nowrap;
+  direction: rtl;              /* ← متن فارسی درست نمایش داده شود */
+  unicode-bidi: embed;
+}
+
+/* جداکننده */
+.contact-item .sep {
+  color: #666;
+  transition: color 0.35s ease;
+}
+
+/* مقدار — همیشه LTR (شماره، ایمیل، آیدی) */
+.contact-item .value {
+  color: #ffffff;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: color 0.35s ease;
+  direction: ltr;
+  unicode-bidi: embed;
+  white-space: nowrap;
+}
+
+/* هاور — رنگ طلایی */
+.contact-item:hover .label,
+.contact-item:hover .sep,
+.contact-item:hover .value {
+  color: #c9a227;
+}
+
+/* در فارسی، فونت Vazirmatn برای label */
+html[dir="rtl"] .contact-item .label {
+  font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+}
+
+html[dir="rtl"] .contact-item .value {
+  font-family: 'DM Sans', 'Vazirmatn', sans-serif;
+}
+
+/* موبایل */
+@media (max-width: 600px) {
+  .contact-info-block {
+    margin-top: 50px;
+    padding: 40px 20px 60px;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .contact-item {
+    padding: 12px 0;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .contact-item .label {
+    font-size: 0.8rem;
+  }
+
+  .contact-item .value {
+    font-size: 0.82rem;
+  }
+}
