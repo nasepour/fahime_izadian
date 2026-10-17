@@ -4656,3 +4656,20 @@ html[dir="rtl"] .contact-item:hover {
     padding-bottom: 50px !important;
   }
 }
+.designer-credit {
+  font-size: 0.75em; /* کوچک */
+  opacity: 0.6;      /* محو و کم‌رنگ */
+  margin-top: 5px;
+  text-align: center; /* وسط‌چین */
+}
+
+.designer-credit a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor; /* خط نقطه‌چین زیر ایمیل */
+}
+
+.designer-credit a:hover {
+  opacity: 1;
+  border-bottom: 1px solid currentColor; /* خط پررنگ هنگام هاور */
+}
