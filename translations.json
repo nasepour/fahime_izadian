@@ -109,10 +109,6 @@
     "footer_prints": "Portraits",
     "footer_videos": "Videos",
     "footer_about": "About",
-    "footer_copyright": "Fahime Izadian Realism. All rights reserved.",
-    "footer_copyright_full": "Fahime Izadian Realism. Realism Artist & Art Studio — Qom, Iran.",
-    "footer_back_to_top": "Back to top ↑",
-    "footer_rights": "All rights reserved.",
     "footer_back_top": "Back to top ↑",
 
     "chat_title": "Artist Support",
@@ -190,19 +186,16 @@
     "contact_placeholder_subject": "Subject",
     "contact_placeholder_message": "Your message",
     "contact_send": "Send message",
-    "contact_success": "Thank you! Your message has been received.",
-    
+
     "contact_info_title": "Contact Information",
     "contact_phone_label": "Phone",
     "contact_email_label": "Email",
     "contact_instagram_label": "Instagram",
-    "designer_credit": "Designed by",
-    "designer_name_label": "Website Design By",
-    "designer_email_label": "Designer Email",
 
+    "designer_credit": "Designed by",
     "designer_name_1": "Sepide Naserpour",
     "designer_name_2": "Eng. Mahboubeh Shamsi",
-    "contact_designer_link": "Contact Site Designer"
+    "contact_designer_link": "Contact the site designer"
   },
 
   "fa": {
@@ -315,10 +308,6 @@
     "footer_prints": "پرتره‌ها",
     "footer_videos": "ویدیوها",
     "footer_about": "درباره",
-    "footer_copyright": "فهیمه ایزدیان رئالیسم. تمامی حقوق محفوظ است.",
-    "footer_copyright_full": "فهیمه ایزدیان رئالیسم. هنرمند رئالیست و استودیو هنر — قم، ایران.",
-    "footer_back_to_top": "بازگشت به بالا ↑",
-    "footer_rights": "تمامی حقوق محفوظ است.",
     "footer_back_top": "بازگشت به بالا ↑",
 
     "chat_title": "پشتیبانی هنری",
@@ -396,16 +385,13 @@
     "contact_placeholder_subject": "موضوع",
     "contact_placeholder_message": "پیام شما",
     "contact_send": "ارسال پیام",
-    "contact_success": "متشکرم! پیام شما دریافت شد.",
-    
+
     "contact_info_title": "راه‌های ارتباطی",
     "contact_phone_label": "شماره تماس",
     "contact_email_label": "ایمیل",
     "contact_instagram_label": "اینستاگرام",
-    "designer_credit": "طراحی توسط",
-    "designer_name_label": "طراحی سایت توسط",
-    "designer_email_label": "ایمیل طراح",
 
+    "designer_credit": "طراحی توسط",
     "designer_name_1": "سپیده ناصرپور",
     "designer_name_2": "مهندس محبوبه شمسی",
     "contact_designer_link": "تماس با طراح سایت"
