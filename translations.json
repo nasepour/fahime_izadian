@@ -198,7 +198,11 @@
     "contact_instagram_label": "Instagram",
     "designer_credit": "Designed by",
     "designer_name_label": "Website Design By",
-    "designer_email_label": "Designer Email"
+    "designer_email_label": "Designer Email",
+
+    "designer_name_1": "Sepide Naserpour",
+    "designer_name_2": "Eng. Mahboubeh Shamsi",
+    "contact_designer_link": "Contact Site Designer"
   },
 
   "fa": {
@@ -400,6 +404,10 @@
     "contact_instagram_label": "اینستاگرام",
     "designer_credit": "طراحی توسط",
     "designer_name_label": "طراحی سایت توسط",
-    "designer_email_label": "ایمیل طراح"
+    "designer_email_label": "ایمیل طراح",
+
+    "designer_name_1": "سپیده ناصرپور",
+    "designer_name_2": "مهندس محبوبه شمسی",
+    "contact_designer_link": "تماس با طراح سایت"
   }
 }
