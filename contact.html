@@ -8,12 +8,161 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="i18n.js"></script>
   <script defer src="chat-final-v3.js"></script>
+  <style>
+    /* =========================
+       FOOTER — مرتب و کارتی
+    ========================== */
+    .footer {
+      padding: 48px 24px 24px;
+      border-top: 1px solid #e8e8e8;
+      background: #fafafa;
+      font-size: 0.92rem;
+      color: #333;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto 36px;
+    }
+
+    .footer-logo {
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      color: inherit;
+      letter-spacing: 0.3px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #555;
+      transition: color 0.25s ease;
+    }
+
+    .footer-links a:hover {
+      color: #c9a227;
+    }
+
+    .footer-credit {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto 36px;
+    }
+
+    .credit-card {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 20px 24px;
+      background: #fff;
+      border: 1px solid #ececec;
+      border-radius: 12px;
+      min-width: 260px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .credit-card:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+      transform: translateY(-2px);
+    }
+
+    .credit-name {
+      font-size: 0.78rem;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .credit-title {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .credit-card a {
+      text-decoration: none;
+      color: #444;
+      transition: color 0.25s ease;
+    }
+
+    .credit-card a:hover {
+      color: #c9a227;
+    }
+
+    .designer-phone-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .designer-phone-link .phone-icon {
+      flex-shrink: 0;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-top: 20px;
+      border-top: 1px solid #ececec;
+      font-size: 0.82rem;
+      color: #777;
+    }
+
+    .footer-copy {
+      margin: 0;
+    }
+
+    .footer-top-link {
+      text-decoration: none;
+      color: #777;
+      transition: color 0.25s ease;
+    }
+
+    .footer-top-link:hover {
+      color: #c9a227;
+    }
+
+    @media (max-width: 600px) {
+      .footer {
+        padding: 36px 18px 18px;
+      }
+
+      .footer-top,
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+
+      .credit-card {
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+  </style>
 </head>
 <body class="contact-page">
 
-  <!-- =========================
-       SIDE MENU
-  ========================== -->
   <button
     class="side-menu-toggle"
     id="sideMenuToggle"
@@ -26,58 +175,40 @@
   </button>
 
   <nav class="side-menu" id="sideMenu">
-
     <a href="index.html" class="side-menu-home" data-lang-key="nav_home">HOME</a>
-
     <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
     <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
     <a href="prints.html" data-lang-key="nav_prints">Prints</a>
     <a href="videos.html" data-lang-key="nav_videos">Videos</a>
     <a href="about.html" data-lang-key="nav_about">About</a>
     <a href="contact.html" data-lang-key="nav_contact">Contact</a>
-
   </nav>
 
   <div class="side-menu-backdrop" id="sideMenuBackdrop"></div>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
   <header class="header">
     <div class="header-container">
-
       <a href="index.html" class="logo">
         <span class="logo-main" data-lang-key="logo_main">Fahime Izadian</span>
         <span class="logo-sub" data-lang-key="logo_sub">Realism</span>
       </a>
-
       <div class="lang-switcher">
         <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="fa">FA</button>
       </div>
-
     </div>
   </header>
 
   <main>
 
-    <!-- =========================
-         عکس Contact
-    ========================== -->
     <section class="about-hero-image">
       <img src="contact.jpg" alt="Contact — Fahime Izadian">
     </section>
 
-    <!-- =========================
-         کلمه Contact زیر عکس
-    ========================== -->
     <section class="about-hero-caption reveal">
       <h1 data-lang-key="contact_title">Contact</h1>
     </section>
 
-    <!-- =========================
-         محتوای فرم تماس
-    ========================== -->
     <section class="page-content">
 
       <div class="page-intro reveal">
@@ -89,42 +220,32 @@
         <p data-lang-key="contact_intro_text">Use the form below for exhibitions, commissions, collaborations or general enquiries.</p>
       </div>
 
-      <form
-        class="contact-form reveal"
-        onsubmit="event.preventDefault(); const note = document.querySelector('.simple-note'); const lang = localStorage.getItem('siteLang') || 'en'; note.textContent = lang === 'fa' ? 'متشکرم! پیام شما دریافت شد.' : 'Thank you! Your message has been received.'; this.reset();"
-      >
-        <input type="text" data-lang-key="contact_placeholder_name" placeholder="Your name" required>
-        <input type="email" data-lang-key="contact_placeholder_email" placeholder="Your email address" required>
-        <input type="text" data-lang-key="contact_placeholder_subject" placeholder="Subject" required>
-        <textarea data-lang-key="contact_placeholder_message" placeholder="Your message" required></textarea>
+      <form class="contact-form reveal" id="contact-form">
+        <input type="text" name="name" data-lang-key="contact_placeholder_name" placeholder="Your name" required>
+        <input type="email" name="email" data-lang-key="contact_placeholder_email" placeholder="Your email address" required>
+        <input type="text" name="subject" data-lang-key="contact_placeholder_subject" placeholder="Subject" required>
+        <textarea name="message" data-lang-key="contact_placeholder_message" placeholder="Your message" required></textarea>
         <button type="submit" data-lang-key="contact_send">Send message</button>
-        <p class="simple-note" data-lang-key="contact_success"></p>
       </form>
 
-      <!-- =========================
-           CONTACT INFO — راه‌های ارتباطی
-      ========================== -->
       <section class="contact-info-block reveal">
 
         <h3 class="contact-info-title" data-lang-key="contact_info_title">Contact Information</h3>
 
         <div class="contact-list">
 
-          <!-- شماره تماس — کلیک → اپ Phone -->
           <a href="tel:+989121234567" class="contact-item" aria-label="Phone">
             <span class="label" data-lang-key="contact_phone_label">Phone</span>
             <span class="sep">:</span>
             <span class="value" dir="ltr">+98 912 123 4567</span>
           </a>
 
-          <!-- ایمیل — کلیک → اپ Email -->
           <a href="mailto:fahimeizadian@gmail.com" class="contact-item" aria-label="Email">
             <span class="label" data-lang-key="contact_email_label">Email</span>
             <span class="sep">:</span>
             <span class="value" dir="ltr">fahimeizadian@gmail.com</span>
           </a>
 
-          <!-- اینستاگرام — کلیک → اپ/سایت Instagram -->
           <a href="https://instagram.com/fahimeizadian" target="_blank" rel="noopener" class="contact-item" aria-label="Instagram">
             <span class="label" data-lang-key="contact_instagram_label">Instagram</span>
             <span class="sep">:</span>
@@ -139,15 +260,10 @@
 
   </main>
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
   <footer class="footer">
 
     <div class="footer-top">
-
       <a href="index.html" class="footer-logo" data-lang-key="footer_logo">Fahime Izadian Realism</a>
-
       <div class="footer-links">
         <a href="paintings.html" data-lang-key="footer_paintings">Paintings</a>
         <a href="brushes.html" data-lang-key="footer_brushes">Brushes</a>
@@ -155,35 +271,36 @@
         <a href="videos.html" data-lang-key="footer_videos">Videos</a>
         <a href="about.html" data-lang-key="footer_about">About</a>
       </div>
+    </div>
+
+    <div class="footer-credit">
+
+      <div class="credit-card">
+        <div class="credit-name" data-lang-key="designer_credit">Designed by</div>
+        <strong class="credit-title" data-lang-key="designer_name_1" dir="ltr">Sepide Naserpour</strong>
+        <a href="mailto:sepidenaserpour@gmail.com" dir="ltr">sepidenaserpour@gmail.com</a>
+        <a
+          href="tel:+989919492592"
+          class="designer-phone-link"
+          aria-label="تماس با طراح سایت"
+        >
+          <svg class="phone-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          <span data-lang-key="contact_designer_link">تماس با طراح سایت</span>
+        </a>
+      </div>
+
+      <div class="credit-card">
+        <strong class="credit-title" data-lang-key="designer_name_2" dir="rtl">مهندس محبوبه شمسی</strong>
+        <a href="mailto:Shamsi@qut.ac.ir" dir="ltr">Shamsi@qut.ac.ir</a>
+      </div>
 
     </div>
 
     <div class="footer-bottom">
-      <p>
-        © <span id="year"></span> Fahime Izadian Realism. 
-        <span data-lang-key="footer_rights">All rights reserved.</span>
-      </p>
-      
-      <!-- اطلاعات طراح (چیدمان یکسان در موبایل و لپ‌تاپ) -->
-      <div class="designer-credit">
-        
-        <!-- بخش سپیده ناصرپور -->
-        <div class="credit-card">
-          <div class="credit-name" data-lang-key="designer_credit">Designed by</div>
-          <strong class="credit-title" data-lang-key="designer_name_1" dir="ltr">Sepide Naserpour</strong>
-          <a href="mailto:sepidenaserpour@gmail.com" dir="ltr">sepidenaserpour@gmail.com</a>
-          <a href="tel:+989919492592" data-lang-key="contact_designer_link">تماس با طراح سایت</a>
-        </div>
-
-        <!-- بخش مهندس محبوبه شمسی -->
-        <div class="credit-card">
-          <strong class="credit-title" data-lang-key="designer_name_2" dir="rtl">مهندس محبوبه شمسی</strong>
-          <a href="mailto:Shamsi@qut.ac.ir" dir="ltr">Shamsi@qut.ac.ir</a>
-        </div>
-
-      </div>
-
-      <a href="#home" data-lang-key="footer_back_top" style="display: inline-block; margin-top: 15px;">
+      <p class="footer-copy">© Fahime Izadian Realism</p>
+      <a href="#home" class="footer-top-link" data-lang-key="footer_back_top">
         Back to top ↑
       </a>
     </div>
@@ -191,7 +308,15 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent = document.getElementById('year').textContent || new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('contact-form');
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        form.reset();
+      });
+    });
   </script>
 
 </body>
