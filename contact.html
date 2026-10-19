@@ -232,10 +232,10 @@
 
         <div class="contact-list">
 
-          <a href="tel:+989121234567" class="contact-item" aria-label="Phone">
+          <a href="tel:+989128531329" class="contact-item" aria-label="Phone">
             <span class="label" data-lang-key="contact_phone_label">Phone</span>
             <span class="sep">:</span>
-            <span class="value" dir="ltr">+98 912 123 4567</span>
+            <span class="value" dir="ltr">+98 912 853 1329</span>
           </a>
 
           <a href="mailto:fahimeizadian@gmail.com" class="contact-item" aria-label="Email">
@@ -280,6 +280,7 @@
         <a
           href="tel:+989919492592"
           class="designer-phone-link"
+          id="designerPhoneLink"
           aria-label="تماس با طراح سایت"
         >
           <svg class="phone-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
@@ -308,12 +309,20 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const form = document.getElementById('contact-form');
-      if (!form) return;
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          form.reset();
+        });
+      }
 
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        form.reset();
-      });
+      const designerPhoneLink = document.getElementById('designerPhoneLink');
+      if (designerPhoneLink) {
+        designerPhoneLink.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.location.href = 'tel:+989919492592';
+        });
+      }
     });
   </script>
 
