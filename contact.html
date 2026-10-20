@@ -106,10 +106,33 @@
       align-items: center;
       gap: 6px;
       margin-top: 4px;
+      cursor: pointer;
     }
 
     .designer-phone-link .phone-icon {
       flex-shrink: 0;
+    }
+
+    /* استایل پیام کپی شدن شماره */
+    .copy-toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 9999;
+    }
+
+    .copy-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
     }
 
     .footer-bottom {
@@ -277,6 +300,8 @@
         <div class="credit-name" data-lang-key="designer_credit">Designed by</div>
         <strong class="credit-title" data-lang-key="designer_name_1" dir="ltr">Sepide Naserpour</strong>
         <a href="mailto:sepidenaserpour@gmail.com" dir="ltr">sepidenaserpour@gmail.com</a>
+        
+        <!-- لینک طراح: با کلیک شماره کپی می‌شود -->
         <a
           href="tel:+989919492592"
           class="designer-phone-link"
@@ -306,8 +331,12 @@
 
   </footer>
 
+  <!-- پیام کوچک برای نمایش کپی شدن شماره -->
+  <div id="copyToast" class="copy-toast">شماره کپی شد: 0919492592</div>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      // فرم تماس
       const form = document.getElementById('contact-form');
       if (form) {
         form.addEventListener('submit', function (e) {
@@ -316,11 +345,39 @@
         });
       }
 
+      // مدیریت کلیک روی لینک شماره طراح
       const designerPhoneLink = document.getElementById('designerPhoneLink');
+      const copyToast = document.getElementById('copyToast');
+      const phoneNumber = "0919492592"; // شماره به صورت متنی برای نمایش
+
       if (designerPhoneLink) {
         designerPhoneLink.addEventListener('click', function (e) {
-          e.preventDefault();
-          window.location.href = 'tel:+989919492592';
+          // جلوگیری از باز شدن صفحه تماس در دسکتاپ (اختیاری)
+          // اگر می‌خواهید در موبایل باز شود، این خط را کامنت کنید
+          e.preventDefault(); 
+
+          // ۱. کپی کردن شماره در حافظه
+          navigator.clipboard.writeText(phoneNumber).then(function() {
+            // ۲. نمایش پیام موفقیت
+            if (copyToast) {
+              copyToast.textContent = "شماره کپی شد: " + phoneNumber;
+              copyToast.classList.add('show');
+              
+              // ۳. مخفی کردن پیام بعد از ۲.۵ ثانیه
+              setTimeout(function() {
+                copyToast.classList.remove('show');
+              }, 2500);
+            }
+          }).catch(function(err) {
+            // اگر کپی نشد (مثلاً مرورگر قدیمی بود)، حداقل شماره را در پیام نشان بده
+            if (copyToast) {
+              copyToast.textContent = "شماره طراح: " + phoneNumber;
+              copyToast.classList.add('show');
+              setTimeout(function() {
+                copyToast.classList.remove('show');
+              }, 3000);
+            }
+          });
         });
       }
     });
