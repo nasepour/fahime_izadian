@@ -245,3 +245,53 @@ if (countdownEl) {
   updateCountdown();
   setInterval(updateCountdown, 1000);
 }
+/* =====================================
+PROTECTION: DISABLE RIGHT CLICK & DRAG
+===================================== */
+
+// غیرفعال کردن کلیک راست (برای همه چیز)
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+// غیرفعال کردن کشیدن و رها کردن عکس‌ها
+document.addEventListener('dragstart', function(e) {
+    if (e.target.nodeName === 'IMG') {
+        e.preventDefault();
+    }
+});
+
+// غیرفعال کردن کلیدهای میانبر ذخیره (Ctrl+S / Cmd+S)
+document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+        e.preventDefault();
+    }
+});
+
+/* =====================================
+PROTECTION: DISABLE VIDEO DOWNLOAD BUTTON
+===================================== */
+
+// حذف دکمه دانلود از تمام ویدیوها (حتی ویدیوهایی که بعداً اضافه می‌شوند)
+function disableVideoDownload() {
+    const videos = document.querySelectorAll('video');
+    videos.forEach(function(video) {
+        video.setAttribute('controlsList', 'nodownload');
+        // اگر ویدیو در حال پخش است، دکمه دانلود مخفی می‌شود
+    });
+}
+
+// اجرا در بارگذاری اولیه
+disableVideoDownload();
+
+// اجرا مجدد وقتی ویدیو جدیدی به صفحه اضافه می‌شود (مثل مودال)
+const videoObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        if (mutation.addedNodes.length) {
+            disableVideoDownload();
+        }
+    });
+});
+
+// نظارت بر تغییرات DOM
+videoObserver.observe(document.body, { childList: true, subtree: true });
