@@ -177,6 +177,28 @@
        SCRIPT
   ========================== -->
   <script>
+    /* =====================================
+       PROTECTION: DISABLE RIGHT CLICK & DRAG
+    ===================================== */
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('dragstart', function(e) {
+        if (e.target.nodeName === 'IMG') {
+            e.preventDefault();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+            e.preventDefault();
+        }
+    });
+
+    /* =====================================
+       YEAR
+    ===================================== */
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
