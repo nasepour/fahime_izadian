@@ -245,7 +245,7 @@
     <div class="video-modal-backdrop"></div>
     <div class="video-modal-content">
       <button class="video-modal-close" id="videoModalClose" aria-label="Close video">×</button>
-      <video id="modalVideo" controls playsinline>
+      <video id="modalVideo" controls controlsList="nodownload" playsinline>
         <source id="modalVideoSource" src="" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
@@ -270,6 +270,49 @@
   </footer>
 
   <script>
+    /* =====================================
+       PROTECTION: DISABLE RIGHT CLICK & DRAG
+    ===================================== */
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('dragstart', function(e) {
+        if (e.target.nodeName === 'IMG') {
+            e.preventDefault();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+            e.preventDefault();
+        }
+    });
+
+    /* =====================================
+       PROTECTION: DISABLE VIDEO DOWNLOAD
+    ===================================== */
+    function disableVideoDownload() {
+        const videos = document.querySelectorAll('video');
+        videos.forEach(function(video) {
+            video.setAttribute('controlsList', 'nodownload');
+        });
+    }
+
+    disableVideoDownload();
+
+    const videoObserver = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length) {
+                disableVideoDownload();
+            }
+        });
+    });
+    videoObserver.observe(document.body, { childList: true, subtree: true });
+
+    /* =====================================
+       VIDEO MODAL LOGIC
+    ===================================== */
     const videoCards = document.querySelectorAll(".video-card");
     const videoModal = document.getElementById("videoModal");
     const modalVideo = document.getElementById("modalVideo");
