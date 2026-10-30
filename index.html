@@ -459,7 +459,25 @@
 
   </section>
 
+    <!-- کد اصلی GoatCounter (ثبت آمار) -->
   <script data-goatcounter="https://painter.site.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+          async src="//gc.zgo.at/count.js"></script>
+
+  <!-- کد اصلاح شده برای نمایش شمارنده -->
+  <script>
+    window.addEventListener('load', function() {
+      // به اسکریپت اصلی کمی زمان می‌دهیم تا لود شود
+      setTimeout(function() {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+          window.goatcounter.visit_count({
+            append: '#stats',
+            path: 'TOTAL'
+          });
+        } else {
+          console.error("GoatCounter script not loaded. Check adblocker.");
+        }
+      }, 500); // نیم ثانیه صبر می‌کند
+    });
+  </script>
 </body>
 </html>
