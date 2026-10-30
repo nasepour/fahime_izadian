@@ -339,12 +339,10 @@
         Realism Artist &amp; Art Studio — Qom, Iran.
       </p>
 
-      <!-- شمارنده بازدیدکنندگان (LibreCounter) -->
-      <p class="visitor-counter">
+      <!-- شمارنده بازدیدکنندگان -->
+      <p class="visitor-counter" style="font-family: inherit; font-size: 0.9rem; opacity: 0.8; margin: 10px 0;">
         <span data-lang-key="visitors">Visitors:</span> 
-        <a href="https://librecounter.org/nasepour.github.io/show" target="_blank" rel="noopener" style="text-decoration: none;">
-          <img src="https://librecounter.org/counter.svg" referrerpolicy="unsafe-url" alt="Visitor Count" style="height: 20px; vertical-align: middle; margin-left: 5px;">
-        </a>
+        <span id="stats"></span>
       </p>
 
       <a href="#home">
@@ -461,5 +459,25 @@
 
   </section>
 
+  <!-- کد اصلی GoatCounter (برای ثبت آمار) -->
+  <script data-goatcounter="https://painter.site.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+
+  <!-- کد نمایش شمارنده به صورت متنی (با تاخیر برای اطمینان از لود اسکریپت اصلی) -->
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+          window.goatcounter.visit_count({
+            append: '#stats',
+            path: 'TOTAL',
+            type: 'html'
+          });
+        } else {
+            console.error("GoatCounter script not loaded. Check adblocker or network.");
+        }
+      }, 1000);
+    });
+  </script>
 </body>
 </html>
