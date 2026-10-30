@@ -458,12 +458,11 @@
     </div>
 
   </section>
-
-  <!-- کد اصلی GoatCounter (برای ثبت آمار) -->
+  <!-- کد اصلی GoatCounter (با میزبانی محلی در گیت‌هاب) -->
   <script data-goatcounter="https://painter.site.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
+          async src="count.js"></script>
 
-  <!-- کد نمایش شمارنده به صورت متنی (با تاخیر برای اطمینان از لود اسکریپت اصلی) -->
+  <!-- کد نمایش شمارنده به صورت متنی -->
   <script>
     window.addEventListener('load', function() {
       setTimeout(function() {
@@ -473,11 +472,10 @@
             path: 'TOTAL',
             type: 'html'
           });
-        } else {
-            console.error("GoatCounter script not loaded. Check adblocker or network.");
         }
       }, 1000);
     });
   </script>
 </body>
 </html>
+  
