@@ -339,10 +339,10 @@
         Realism Artist &amp; Art Studio — Qom, Iran.
       </p>
 
-      <!-- شمارنده بازدیدکنندگان -->
-      <p class="visitor-counter" style="font-family: inherit; font-size: 0.9rem; opacity: 0.8; margin: 10px 0;">
+      <!-- شمارنده بازدیدکنندگان (به صورت متن) -->
+      <p class="visitor-counter" style="font-family: inherit; font-size: 0.9rem; opacity: 0.8; margin: 10px 0; color: inherit;">
         <span data-lang-key="visitors">Visitors:</span> 
-        <span id="stats"></span>
+        <span id="stats" style="font-weight: bold;">...</span>
       </p>
 
       <a href="#home">
@@ -460,40 +460,36 @@
   </section>
 
   <!-- =========================
-       GOATCOUNTER — Tracking + Visitor Counter
+       GOATCOUNTER SCRIPTS
   ========================== -->
-
-  <!-- اسکریپت ردیابی GoatCounter (میزبانی محلی روی GitHub) -->
+  
+  <!-- اسکریپت اصلی ردیابی -->
   <script data-goatcounter="https://painter.site.goatcounter.com/count"
-          async src="count.js"></script>
+          async src="//gc.zgo.at/count.js"></script>
 
-  <!-- نمایش شمارنده بازدیدکنندگان -->
+  <!-- اسکریپت دریافت و نمایش عدد به صورت متن -->
   <script>
-    (function () {
-      var attempts = 0;
-      var maxAttempts = 100; // حداکثر ۱۰ ثانیه صبر می‌کند
-
-      var timer = setInterval(function () {
-        attempts++;
-
-        if (window.goatcounter && typeof window.goatcounter.visit_count === 'function') {
-          clearInterval(timer);
-
-          window.goatcounter.visit_count({
-            append: '#stats',
-            path: 'TOTAL',
-            type: 'html'
-          });
-
-          return;
-        }
-
-        if (attempts >= maxAttempts) {
-          clearInterval(timer);
-          console.warn('goatcounter: visit_count در دسترس نیست. بررسی کنید که count.js بارگذاری شده و مسدود نشده باشد.');
-        }
-      }, 100);
-    })();
+    document.addEventListener("DOMContentLoaded", function() {
+      // درخواست به API برای گرفتن دیتای شمارنده به صورت JSON
+      fetch('https://painter.site.goatcounter.com/counter/TOTAL.json')
+        .then(response => {
+          if (!response.ok) throw new Error('Network response was not ok');
+          return response.json();
+        })
+        .then(data => {
+          if (data && data.count) {
+            // اگر عدد دریافت شد، آن را در صفحه چاپ کن
+            document.getElementById('stats').innerText = data.count;
+          } else {
+            document.getElementById('stats').innerText = '0';
+          }
+        })
+        .catch(error => {
+          // اگر مسدودکننده اجازه نداد، این کلمه نمایش داده می‌شود
+          document.getElementById('stats').innerText = 'Unavailable';
+          console.warn('GoatCounter blocked or failed to load:', error);
+        });
+    });
   </script>
 
 </body>
