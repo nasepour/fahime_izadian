@@ -339,10 +339,10 @@
         Realism Artist &amp; Art Studio — Qom, Iran.
       </p>
 
-      <!-- شمارنده بازدیدکنندگان (روش مستقیم با تصویر) -->
+      <!-- شمارنده بازدیدکنندگان (روش متنی) -->
       <p class="visitor-counter">
         <span data-lang-key="visitors">Visitors:</span> 
-        <img src="https://painter.site.goatcounter.com/counter/TOTAL.svg" alt="Visitor Count" style="height: 20px; vertical-align: middle;">
+        <span id="stats"></span>
       </p>
 
       <a href="#home">
@@ -459,8 +459,25 @@
 
   </section>
 
-  <!-- کد اصلی GoatCounter (فقط برای ثبت آمار) -->
+  <!-- کد اصلی GoatCounter (برای ثبت آمار) -->
   <script data-goatcounter="https://painter.site.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
+
+  <!-- کد نمایش شمارنده به صورت متنی -->
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+          window.goatcounter.visit_count({
+            append: '#stats',
+            path: 'TOTAL',
+            type: 'html' // نمایش به صورت متن
+          });
+        } else {
+            console.error("GoatCounter script not loaded.");
+        }
+      }, 800); // 800 میلی‌ثانیه صبر می‌کند تا اسکریپت لود شود
+    });
+  </script>
 </body>
 </html>
