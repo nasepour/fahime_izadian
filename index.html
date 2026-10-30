@@ -466,11 +466,11 @@
   <script data-goatcounter="https://paintersite.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 
-  <!-- اسکریپت دریافت و نمایش عدد به صورت متن -->
+  <!-- اسکریپت دریافت و نمایش عدد کل بازدیدها -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // آدرس API اصلاح شد (بدون نقطه)
-      fetch('https://paintersite.goatcounter.com/counter/TOTAL.json')
+      // حذف کلمه TOTAL برای خواندن کل آمار دامنه
+      fetch('https://paintersite.goatcounter.com/counter/.json')
         .then(response => {
           if (!response.ok) throw new Error('Network response was not ok');
           return response.json();
@@ -488,7 +488,6 @@
         });
     });
   </script>
-
 </body>
 </html>
   
