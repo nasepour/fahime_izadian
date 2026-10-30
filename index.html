@@ -458,36 +458,21 @@
     </div>
 
   </section>
-  <!-- =========================
-       GOATCOUNTER SCRIPTS
+    <!-- =========================
+       GOATCOUNTER (نسخه تصویری)
   ========================== -->
   
-  <!-- اسکریپت اصلی ردیابی (آدرس اصلاح شد) -->
+  <!-- اسکریپت اصلی ردیابی -->
   <script data-goatcounter="https://paintersite.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 
-  <!-- اسکریپت دریافت و نمایش عدد کل بازدیدها -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // حذف کلمه TOTAL برای خواندن کل آمار دامنه
-      fetch('https://paintersite.goatcounter.com/counter/.json')
-        .then(response => {
-          if (!response.ok) throw new Error('Network response was not ok');
-          return response.json();
-        })
-        .then(data => {
-          if (data && data.count) {
-            document.getElementById('stats').innerText = data.count;
-          } else {
-            document.getElementById('stats').innerText = '0';
-          }
-        })
-        .catch(error => {
-          document.getElementById('stats').innerText = 'Unavailable';
-          console.warn('GoatCounter blocked or failed to load:', error);
-        });
-    });
-  </script>
+  <!-- نمایش شمارنده به صورت تصویر رسمی (بدون نیاز به جاوااسکریپت) -->
+  <p class="visitor-counter" style="font-family: inherit; font-size: 0.9rem; opacity: 0.8; margin: 10px 0; text-align: center; color: inherit;">
+    <span data-lang-key="visitors">Visitors:</span> 
+    <img src="https://paintersite.goatcounter.com/counter/.png" 
+         alt="Visitors" 
+         style="height: 22px; vertical-align: middle; margin-left: 5px;">
+  </p>
 </body>
 </html>
   
