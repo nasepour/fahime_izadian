@@ -458,24 +458,43 @@
     </div>
 
   </section>
-  <!-- کد اصلی GoatCounter (با میزبانی محلی در گیت‌هاب) -->
+
+  <!-- =========================
+       GOATCOUNTER — Tracking + Visitor Counter
+  ========================== -->
+
+  <!-- اسکریپت ردیابی GoatCounter (میزبانی محلی روی GitHub) -->
   <script data-goatcounter="https://painter.site.goatcounter.com/count"
           async src="count.js"></script>
 
-  <!-- کد نمایش شمارنده به صورت متنی -->
+  <!-- نمایش شمارنده بازدیدکنندگان -->
   <script>
-    window.addEventListener('load', function() {
-      setTimeout(function() {
-        if (window.goatcounter && window.goatcounter.visit_count) {
+    (function () {
+      var attempts = 0;
+      var maxAttempts = 100; // حداکثر ۱۰ ثانیه صبر می‌کند
+
+      var timer = setInterval(function () {
+        attempts++;
+
+        if (window.goatcounter && typeof window.goatcounter.visit_count === 'function') {
+          clearInterval(timer);
+
           window.goatcounter.visit_count({
             append: '#stats',
             path: 'TOTAL',
             type: 'html'
           });
+
+          return;
         }
-      }, 1000);
-    });
+
+        if (attempts >= maxAttempts) {
+          clearInterval(timer);
+          console.warn('goatcounter: visit_count در دسترس نیست. بررسی کنید که count.js بارگذاری شده و مسدود نشده باشد.');
+        }
+      }, 100);
+    })();
   </script>
+
 </body>
 </html>
-  
