@@ -11,7 +11,6 @@
     content="Realism Artist & Art Studio — Qom, Iran"
   />
 
-  <!-- Preconnect برای لود سریع فونت‌ها -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -23,305 +22,166 @@
 
 <body>
 
-  <!-- =========================
-       SIDE MENU (سه‌خطی گوشه)
-  ========================== -->
-  <button
-    class="side-menu-toggle"
-    id="sideMenuToggle"
-    aria-label="Open side menu"
-    aria-expanded="false"
-  >
+  <button class="side-menu-toggle" id="sideMenuToggle" aria-label="Open side menu" aria-expanded="false">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
   <nav class="side-menu" id="sideMenu">
-
     <a href="index.html" class="side-menu-home" data-lang-key="nav_home">HOME</a>
-
     <a href="paintings.html" data-lang-key="nav_paintings">Paintings</a>
     <a href="brushes.html" data-lang-key="nav_brushes">Brushes</a>
     <a href="prints.html" data-lang-key="nav_prints">Prints</a>
     <a href="videos.html" data-lang-key="nav_videos">Videos</a>
     <a href="about.html" data-lang-key="nav_about">About</a>
     <a href="contact.html" data-lang-key="nav_contact">Contact</a>
-
   </nav>
 
   <div class="side-menu-backdrop" id="sideMenuBackdrop"></div>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
   <header class="header" id="home">
     <div class="header-container">
-
       <a href="#home" class="logo">
         <span class="logo-main" data-lang-key="logo_main">FAHIME IZADIAN</span>
         <span class="logo-sub" data-lang-key="logo_sub">REALISM</span>
       </a>
-
       <div class="lang-switcher">
         <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="fa">FA</button>
       </div>
-
     </div>
   </header>
 
-    <!-- =========================
-       HERO
-  ========================== -->
   <section class="hero">
-
     <div class="hero-bg">
       <img src="hero.jpg" alt="Fahime Izadian painting in studio" />
     </div>
-
     <div class="hero-overlay"></div>
-
     <div class="hero-content">
-
       <p class="eyebrow" data-lang-key="hero_eyebrow">REALISM ART</p>
-
       <a href="paintings.html" class="button button-light" data-lang-key="hero_button">
         Explore Collection
       </a>
-
     </div>
-
     <div class="scroll-indicator">
       <span data-lang-key="hero_scroll">SCROLL</span>
       <div></div>
     </div>
-
   </section>
 
-  <!-- =========================
-       INTRO
-  ========================== -->
   <section class="intro section-padding">
-
     <div class="intro-content reveal">
-
       <p class="eyebrow dark" data-lang-key="intro_eyebrow">THE COLLECTION</p>
-
       <h2>
         <span data-lang-key="intro_title_1">Paintings created with</span>
         <em data-lang-key="intro_title_em">patience, observation</em>
         <span data-lang-key="intro_title_2">and attention to detail.</span>
       </h2>
-
       <p class="intro-text" data-lang-key="intro_text">
         Explore a collection of original works, portraits and artistic resources.
       </p>
-
     </div>
-
   </section>
 
-  <!-- =========================
-       PAINTINGS
-  ========================== -->
   <section class="feature-section" id="paintings">
-
     <div class="feature-image reveal">
-      <img
-        src="emeraldembrace.jpg"
-        alt="Paintings collection"
-      />
+      <img src="emeraldembrace.jpg" alt="Paintings collection" />
     </div>
-
     <div class="feature-content reveal">
-
       <p class="eyebrow dark" data-lang-key="paintings_eyebrow">01 / COLLECTION</p>
-
       <h2 data-lang-key="paintings_title">Paintings</h2>
-
       <p data-lang-key="paintings_text">
         Discover original paintings and explore the complete collection
         of available artwork.
       </p>
-
       <a href="paintings.html" class="text-link">
         <span data-lang-key="paintings_link">Discover the collection</span>
         <span>→</span>
       </a>
-
     </div>
-
   </section>
 
-  <!-- =========================
-       BRUSHES
-  ========================== -->
   <section class="feature-section reverse" id="brushes">
-
     <div class="feature-image reveal">
-      <img
-        src="brushes.jpg"
-        alt="Professional brushes"
-      />
+      <img src="brushes.jpg" alt="Professional brushes" />
     </div>
-
     <div class="feature-content reveal">
-
       <p class="eyebrow dark" data-lang-key="brushes_eyebrow">02 / TOOLS</p>
-
       <h2 data-lang-key="brushes_title">Brushes</h2>
-
       <h3 data-lang-key="brushes_subtitle">Fine Detail Professional Brush Set</h3>
-
       <p data-lang-key="brushes_text">
         A carefully selected collection of brushes designed for precision,
         detail and artistic control.
       </p>
-
       <a href="brushes.html" class="text-link">
         <span data-lang-key="brushes_link">Discover the brushes</span>
         <span>→</span>
       </a>
-
     </div>
-
   </section>
 
-  <!-- =========================
-       PORTRAITS
-  ========================== -->
   <section class="feature-section" id="prints">
-
     <div class="feature-image reveal">
-      <img
-        src="crimsonportrait.jpg"
-        alt="Portraits collection — Fahime Izadian"
-      />
+      <img src="crimsonportrait.jpg" alt="Portraits collection — Fahime Izadian" />
     </div>
-
     <div class="feature-content reveal">
-
       <p class="eyebrow dark" data-lang-key="prints_eyebrow">03 / PORTRAITS</p>
-
       <h2 data-lang-key="prints_title">Portraits</h2>
-
       <p data-lang-key="prints_text">
         Discover a collection of portrait works, where each face
         tells a story of character, emotion and presence.
       </p>
-
       <a href="prints.html" class="text-link">
         <span data-lang-key="prints_button">View Portraits</span>
         <span>→</span>
       </a>
-
     </div>
-
   </section>
 
-  <!-- =========================
-       VIDEO MODAL
-  ========================== -->
   <div class="video-modal" id="videoModal">
-
     <div class="video-modal-backdrop"></div>
-
     <div class="video-modal-content">
-
-      <button
-        class="video-modal-close"
-        id="videoModalClose"
-        type="button"
-        aria-label="Close video"
-      >
+      <button class="video-modal-close" id="videoModalClose" type="button" aria-label="Close video">
         ×
       </button>
-
-      <video
-        id="modalVideo"
-        controls
-        controlsList="nodownload"
-        playsinline
-      >
-        <source
-          id="modalVideoSource"
-          src=""
-          type="video/mp4"
-        />
-
+      <video id="modalVideo" controls controlsList="nodownload" playsinline>
+        <source id="modalVideoSource" src="" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
-
     </div>
-
   </div>
 
-  <!-- =========================
-       ART COLLECTION — Pure Image
-  ========================== -->
   <section class="gallery-feature section-padding">
-
     <div class="gallery-image reveal">
       <img src="artcollection.jpg" alt="Art Collection — Fahime Izadian" />
     </div>
-
   </section>
 
-  <!-- =========================
-       NEWSLETTER
-  ========================== -->
   <section class="newsletter" id="newsletter">
-
     <div class="newsletter-content reveal">
-
       <p class="eyebrow" data-lang-key="newsletter_eyebrow">STAY CONNECTED</p>
-
       <h2 data-lang-key="newsletter_title">Newsletter</h2>
-
       <p data-lang-key="newsletter_text">
         Subscribe now to receive news about:
       </p>
-
       <div class="newsletter-list">
         <span data-lang-key="newsletter_item_prints">Prints</span>
         <span data-lang-key="newsletter_item_brushes">Brushes</span>
         <span data-lang-key="newsletter_item_paintings">Paintings</span>
         <span data-lang-key="newsletter_item_workshops">Workshops</span>
       </div>
-
       <form class="newsletter-form">
-
-        <input
-          type="email"
-          data-lang-key="newsletter_placeholder"
-          placeholder="Your email address"
-          required
-        />
-
-        <button type="submit" data-lang-key="newsletter_button">
-          Subscribe
-        </button>
-
+        <input type="email" data-lang-key="newsletter_placeholder" placeholder="Your email address" required />
+        <button type="submit" data-lang-key="newsletter_button">Subscribe</button>
       </form>
-
       <p class="form-message"></p>
-
     </div>
-
   </section>
 
-    <!-- =========================
-       FOOTER
-  ========================== -->
   <footer class="footer">
-
     <div class="footer-top">
-
-      <a href="#home" class="footer-logo" data-lang-key="footer_logo">
-        FAHIME IZADIAN REALISM
-      </a>
-
+      <a href="#home" class="footer-logo" data-lang-key="footer_logo">FAHIME IZADIAN REALISM</a>
       <div class="footer-links">
         <a href="paintings.html" data-lang-key="footer_paintings">Paintings</a>
         <a href="brushes.html" data-lang-key="footer_brushes">Brushes</a>
@@ -329,35 +189,25 @@
         <a href="videos.html" data-lang-key="footer_videos">Videos</a>
         <a href="about.html" data-lang-key="footer_about">About</a>
       </div>
-
     </div>
 
     <div class="footer-bottom">
-
       <p>
         © <span id="year"></span> Fahime Izadian Realism.
         Realism Artist &amp; Art Studio — Qom, Iran.
       </p>
 
-      <!-- شمارنده بازدیدکنندگان (به صورت متن) -->
-      <p class="visitor-counter" style="font-family: inherit; font-size: 0.9rem; opacity: 0.8; margin: 10px 0; color: inherit;">
+      <!-- شمارنده بازدیدکنندگان (تصویر قطعی) -->
+      <p class="visitor-counter" style="font-family: inherit; font-size: 0.9rem; opacity: 0.8; margin: 10px 0; color: inherit; display: flex; align-items: center; justify-content: center; gap: 5px;">
         <span data-lang-key="visitors">Visitors:</span> 
-        <span id="stats" style="font-weight: bold;">...</span>
+        <img src="https://paintersite.goatcounter.com/counter/.png" alt="Visitors" style="height: 22px;">
       </p>
 
-      <a href="#home">
-        Back to top ↑
-      </a>
-
+      <a href="#home">Back to top ↑</a>
     </div>
-
   </footer>
 
-  <!-- =========================
-       CLASSES / WORKSHOPS
-  ========================== -->
   <section class="classes-section section-padding" id="classes">
-
     <div class="section-heading reveal">
       <p class="eyebrow dark" data-lang-key="classes_eyebrow">LEARN WITH US</p>
       <h2 data-lang-key="classes_title">Painting Classes</h2>
@@ -374,8 +224,6 @@
     </div>
 
     <div class="classes-grid">
-
-      <!-- کلاس ۱ -->
       <div class="class-card" data-type="online">
         <div class="class-art art-1">
           <span class="class-number">01</span>
@@ -395,7 +243,6 @@
         </div>
       </div>
 
-      <!-- کلاس ۲ -->
       <div class="class-card" data-type="in-person">
         <div class="class-art art-2">
           <span class="class-number">02</span>
@@ -415,7 +262,6 @@
         </div>
       </div>
 
-      <!-- کلاس ۳ -->
       <div class="class-card" data-type="online">
         <div class="class-art art-3">
           <span class="class-number">03</span>
@@ -435,7 +281,6 @@
         </div>
       </div>
 
-      <!-- کلاس ۴ -->
       <div class="class-card" data-type="hybrid">
         <div class="class-art art-4">
           <span class="class-number">04</span>
@@ -454,25 +299,14 @@
           <a href="contact.html" class="button-dark" data-lang-key="class4_btn">Book Now</a>
         </div>
       </div>
-
     </div>
-
   </section>
-    <!-- =========================
-       GOATCOUNTER (نسخه تصویری)
+
+  <!-- =========================
+       GOATCOUNTER TRACKING
   ========================== -->
-  
-  <!-- اسکریپت اصلی ردیابی -->
   <script data-goatcounter="https://paintersite.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 
-  <!-- نمایش شمارنده به صورت تصویر رسمی (بدون نیاز به جاوااسکریپت) -->
-  <p class="visitor-counter" style="font-family: inherit; font-size: 0.9rem; opacity: 0.8; margin: 10px 0; text-align: center; color: inherit;">
-    <span data-lang-key="visitors">Visitors:</span> 
-    <img src="https://paintersite.goatcounter.com/counter/.png" 
-         alt="Visitors" 
-         style="height: 22px; vertical-align: middle; margin-left: 5px;">
-  </p>
 </body>
 </html>
-  
